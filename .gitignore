@@ -1,3 +1,8 @@
+# Rmd files
+summary-scientific-results.log
+summary-scientific-results.tex
+summary-scientific-results.pdf
+
 # History files
 .Rhistory
 .Rapp.history

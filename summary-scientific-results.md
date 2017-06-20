@@ -44,7 +44,7 @@ Les résultats de l'article ont été relayés dans plusieurs médias et rapport
 
 ## 2. Cartes historiques de la déforestation à Madagascar: soixante ans d'étude de la déforestation et de la fragmentation forestière.
 
-## 3. Logiciel Python ‘deforestprob' pour le calcul de la probabilité spatiale de déforestation
+## 3. Logiciel Python `deforestprob` pour le calcul de la probabilité spatiale de déforestation
 
 ## 4. Modèles d'évolution de l'intensité de déforestation en Afrique et à Madagascar
 
