@@ -8,7 +8,7 @@ output:
     keep_tex: true
     latex_engine: pdflatex
 # Authors
-author: Ghislain Vieilledent
+author: Ghislain Vieilledent^[Coordinateur du projet; Cirad, UPR Forêts et Sociétés, F-34398 Montpellier, FRANCE]
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 # Text
 #geometry: margin=1in
@@ -37,9 +37,9 @@ Concernant les scénarios d'évolution de la biodiversité et des stocks de carb
 
 **\underline{Vieilledent G.}, O. Gardi, \underline{C. Grinand}, C. Burren, M. Andriamanjato, C. Camara, C. J. Gardner, L. Glass, A. Rasolohery, H. Rakoto Ratsimba, V. Gond, \underline{J.-R. Rakotoarijaona}**. 2016. Bioclimatic envelope models predict a decrease in tropical forest carbon stocks with climate change in Madagascar. _Journal of Ecology_. **104**: 703-715. doi: [10.1111/1365-2745.12548](http://dx.doi.org/10.1111/1365-2745.12548).
 
-Cet article a constitué le choix de l'éditeur pour le numéro **104**(3) de la revue Journal of Ecology: [Editor's Choice 104:3](https://jecologyblog.wordpress.com/2016/05/06/editors-choice-1043/).
+Cet article a constitué le choix de l'éditeur pour le numéro **104**(3) de la revue _Journal of Ecology_: [Editor's Choice 104:3](https://jecologyblog.wordpress.com/2016/05/06/editors-choice-1043/).
 
-Cet article a également été sélectionné par les éditeurs pour un numéro spécial de la revue Journal of Ecology intitulé "Plants in a changing world: global change and plant ecology". Publié le 24 April 2017. [Feuilleter le numéro spécial](http://besjournals.onlinelibrary.wiley.com/hub/issue/10.1111/%28ISSN%291365-2745.globalchangevirtualissue).
+Cet article a également été sélectionné par les éditeurs pour un numéro spécial de la revue _Journal of Ecology_ intitulé "Plants in a changing world: global change and plant ecology". Publié le 24 April 2017. [Feuilleter le numéro spécial](http://besjournals.onlinelibrary.wiley.com/hub/issue/10.1111/%28ISSN%291365-2745.globalchangevirtualissue).
 
 Les résultats de l'article ont été relayés dans plusieurs médias et rapports d'activités:
 [The Conversation](https://t.co/pMXLUUrV0I),
@@ -54,40 +54,9 @@ Les résultats de l'article ont été relayés dans plusieurs médias et rapport
 
 ## 2. Cartes historiques de la déforestation à Madagascar: soixante ans d'étude de la déforestation et de la fragmentation forestière.
 
-Nous avons obtenu des cartes de suivi de la couverture forestière sans nuages à 30m de résolution sur la période 1990-2000-2010-2014 (Fig. XX)
-qui sert de base au travail de modélisation du processus de déforestation. Ces cartes
-constituent une première avancée par rapport aux cartes de déforestation actuellement
-disponibles pour Madagascar qui présentent soit (i) une couverture nuageuse importante
-[@ONE2013], soit (ii) une incertitude concernant les seuils de couverts arborés à
-adopter pour définir la forêt sèche et épineuse à Madagascar [@Hansen2013], soit
-(iii) une non prise en compte de la forêt sèche et épineuse en tant que forêt tropicale
-[@Kim2014]. Ces cartes sont désormais disponibles sur le site du projet BioSceneMada:
-\url{https://bioscenemada.cirad.fr/forestmaps}.
+Nous avons également obtenu pour Madagascar des cartes de la couverture forestière sans nuages à 30m de résolution pour l'année 1990 et annuellement sur la période 2000-2014 qui servent de base au travail de modélisation du processus de déforestation (Fig. XX). Ces cartes constituent une première avancée par rapport aux cartes de déforestation précédemment disponibles pour Madagascar qui présentent soit (i) une couverture nuageuse importante [@ONE2013], soit (ii) une incertitude concernant les seuils de couverts arborés à adopter pour définir la forêt sèche et épineuse à Madagascar [@Hansen2013], soit (iii) une non prise en compte de la forêt sèche et épineuse en tant que forêt tropicale [@Kim2014]. Ces cartes sont désormais disponibles sur le site du projet BioSceneMada: \url{https://bioscenemada.cirad.fr/forestmaps}.
 
-Ces cartes présentent l'évolution de la couverture des forêts _naturelles_ (hors
-plantations) et ne prends pas en compte la régénération naturelle des forêts qui, même si
-elle reste possible pour les forêts humides de l'est [@Saboureau1960,
-  @Rasolofoharinoro1997], est limitée sur le long terme à Madagascar (succession de
-régénérations et coupes ou brûlis) et conduit à des forêts secondaires ayant
-potentiellement un niveau de biodiversité et de carbone moindre par rapport aux forêts
-naturelles [@Grouzis2001]. Techniquement, nous sommes partis de la carte de couvert
-forestier en 2000 à Madagascar issues des travaux de [@Harper2007]. Sur cette carte,
-~200 000 hectares (ha) de nuages sont présents sur les ~4.2 millions d'hectares
-(Mha) de forêt humide (4.8% de nuages). En utilisant la carte de couverture arborée
-fournie par [@Hansen2013], nous avons remplacé les nuages par de la forêt si la
-couverture arborée était supérieure à 75% [@Achard2014]. Cela nous a permis
-d'obtenir une carte de couverture forestière sans nuages pour l'année 2000. En partant de
-cette carte en 2000 et de la perte de couvert forestier annuel fournie par
-[@Hansen2013], il a été possible d'obtenir des cartes d'évolution du couvert
-forestier annuelle sur la période 2000-2010-2014. La carte de 1990 comprenait initialement très
-peu de nuages (9603 ha). Compte tenu de ce fait, nous
-n'avons considéré aucun changement de couverture forestière entre 1990 et 2000 sur ces
-zones de nuage. Nous avons également corrigé la carte de 1990 en considérant que les
-surfaces en forêt en 2000 l'étaient déjà en 1990. Des cartes supplémentaires pour les années _ca._ 1953, _ca._ 1973
-[@Harper2007] et ont également été produites. La carte intiale de 1973 a été corrigée en considérant que les surfaces en forêt en
-1990 l'étaient déjà en 1953 et 1973. L'ensemble de ces cartes permettent de retracer
-l'évolution du couvert forestier à Madagascar sur une période d'environ 60 ans, de 1953 à
-2014. 
+Techniquement, nous sommes partis de la carte de couvert forestier en 2000 à Madagascar issues des travaux de [@Harper2007]. Sur cette carte, ~200 000 hectares (ha) de nuages sont présents sur les ~4.2 millions d'hectares (Mha) de forêt humide (4.8% de nuages). En utilisant la carte de couverture arborée fournie par [@Hansen2013], nous avons remplacé les nuages par de la forêt si la couverture arborée était supérieure à 75% [@Achard2014]. Cela nous a permis d'obtenir une carte de couverture forestière sans nuages pour l'année 2000. En partant de cette carte en 2000 et de la perte de couvert forestier annuel fournie par [@Hansen2013], il a été possible d'obtenir des cartes d'évolution du couvert forestier annuelle sur la période 2000-2010-2014. La carte de 1990 comprenait initialement très peu de nuages (9603 ha). Compte tenu de ce fait, nous n'avons considéré aucun changement de couverture forestière entre 1990 et 2000 sur ces zones de nuage. Nous avons également corrigé la carte de 1990 en considérant que les surfaces en forêt en 2000 l'étaient déjà en 1990. Des cartes supplémentaires pour les années 1953 et 1973 ont également été produites en rééchantillonnant et reprojetant les cartes de @Harper2007. La carte de 1973 a été corrigée en considérant que les surfaces en forêt en 1990 l'étaient déjà en 1973. L'ensemble de ces cartes permettent de retracer l'évolution du couvert forestier à Madagascar sur une période d'environ 60 ans, de 1953 à 2014.
 
 **\underline{Vieilledent G.}, \underline{C. Grinand}, F. A. Rakotomalala, R. Ranaivosoa, \underline{J.-R. Rakotoarijaona}, \underline{T. F. Allnutt}, and F. Achard**. Combining global tree cover loss data with historical national forest-cover maps to look at six decades of deforestation and forest fragmentation in Madagascar. _bioRxiv_. 147827. doi: [10.1101/147827](https://doi.org/10.1101/147827).
 
