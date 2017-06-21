@@ -6,9 +6,10 @@ output:
     citation_package: natbib
     fig_caption: true
     keep_tex: true
+    number_sections: true
     latex_engine: pdflatex
 # Authors
-author: Ghislain Vieilledent^[Coordinateur du projet; Cirad, UPR Forêts et Sociétés, F-34398 Montpellier, FRANCE]
+author: Ghislain Vieilledent^[Coordinateur du projet; Cirad, UPR Forêts et Sociétés, F34398 Montpellier, FRANCE]
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 # Text
 #geometry: margin=1in
@@ -27,9 +28,24 @@ biblio-style: bib/jae.bst
 
 L'objectif du projet BioSceneMada est de fournir des scénarios d'évolution de la biodiversité sous l'impact conjoint du changement climatique et de la biodiversité à Madagascar. Suite aux trois premières années du projet concernant le volet scientifique, voici les principaux résultats que nous avons obtenus. Ces résultats seront consolidés et complétés pendant les deux dernières années du projet en parrallèle des activités de renforcement de capacité des institutions à Madagascar. Ces ateliers de renforcement de capacité permettront d'assurer le transfert des méthodes et outils scientifiques développés au cours des trois premières années du projet afin de déterminer des stratégies de conservation efficaces de la biodiversité.
 
+# Liste des principaux produits issus du projet
+
+```{r livrables, results="asis", echo=FALSE}
+library(pander)
+df.livrables <- read.table("tables/livrables.txt", header=TRUE, sep=";")
+pandoc.table(df.livrables, justify=c("left","left","left"),
+             split.table=Inf, split.cells=c(30,90,20))
+```
+
+Table 1: **Principaux produits issus du projet BioSceneMada.** Les produits sont classés par catégories ("Scripts", "Cartes", "Articles", etc.). Certains produits sont disponibles publiquement via un lien internet. D'autres n'ont pas encore été mis en ligne mais le seront d'ici la fin du projet.
+
 # Principaux résultats scientifiques:
 
-## 1. Carte de carbone forestier et vulnérabilité des forêts tropicales au changement climatique à Madagascar
+## MadaClim: portail de données climatiques et environnementales pour Madagascar.
+
+Dans le cadre du projet BioSceneMada, nous avons développé le site internet MadaClim (<https://madaclim.cirad.fr>). Ce site reprend toutes les données climatiques actuelles fournies par WorldClim ainsi que les prédictions climatiques issues des modèles du GIEC (groupe d'experts intergouvernemental sur l'évolution du climat) et fournies par le CGIAR CCAFS. Les données sont recompilées (reprojetées et rééchantillonnées à 1km) et distribuées spécifiquement pour Madagascar. Des variables bioclimatiques supplémentaires comme l'évapotranspiration et le nombre de mois secs ont été calculées et ajoutées aux variables déjà disponibles. En plus des données climatiques, des données environnementales (sol, géologie, altitude, etc.) sont également fournies. Ce site et ces données sont particulièrement utiles pour tous les chercheurs, gestionnaires, membres d'ONG environnementales, ministères voulant étudier les effets du changement climatique à Madagascar. Elles peuvent être utilisées par exemple pour calculer les anomalies climatiques prédites par les modèles du GIECC.
+
+## Carte de carbone forestier et vulnérabilité des forêts tropicales au changement climatique à Madagascar
 
 Dans le cadre du projet BioSceneMada, en utilisant les données climatiques précédemment calculées (<https://madaclim.cirad.fr>) et des données d'inventaires forestiers pour 1771 placettes réparties sur l'ensemble de Madagascar, nous avons démontré qu'il existait un lien fort entre climat et stocks de carbone forestiers. Ce lien est notamment déterminé par les caractéristiques architecturales (hauteur notamment) des espèces d'arbres présentes le long du gradient climatique à Madagascar (climat --> assemblage d'espèces --> stocks de carbone). Ainsi, les stocks de carbone sont en moyenne beaucoup plus faibles en forêt épineuse (17 Mg.ha$^{-1}$) qu'en forêt humide (150 Mg.ha$^{-1}$). Le modèle statistique intégrant la relation climat-stock de carbone a permis de produire une carte précise des stocks de carbone forestier à Madagascar à une résolution de 250 m. Cette carte pourra être utilisée par les instances gouvernementales à Madagascar ou les porteurs de projet REDD+ au niveau régional pour le calcul des émissions de CO2 associées à la déforestation. Cette carte ainsi que les données qui ont permis de l'obtenir sont disponibles sur le site du projet BioSceneMada (<https://bioscenemada.cirad.fr/carbonmaps>) ainsi que sur le serveur de données Dryad (doi: [10.5061/dryad.9ph68](http://doi.org/10.5061/dryad.9ph68)).
 
@@ -52,35 +68,63 @@ Les résultats de l'article ont été relayés dans plusieurs médias et rapport
 [Cirad](http://www.cirad.fr/en/news/all-news-items/press-releases/2016/climate-change-alters-the-co2-storage-capacity-of-tropical-forests),
 [Cirad activity report 2015](http://www.cirad.fr/content/download/11005/128917/version/2/file/RA2015_FR.pdf).
 
-## 2. Cartes historiques de la déforestation à Madagascar: soixante ans d'étude de la déforestation et de la fragmentation forestière.
+## Soixante ans (1953-2014) d'étude de la déforestation et de la fragmentation forestière à Madagascar
 
-Nous avons également obtenu pour Madagascar des cartes de la couverture forestière sans nuages à 30m de résolution pour l'année 1990 et annuellement sur la période 2000-2014 qui servent de base au travail de modélisation du processus de déforestation (Fig. XX). Ces cartes constituent une première avancée par rapport aux cartes de déforestation précédemment disponibles pour Madagascar qui présentent soit (i) une couverture nuageuse importante [@ONE2013], soit (ii) une incertitude concernant les seuils de couverts arborés à adopter pour définir la forêt sèche et épineuse à Madagascar [@Hansen2013], soit (iii) une non prise en compte de la forêt sèche et épineuse en tant que forêt tropicale [@Kim2014]. Ces cartes sont désormais disponibles sur le site du projet BioSceneMada: \url{https://bioscenemada.cirad.fr/forestmaps}.
-
-Techniquement, nous sommes partis de la carte de couvert forestier en 2000 à Madagascar issues des travaux de [@Harper2007]. Sur cette carte, ~200 000 hectares (ha) de nuages sont présents sur les ~4.2 millions d'hectares (Mha) de forêt humide (4.8% de nuages). En utilisant la carte de couverture arborée fournie par [@Hansen2013], nous avons remplacé les nuages par de la forêt si la couverture arborée était supérieure à 75% [@Achard2014]. Cela nous a permis d'obtenir une carte de couverture forestière sans nuages pour l'année 2000. En partant de cette carte en 2000 et de la perte de couvert forestier annuel fournie par [@Hansen2013], il a été possible d'obtenir des cartes d'évolution du couvert forestier annuelle sur la période 2000-2010-2014. La carte de 1990 comprenait initialement très peu de nuages (9603 ha). Compte tenu de ce fait, nous n'avons considéré aucun changement de couverture forestière entre 1990 et 2000 sur ces zones de nuage. Nous avons également corrigé la carte de 1990 en considérant que les surfaces en forêt en 2000 l'étaient déjà en 1990. Des cartes supplémentaires pour les années 1953 et 1973 ont également été produites en rééchantillonnant et reprojetant les cartes de @Harper2007. La carte de 1973 a été corrigée en considérant que les surfaces en forêt en 1990 l'étaient déjà en 1973. L'ensemble de ces cartes permettent de retracer l'évolution du couvert forestier à Madagascar sur une période d'environ 60 ans, de 1953 à 2014.
+Nous avons obtenu pour Madagascar de nouvelles cartes de la couverture forestière sans nuages à 30m de résolution pour l'année 1990 et annuellement sur la période 2000-2014. Ces cartes constituent une avancée par rapport aux cartes de déforestation précédemment disponibles pour Madagascar pour la période récente (après 2000) qui présentent soit (i) une couverture nuageuse importante [@ONE2013], soit (ii) une incertitude concernant les seuils de couverts arborés à adopter pour définir la forêt sèche et épineuse à Madagascar [@Hansen2013], soit (iii) une non prise en compte de la forêt sèche et épineuse en tant que forêt tropicale [@Kim2014]. Techniquement, nous sommes partis de la carte de couvert forestier en 2000 à Madagascar issues des travaux de [@Harper2007]. Sur cette carte, 200 000 hectares (ha) de nuages sont présents sur les 4.2 millions d'hectares (Mha) de forêt humide (4.8% de nuages). En utilisant la carte de couvert arboré fournie par [@Hansen2013], nous avons remplacé les nuages par de la forêt si le couvert arboré était supérieure à 75% [@Achard2014]. Cela nous a permis d'obtenir une carte de couverture forestière sans nuages pour l'année 2000. En partant de cette carte en 2000 et de la perte de couvert arboré annuel fournie par [@Hansen2013], il a été possible d'obtenir des cartes annuelle d'évolution du couvert forestier sur la période 2000-2014. La carte de 1990 comprenait initialement très peu de nuages (9603 ha). Compte tenu de ce fait, nous n'avons considéré aucun changement de couverture forestière entre 1990 et 2000 pour ces zones de nuage. Nous avons également corrigé la carte de 1990 en considérant que les surfaces en forêt en 2000 l'étaient déjà en 1990. Des cartes supplémentaires pour les années 1953 et 1973 ont également été produites en rééchantillonnant et reprojetant les cartes de @Harper2007. La carte de 1973 a été corrigée en considérant que les surfaces en forêt en 1990 l'étaient déjà en 1973. L'ensemble de ces cartes permettent de retracer l'évolution du couvert forestier à Madagascar sur une période d'environ 60 ans, de 1953 à 2014.
+Ces cartes sont disponibles sur le site du projet BioSceneMada: <https://bioscenemada.cirad.fr/forestmaps>. Elles servent de base au travail de modélisation du processus de déforestation. Les données et scripts `R/GRASS` utilisés pour les calculs sont disponibles sur la plateforme GitHub: <https://github.com/ghislainv/deforestmap>. Ce travail a fait l'objet d'un article soumis à la revue _Biological Conservation_. Le manuscrit est disponible sur le serveur de pré-publication _bioRxiv_. Les co-auteurs partenaires du projet sont soulignés:
 
 **\underline{Vieilledent G.}, \underline{C. Grinand}, F. A. Rakotomalala, R. Ranaivosoa, \underline{J.-R. Rakotoarijaona}, \underline{T. F. Allnutt}, and F. Achard**. Combining global tree cover loss data with historical national forest-cover maps to look at six decades of deforestation and forest fragmentation in Madagascar. _bioRxiv_. 147827. doi: [10.1101/147827](https://doi.org/10.1101/147827).
 
-## 3. Logiciel Python `deforestprob` pour le calcul de la probabilité spatiale de déforestation
+## Logiciel Python `deforestprob` pour le calcul de la probabilité spatiale de déforestation
 
-Un module Python a été développé afin de pouvoir estimer rapidement la probabilité spatiale de déforestation sur de grandes échelles spatiales (nationales ou continentales) avec une résolution fine (ex. 30 ou 10 m) et de prédire quelles seront les zones à risques de déforestation et les zones potentielles de refuge de la biodiversité dans le futur. Le modèle portant sur la localisation de la déforestation permet de prédire la probabilité spatiale de déforestation en fonction de variables environnementales décrivant l'accessibilité de la forêt (distance aux routes, villages et rivières, distance à la lisière de la forêt, topographie), son statut de protection (appartenance au réseau d’aires naturelles protégées) et son historique (distance à la déforestation passée). Le module Python est disponible sur le serveur Github: <https://github.com/ghislainv/deforestprob>.
+Un module Python a été développé afin de pouvoir estimer rapidement la probabilité spatiale de déforestation sur de grandes échelles spatiales (nationales ou continentales) avec une résolution fine (ex. 30 ou 10 m) et de prédire quelles seront les zones à risques de déforestation et les zones potentielles de refuge de la biodiversité dans le futur. Le modèle portant sur la localisation de la déforestation permet de prédire la probabilité spatiale de déforestation en fonction de variables environnementales décrivant l'accessibilité de la forêt (distance aux routes, villages et rivières, distance à la lisière de la forêt, topographie), son statut de protection (appartenance au réseau d'aires naturelles protégées) et son historique (distance à la déforestation passée). Le module Python est disponible sur le serveur Github: <https://github.com/ghislainv/deforestprob>.
 
 Nous avons utilisé ce module pour estimer la probabilité spatiale de déforestation à l'échelle nationale à Madagascar, à une résolution fine de 30 m et pour la couverture forestière de l'année 2010. Cette démarche a fait l'objet d'un tutoriel où chacune des étape de modélisation est indiquée pas à pas. Cet tutoriel, disponible sous forme d'un notebook Jupyter est disponible à l'adresse suivante: <https://ghislainv.github.io/deforestprob>. Le tutoriel pourra notamment être utilisé pendant les ateliers de renforcement de capacité dans les deux prochaines années à venir.
 
-## 4. Modèles d'évolution de l'intensité de déforestation en Afrique et à Madagascar
+## Modèles d'évolution de l'intensité de déforestation en Afrique et à Madagascar
 
-## 4. Scénarios d'évolution de la couverture forestière à Madagascar et cartes du couvert forestier futur
+## Scénarios d'évolution de la couverture forestière à Madagascar et cartes du couvert forestier futur
 
-## 5. MadaClim: portail de données climatiques et environnementales pour Madagascar.
 
-Dans le cadre du projet BioSceneMada, nous avons développé le site internet MadaClim (<https://madaclim.cirad.fr>). Ce site reprend toutes les données climatiques actuelles fournies par WorldClim ainsi que les prédictions climatiques issues des modèles du GIEC (groupe d'experts intergouvernemental sur l'évolution du climat) et fournies par le CGIAR CCAFS. Les données sont recompilées (reprojetées et rééchantillonnées à 1km) et distribuées spécifiquement pour Madagascar. Des variables bioclimatiques supplémentaires comme l'évapotranspiration et le nombre de mois secs ont été calculées et ajoutées aux variables déjà disponibles. En plus des données climatiques, des données environnementales (sol, géologie, altitude, etc.) sont également fournies. Ce site et ces données sont particulièrement utiles pour tous les chercheurs, gestionnaires, membres d'ONG environnementales, ministères voulant étudier les effets du changement climatique à Madagascar. Elles peuvent être utilisées par exemple pour calculer les anomalies climatiques prédites par les modèles du GIECC.
+## Base de données de biodiversité à Madagascar
 
-## 6. Base de données de biodiversité à Madagascar
+```{r species, results="asis", echo=FALSE}
+df.species <- read.table("tables/species.txt", header=TRUE, sep=";")
+names(df.species)[1] <- " "
+pandoc.table(df.species, justify=c("left","left","right","right","right"),
+             split.table=Inf)
+```
 
-## 7. Atlas de la biodiversité à Madagascar et de sa vulnérabilité au changement climatique
+Table 2: **Bases de données sur la biodiversité de Madagascar.** La base de données incluent des points de présence pour 4969 espèces réparties dans différents groupes taxonomiques. Ces espèces sont représentatives de la biodiversité à Madagascar.
 
-## 8. Cartes de biodiversité et des communautés d'espèces à Madagascar
+## Atlas de la biodiversité à Madagascar et de sa vulnérabilité au changement climatique
 
-## 4. Communications:
+Nous avons développé un script permettant de modéliser la niche climatique des espèces à partir de modèles d'ensemble [@Vieilledent2013a;@Araujo2007a]. Ce script utilise le package `biomod2` sous `R`. A partir de variables environnementales, incluant des variables climatiques (température moyenne annuelle, saisonnalité de la température, précipitations annuelles, déficit en eau, nombre de mois secs) et des variables physiques (radiation solaire, géologie) disponibles sur le site [MadaClim](https://madaclim.cirad.fr), nous avons pu prédire la probabilité de présence ainsi que l'aire de distribution présente et future des sept espèces de baobab à Madagascar. Les prédictions sont issues de plusieurs modèles statistiques (Maxent, GLM, GAM et Random Forest). L'approche par modèles d'ensemble permet de moyenner les prédictions faites par plusieurs modèles statistiques afin d'évaluer l'incertitude des prédictions et d'augmenter la robustesse de l'aire de distribution. 
+
+L'idée est de pouvoir utiliser ce script et modéliser l'aire de distribution présente et future de l'ensemble des espèces constitutant le jeu de données sur la biodiversité à Madagascar (4969 espèces). Pour ce faire, des améliorations devront être apportées au script. L'obtention des résultats prend environ actuellement une heure par espèce. Ainsi, le script devra être optimisé et pouvoir être parrallélisé, c'est-à-dire envoyé sur les différents processeurs d'un serveur afin d'accélérer les calculs et de pouvoir obtenir les résultats pour les 4969 espèces en quelques jours. L'objectif est d'obtenir au final un atlas de la biodiversité à Madagascar incluant (i) les points de présences, (ii) la distribution actuelle des espèces, (iii) la distribution futures des espèces et leur vulnérabilité au changement climatique.
+
+## Cartes de biodiversité et des communautés d'espèces à Madagascar
+
+Lorsque l'on parle de carte de biodiversité à l'échelle nationale, l'objectif n'est pas uniquement d'obtenir des informations sur la localisation des "hotspots" ou points-chauds de la biodiversité (les sites ayant une diversité spécifique élevée), ce que l'on appelle encore la diversité $\alpha$. Il est en effet surtout intéressant de considérer la diversité $\beta$, c'est-à-dire les communautés ou assemblages d'espèces et comment les assemblages d'espèces changent spatialement ("species turnover"), selon des gradients environnementaux (d'altitude, de climat, etc.). De telles cartes n'existent pas actuellement à l'échelle nationale pour Madagascar. Seules des cartes de végétation sont disponibles pour lesquelles la classification s'appuie sur la définition de grands biomes (<http://www.vegmad.org>) et non sur des relevés à l'échelle de l'espèce, à la fois pour la faune et la flore.
+
+En utilisant des modèles de communautés [@Ferrier2007], nous avons cherché à identifier les facteurs environnementaux déterminants les assemblages d'espèces. Ces facteurs peuvent être climatiques ou associés à des barrières géographiques comme les bassins versants ou les rivières [@Pearson2009]. Il ainsi été montré que la distribution des espèces de lémuriens à Madagascar était fortement liée aux bassins versants [@Wilme2006; Mercier2013]. Les modèles de communautés que nous avons utilisés, appelés GDM (Generalized Dissimilarity Models), modélisent les changements d'espèces au sein de la communauté en fonction des gradients environnementaux en s'appuyant sur des indices de dissimilarités entre sites [@Ferrier2007].
+
+En appliquant ce modèle à nos données de présence d'espèces à Madagascar, nous avons obtenu une première carte de la biodiversité $\beta$ à Madagascar. Mais le pourcentage de déviance expliquée par ce modèle est faible ($<$10%).
+
+En applicant ce même modèle à chaque groupe taxonomique, nous avons trouvé que (i) le pourcentage de variance expliquée par le modèle était généralement beaucoup plus élevé (entre 11% et 88%, Tab. 3) et que (ii) les facteurs explicants l'assemblage des communautés d'espèces variaient d'un groupe taxonomique à l'autre, le climat n'étant pas toujours le facteur le plus important (Tab. 3). Par exemple, nous avons confirmé les résultats obtenus par @Wilme2006 pour les espèces de lémuriens. Pour ce groupe, ce sont les bassins versants qui expliquent en majorité l'assemblage des espèces (84% de déviance expliquée). Cela pourrait notamment s'expliquer par la difficulté qu'on les lémuriens à traverser les cours d'eau. A contrario, le climat explique une grande partie des assemblages d'espèces de reptiles et d'amphibiens, espèces poïkilothermes (animaux ayant une température corporelle qui varie avec celle de leur milieu) et des espèces de mammifères autres que les lémuriens. Pour d'autres groupes, comme les espèces d'arbres, les facteurs climatiques et les bassins versants semblent expliquer à part égale les assemblages d'espèces.
+
+Ainsi, on voit qu'il est difficile d'établir une carte des communautés d'espèces végétales et animales à Madagascar, les facteurs explicatifs de la distribution des communautés changeant d'un groupe à l'autre. Il faudra probablement envisager de croiser les cartes de biodiversité obtenues par groupe taxonomique.
+
+```{r gdms, results="asis", echo=FALSE}
+df.gdms <- read.table("tables/gdms.txt", header=TRUE, sep=";")
+names(df.gdms)[4] <- c("C+WS")
+pandoc.table(df.gdms, justify=c("left","right","right","right","right"),
+             split.table=Inf, missing=" ")
+```
+
+Table 3: **Facteurs explicants l'assemblage des espèces par groupe taxonomique.** Le tableau indique le pourcentage de déviance expliquée par chacun des modèles. Les modèles Clim n'incluent que des variables climatiques, les modèles WS n'incluent que les bassins versants (WS pour "watershed") et les modèles C + WS incluent les deux types de facteurs. Le modèle Full inclue en plus des corrélations spatiales.
+
+## Communications:
 
 - Sites webs: du projet BioSceneMada et des outils MadaClim et deforestprob
 - Répertoires GitHub

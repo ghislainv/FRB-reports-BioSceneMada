@@ -1,0 +1,11 @@
+"Groupes";"Clim";"WS";"C+WS";"Full"
+"**Plantes**";" ";" ";" ";" "
+"Arbres";30;28;43;44
+"Tous";24;16;31;32
+"**Animauxs**";" ";" ";" ";" "
+"Lémuriens";56;84;87;88
+"Autres mammifères";63;30;64;65
+"Oiseaux";8;3;9;11
+"Reptiles et Amphibiens";34;33;40;40
+"Invertébrés";9;3;9;11
+"Tous";6;2;6;9
