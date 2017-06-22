@@ -16,6 +16,7 @@
 ;"**5.5** Carte de biodiversité beta (1km)";"En cours"
 "**6. Articles scientifiques**";"**6.1** Vieilledent G., O. Gardi, C. Grinand, C. Burren, M. Andriamanjato, C. Camara, C. J. Gardner, L. Glass, A. Rasolohery, H. Rakoto Ratsimba, V. Gond, J.-R. Rakotoarijaona. 2016. Bioclimatic envelope models predict a decrease in tropical forest carbon stocks with climate change in Madagascar. _Journal of Ecology_. 104: 703-715";"http://doi.org/10.1111/1365-2745.12548"
 ;"**6.2** Vieilledent G., C. Grinand, F. A. Rakotomalala, R. Ranaivosoa, J.-R. Rakotoarijaona, T. F. Allnutt, and F. Achard. Combining global tree cover loss data with historical national forest-cover maps to look at six decades of deforestation and forest fragmentation in Madagascar. _bioRxiv_. 147827";"https://doi.org/10.1101/147827"
+;"**6.3** Charra M. and G. Vieilledent. Climat ou bassins-versants ? Les facteurs environnementaux déterminant les assemblages d'espèces à Madagascar diffèrent selon les groupes taxonomiques";"https://tinyurl.com/master-mcharra"
 "**7. Autres publications**";"**7.1** Vieilledent G. 2016. Les forêts tropicales, des ‘puits de carbone’ hautement vulnérables. in The Conversation, J. Gallé (Associate Editor)";"https://tinyurl.com/theconversation-GV"
 ;"**7.2** Tutoriel pour modélisation de la probabilité spatiale de déforestation";"https://ghislainv.github.io/deforestprob"
 ;"**7.3** Prototype d’atlas de la biodiversité et de sa vulnérabilité au changement climatique concernant les 7 espèces de Baobab à Madagascar";"https://bioscenemada.cirad.fr/FileTransfer/atlas.pdf"
