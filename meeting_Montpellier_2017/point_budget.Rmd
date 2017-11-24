@@ -1,0 +1,56 @@
+---
+title: "Point budget"
+output: 
+  beamer_presentation:
+#    includes:
+#      in_header: header_beamer.tex
+#      before_body: doc_prefix_beamer.tex
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(echo=FALSE)
+```
+
+## Total budget
+
+```{r total_budget, results='asis'}
+tot_budget <- read.table("total_budget.csv", header=TRUE, sep=";")
+kable(tot_budget, format.args=list(big.mark=","))
+```
+
+## Consumed budget
+
+```{r consume_budget, results='asis'}
+cons_budget <- tot_budget[,-c(3)]
+spent <- c(37457, 8623, 6324, 1545)
+cons_budget$Consumed <- c(spent,sum(spent))
+colnames <- c("Partner", "Institution", "Requested", "Consumed")
+kable(cons_budget, format.args=list(big.mark=","), col.names=colnames)
+```
+
+Budget consommé en septembre 2017.
+
+## Remaining budget
+
+```{r remaining_budget, results='asis'}
+rem_budget <- cons_budget
+rem_budget$Remaining <- rem_budget$Requested-rem_budget$Consumed
+colnames <- c("Partner", "Institution", "Requested", "Consumed", "Remaining")
+kable(rem_budget, format.args=list(big.mark=","), col.names=colnames)
+```
+
+## Received budget
+
+```{r received_budget, results='asis'}
+rec_budget <- rem_budget[,-c(4,5)]
+rec_budget$Received <- 0.8*rec_budget$Requested
+rec_budget$Perc <- rep("80%", nrow(rec_budget))
+colnames <- c("Partner", "Institution", "Requested", "Received", "Perc")
+kable(rec_budget, format.args=list(big.mark=","), col.names=colnames, digits=0)
+```
+
+* La première tranche de 40% a été versée au commencement du projet (15 mai 2014).
+* La seconde tranche de 40% a été versée à la réception du rapport intermédiaire (2016).
+* Troisième versement de 10% à la réception du rapport sur résultats scientifiques (en cours).
+* Troisième versement de 10% à la réception du rapport sur suivi/accompagnement (mai 2019).

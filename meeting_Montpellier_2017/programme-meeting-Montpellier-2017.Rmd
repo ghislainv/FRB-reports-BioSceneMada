@@ -104,6 +104,7 @@ Après-midi
 
 - 13:30 Test sur les espèces de lémuriens à Madagascar avec RStudio et script R atlas.
 - 16:00 Fin de l'après-midi de travail (_RV administratif GV_)
+- 18:30 [Conférence Biodiversité et Santé](https://www.elsevier.com/books/biodiversity-and-health/morand/978-1-78548-115-4) par Serge Morand, Bât. 10 campus de la Faculté des Sciences à Montpellier
 
 ### Mercredi 29 Novembre
 
