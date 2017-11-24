@@ -1,7 +1,7 @@
 # Rmd files
-summary-scientific-results.log
-summary-scientific-results.tex
-summary-scientific-results.pdf
+*.log
+*.tex
+*.pdf
 
 # History files
 .Rhistory

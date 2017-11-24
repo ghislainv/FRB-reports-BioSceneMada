@@ -1,0 +1,156 @@
+---
+title: "Atelier de travail BioSceneMada Montpellier 2017"
+author: Ghislain Vieilledent^[Coordinateur du projet; Cirad, UPR Forêts et Sociétés,
+  F34398 Montpellier, FRANCE]
+date: 24/11/2017
+output:
+  pdf_document:
+    citation_package: natbib
+    fig_caption: no
+    keep_tex: yes
+    latex_engine: pdflatex
+    number_sections: yes
+    toc: no
+  word_document:
+    fig_caption: no
+    toc: no
+header-includes:
+- \hypersetup{colorlinks=true, citecolor=blue}
+- \usepackage{xcolor}
+- \definecolor{darkgreen}{RGB}{0,150,0}
+---
+
+
+![Place de la Comédie](Montpellier.jpg)
+
+## Dates et lieu
+
+*Dates:* Du Lundi 27 Novembre au Vendredi 01 Décembre 2017.
+
+*Lieu:* Montpellier, Maison de la Télédétection, salle de réunion Silva.
+
+La Maison de la télédetection se situe au 500 rue Jean-François
+Breton, dans le Domaine de Lavalette, au nord du quartier
+Hôpitaux-Facultés à Montpellier (France).
+
+*Accès:*
+
+- Tramway ligne 1 (bleu), direction Mosson, jusqu'à la station "Saint-Eloi"
+- Puis bus "La Navette", direction "Universités des sciences et lettres", arrêt "Campus Agropolis"
+- Fréquence : 6 min (30 min pendant les vacances scolaires)
+
+Alternative en voiture le lundi: Pour le premier jour, je passerai
+chercher Jean-Roger et Dimby en voiture à leur hôtel (Hôtel du Palais)
+à 08:10.
+
+*Repas le midi:* Les repas le midi seront pris au restaurant du Cirad Lavalette (~10 euros/personne).
+
+## Participants
+
+- Cirad: Ghislain Vieilledent <ghislain.vieilledent@cirad.fr>
+- WCS: Dimby Razafimpahanana <dimby@wcs.org>
+- ONE: Jean-Roger Rakotoarijaona <jr.rakotoarijaona@gmail.com>
+- ETC Terra: Clovis Grinad <c.grinand@etcterra.org>, Marie Nourtier
+  <m.nourtier@etcterra.org>, Frédérique Montfort
+  <f.montfort@etcterra.org>
+
+## Objectifs de l'atelier
+
+1. Un point sur les résultats scientifiques et les publications.
+2. Un point sur le budget.
+3. La mise en place de stages afin d'avancer sur les questions de
+   biodiversité: i) atlas (calcul + site web) et ii) carte de communautés (biodiversité
+   beta).
+4. L'organisation d'une ou deux semaines de renforcement de capacité à
+   Mada en 2018. Le renforcement de capacité porterait (i) sur les
+   modèles de déforestation et les scénarios de référence, (ii) sur
+   les modèles de niche et l'atlas, (iii) sur les modèles de
+   communauté et les cartes de biodiversité beta.
+
+## Programme
+
+### Lundi 27 Novembre
+
+**Journée résultats et perspectives**
+
+Matin
+
+- 08:30 Accueil des participants et programme de l'atelier
+- 09:00 Points sur les résultats scientifiques du projet BioSceneMada ([results](https://bioscenemada.cirad.fr//wp-content/uploads/2017/10/summary-scientific-results.pdf))
+- 10:00 Point sur le budget
+- 10:30 Pause café
+- 11:00 Fety Rakotomalala <f.rakotomalala@etcterra.org>, "Mesure et suivi de la dégradation et régénération forestière dans l'écorégion des forêts humides de Madagascar".
+- 12:30 Repas
+
+Après-midi
+
+- 13:30 Rédaction des offres de stage et organisation des stages pour 2018. Planning des mission de renforcement de capacité 2018.
+- 16:00 Fin de l'après-midi de travail (_RV GV avec Jean Gérard densité des bois_)
+- 18:45 Repas centre-ville à la [Crèperie Froment et Sarrasin](https://www.fromentetsarrasin-creperie.com)
+- 19:45 Diagonal Montpellier: [Land Grabbing](http://www.festival-alimenterre.org/film/land-grabbing)
+
+### Mardi 28 Novembre
+
+**Journée atlas et données de biodiversité**
+
+Matin
+
+- 08:30 Méthodologie atlas de la biodiversité. Exemple Baobabs.
+- 10:30 Pause café
+- 11:00 Discussion sur les données de biodiversité à Mada. Intérêt d'intégrer les données GBIF. Contacts GBIF Mada.
+- 12:30 Repas
+
+Après-midi
+
+- 13:30 Test sur les espèces de lémuriens à Madagascar avec RStudio et script R atlas.
+- 16:00 Fin de l'après-midi de travail (_RV administratif GV_)
+
+### Mercredi 29 Novembre
+
+**Journée atlas et site web**
+
+Matin
+
+- 08:30 Dimitri Justeau <dimitri.justeau@gmail.com>, "Portail web Niamoto pour la restitution de données écologiques en Nouvelle-Calédonie".
+- 10:30 Pause café
+- 11:00 Discussion sur la création d'un site web pour la restitution des données de l'atlas. Outils simple. Base de données espèce (avec famille, groupe et règne). Recherche par noms scientifiques.
+- 12:30 Repas
+
+Après-midi
+
+- 13:30 Test sur les espèces d'oiseaux (ou reptiles, à voir) à Madagascar.
+- 17:30 Fin de la journée
+
+### Jeudi 30 Novembre
+
+**Journée modèle de déforestation**
+
+Matin
+
+- 08:30 Présentation du module Python `deforestprob`
+- 10:30 Pause café
+- 08:30 Modélisation de la déforestation à Madagascar (et Côte d'Ivoire pour ETC Terra)
+- 12:30 Repas
+
+Après-midi
+
+- 13:30 Discussion autour de l'article [causes de la déforestation dans le Menabe](https://tinyurl.com/y9j5b9gq)
+- 17:30 Fin de la journée
+
+### Vendredi 01 Décembre
+
+**Journée modèle de communauté d'espèces**
+
+Matin
+
+- 08:30 Retour sur les résultats initiaux, intérêt des modèles joints et tests sous R
+- 10:30 Pause café
+- 11:00 Jean-Baptiste Féret <jean-baptiste.feret@teledetection.fr>, "Approche de caractérisation de la biodiversité en forêt tropicale par télédétection".
+- 12:30 Repas 
+
+Après-midi
+
+- 14:00 Sylvain Schmitt <sylvain.schmitt@agroparistech.fr>, "Package R SSDM: stacked species distribution models".
+- 15:00 Bilan de l'atelier
+- 15:30 Fin de l'atelier
+- 16:25 Train pour Paris pour JRR et DR
