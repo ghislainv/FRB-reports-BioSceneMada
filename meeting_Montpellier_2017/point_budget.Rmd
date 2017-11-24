@@ -40,6 +40,11 @@ colnames <- c("Partner", "Institution", "Requested", "Consumed", "Remaining")
 kable(rem_budget, format.args=list(big.mark=","), col.names=colnames)
 ```
 
+* Encore beaucoup de budget disponible: 62,800 euros.
+* Moins ~6000 euros pour l'atelier de Nov. 2017.
+* 3 stages à prévoir sur 2018.
+* 2 ateliers/missions de renforcement de capacités à Mada en 2018 et 2019.
+
 ## Received budget
 
 ```{r received_budget, results='asis'}
