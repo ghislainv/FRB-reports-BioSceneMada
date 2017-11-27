@@ -1,0 +1,35 @@
+---
+title: Modèles joints pour la distribution des espèces d'arbres à Madagascar
+author: Ghislain Vieilledent
+bibliography: biblio.bib
+---
+
+## Objectif
+
+L'objectif du stage est l'obtention d'une carte des communautés d'espèces d'arbres à Madagascar et d'étudier l'influence des changements climatiques sur ces communautés. Ces cartes permettront d'identifier les zones à fort risque de perte de biodiversité et les zones refuges de la biodiversité sous l'effet des changements climatiques afin d'orienter les stratégies de conservation de la biodiversité à l'échelle nationale [@Kremen2008].
+
+## Matériels et Méthodes
+
+Pour obtenir cette carte nous utiliserons des modèles joints pour la distribution des espèces ("joint species distribution models"). Ces modèles permettent de prédire la distribution des espèces à partir de facteurs climatiques et environnementaux tout en considérant les intéractions entre espèces. Plusieurs package R seront testés pour la modélisation, notamment le package `gjam` [@Clark2017].
+
+Les données utilisées proviennent de l'inventaire forestier national à Madagascar. L'inventaire regroupe des données de présence-absence provenant de 753 placettes réparties sur l'ensemble des forêts tropicales de Madagascar (zone humide, sèche et épineuse). 555 espèces y ont été identifiées appartenant à 279 genres.
+
+![Localisation des placettes](inventory_plots.pdf)
+
+## Contexte
+
+Le stage proposé s'intègre dans les activités du projet BioSceneMada qui vise à fournir des scénarios d'évolution de la biodiversité sous l'impact conjoint du changement climatique et de la biodiversité à Madagascar (<https://bioscenemada.cirad.fr>). Le projet, mis en oeuvre par le Cirad inclut EtcTerra-Rongead, World Conservation Society (WCS) et l’Office National de l'Environnement (ONE) come partenaires.
+
+## Profil recherché
+
+* Etudiant Ingénieur ou Master 2 en bio-statistique
+* Bonnes compétences en statistiques et modélisation
+* Maitrise du logiciel R et de Rstudio (Rmarkdown)
+* Compétences rédactionnelles 
+* Autonomie et adaptabilité
+
+## Organisation et condition
+
+Le stage aura une durée de 5 à 6 mois en 2018, idéalement de février/mars à juin/juillet. Il se déroulera en France à Montpellier. L'indemnité légale de stage sera de 554,40 euros par mois. Le stage sera encadré par XXX et co-encadré par Ghislain Vieilledent (Chercheur Cirad, coordinateur du projet BioSceneMada, ghislain.vieilledent@cirad.fr).
+
+## Références
