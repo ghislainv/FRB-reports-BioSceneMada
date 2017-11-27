@@ -32,4 +32,9 @@ Le stage proposé s'intègre dans les activités du projet BioSceneMada qui vise
 
 Le stage aura une durée de 5 à 6 mois en 2018, idéalement de février/mars à juin/juillet. Il se déroulera en France à Montpellier. L'indemnité légale de stage sera de 554,40 euros par mois. Le stage sera encadré par XXX et co-encadré par Ghislain Vieilledent (Chercheur Cirad, coordinateur du projet BioSceneMada, ghislain.vieilledent@cirad.fr).
 
+## Note
+
+* https://mickresearch.wordpress.com/2014/03/17/joint-species-distribution-models/
+* R package boreal
+
 ## Références
