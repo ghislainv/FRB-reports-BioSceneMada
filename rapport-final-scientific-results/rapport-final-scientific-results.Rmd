@@ -1,8 +1,6 @@
 ---
-title: "| Principaux résultats scientifiques du projet \n| FRB BioSceneMada\n"
-author: Ghislain Vieilledent^[Coordinateur du projet; Cirad, UPR Forêts et Sociétés,
-  F34398 Montpellier, FRANCE]
-date: '`r format(Sys.time(), "%B %d, %Y")`'
+title: Test
+  #| RAPPORT FINAL \n Programme "Modélisation et scénarios de la biodiversité" \n Appel à projet 2013
 output:
   pdf_document:
     citation_package: natbib
@@ -11,8 +9,6 @@ output:
     latex_engine: pdflatex
     number_sections: yes
     toc: yes
-  word_document:
-    toc: yes
 header-includes:
 - \hypersetup{colorlinks=true, citecolor=blue}
 - \usepackage{xcolor}
@@ -20,6 +16,15 @@ header-includes:
 bibliography: bib/biblio.bib
 biblio-style: bib/jae.bst
 ---
+
+![](figures/FRB.png)
+
+Rédacteur du rapport: Ghislain Vieilledent    
+Date de rédaction: 01 Décembre 2017    
+E-mail: ghislain.vieilledent@cirad.fr    
+Durée du projet: 5 ans    
+Date de début: 15/05/2014    
+Date de fin: 15/05/2019    
 
 # Rappel des objectifs du projet:
 

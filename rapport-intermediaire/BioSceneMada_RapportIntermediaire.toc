@@ -1,0 +1,21 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Identification du projet}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Informations g\IeC {\'e}n\IeC {\'e}rales}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}R\IeC {\'e}sum\IeC {\'e} grand public}{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Equipes partenaires du projet}{3}{subsection.1.3}
+\contentsline {section}{\numberline {2}Etat d'avancement du projet}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Description des travaux scientifiques effectu\IeC {\'e}s}{4}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Donn\IeC {\'e}es climatiques et environnementales pour Madagascar}{4}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Effet du climat sur la biodiversit\IeC {\'e} et le stock de carbone forestier \IeC {\`a} Madagascar}{4}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Cartes sans nuages de l'\IeC {\'e}volution du couvert forestier \IeC {\`a} Madagascar sur la p\IeC {\'e}riode 1990-2000-2010}{7}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Mod\IeC {\'e}lisation et projection de la d\IeC {\'e}forestation d\IeC {\textquoteright }origine anthropique \IeC {\`a} Madagascar}{7}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.5}Base de donn\IeC {\'e}es sur la biodiversit\IeC {\'e} \IeC {\`a} Madagascar}{9}{subsubsection.2.1.5}
+\contentsline {subsubsection}{\numberline {2.1.6}Effet du climat sur la composition des communaut\IeC {\'e}s \IeC {\`a} Madagascar}{9}{subsubsection.2.1.6}
+\contentsline {subsubsection}{\numberline {2.1.7}Effet du climat sur la distribution future des esp\IeC {\`e}ces}{12}{subsubsection.2.1.7}
+\contentsline {subsection}{\numberline {2.2}Description des activit\IeC {\'e}s de formation, d'animation et de communication effectu\IeC {\'e}es}{14}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Formation de stagiaires en master}{14}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Animation de projet}{14}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Communication autour du projet}{15}{subsubsection.2.2.3}
+\contentsline {section}{\numberline {3}Tableau des livrables}{26}{section.3}
+\contentsline {section}{\numberline {4}Planning d\IeC {\textquoteright }activit\IeC {\'e}s jusqu\IeC {\textquoteright }\IeC {\`a} la fin du projet}{27}{section.4}
+\contentsline {section}{\numberline {5}Liens avec les porteurs d'enjeux}{27}{section.5}

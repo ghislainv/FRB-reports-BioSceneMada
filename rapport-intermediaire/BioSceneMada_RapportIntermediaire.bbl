@@ -1,0 +1,141 @@
+\begin{thebibliography}{20}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Achard \emph{et~al.}(2014)Achard, Beuchle, Mayaux
+  \emph{et~al.}}]{Achard2014}
+Achard F, Beuchle R, Mayaux P, \emph{et~al.} (2014) Determination of tropical
+  deforestation rates and related carbon losses from 1990 to 2010.
+\newblock \emph{Global Change Biology}, \textbf{20}, 2540--2554.
+\newblock \doi{10.1111/gcb.12605}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1111/gcb.12605}.
+
+\bibitem[{Allnutt \emph{et~al.}(2008)Allnutt, Ferrier, Manion
+  \emph{et~al.}}]{Allnutt2008}
+Allnutt TF, Ferrier S, Manion G, \emph{et~al.} (2008) A method for quantifying
+  biodiversity loss and its application to a 50-year record of deforestation
+  across madagascar.
+\newblock \emph{Conservation Letters}, \textbf{1}, 173--181.
+\newblock \urlprefix\url{http://dx.doi.org/10.1111/j.1755-263X.2008.00027.x}.
+
+\bibitem[{Araujo \& New(2007)}]{Araujo2007a}
+Araujo MB, New M (2007) Ensemble forecasting of species distributions.
+\newblock \emph{Trends In Ecology \& Evolution}, \textbf{22}, 42--47.
+\newblock \doi{10.1016/j.tree.2006.09.010}.
+
+\bibitem[{Barnes(1990)}]{Barnes1990}
+Barnes R (1990) {Deforestation trends in tropical Africa}.
+\newblock \emph{African Journal of Ecology}, \textbf{28}, 161--173.
+
+\bibitem[{Brown \emph{et~al.}(2014)Brown, Cameron, Yoder, \&
+  Vences}]{Brown2014}
+Brown JL, Cameron A, Yoder AD, Vences M (2014) A necessarily complex model to
+  explain the biogeography of the amphibians and reptiles of madagascar.
+\newblock \emph{Nature communications}, \textbf{5}.
+
+\bibitem[{Ferrier \emph{et~al.}(2007)Ferrier, Manion, Elith, \&
+  Richardson}]{Ferrier2007}
+Ferrier S, Manion G, Elith J, Richardson K (2007) Using generalized
+  dissimilarity modelling to analyse and predict patterns of beta diversity in
+  regional biodiversity assessment.
+\newblock \emph{Diversity and distributions}, \textbf{13}, 252--264.
+
+\bibitem[{Grouzis \emph{et~al.}(2001)Grouzis, Razanaka, Le~Floc’h, \&
+  Leprun}]{Grouzis2001}
+Grouzis M, Razanaka S, Le~Floc’h E, Leprun JC (2001) {\'E}volution de la
+  v{\'e}g{\'e}tation et de quelques param{\`e}tres {\'e}daphiques au cours de
+  la phase post-culturale dans la r{\'e}gion d’analabo.
+\newblock \emph{Soci{\'e}t{\'e}s paysannes, transitions agraires et dynamiques
+  {\'e}cologiques dans le Sud-Ouest de Madagascar, Antananarivo, IRD/CNRE}, pp.
+  327--337.
+
+\bibitem[{Hansen \emph{et~al.}(2013)Hansen, Potapov, Moore
+  \emph{et~al.}}]{Hansen2013}
+Hansen MC, Potapov PV, Moore R, \emph{et~al.} (2013) High-resolution global
+  maps of 21st-century forest cover change.
+\newblock \emph{Science}, \textbf{342}, 850--853.
+\newblock \doi{10.1126/science.1244693}.
+\newblock
+  \urlprefix\url{http://www.sciencemag.org/content/342/6160/850.abstract}.
+
+\bibitem[{Harper \emph{et~al.}(2007)Harper, Steininger, Tucker, Juhn, \&
+  Hawkins}]{Harper2007}
+Harper GJ, Steininger MK, Tucker CJ, Juhn D, Hawkins F (2007) {Fifty years of
+  deforestation and forest fragmentation in Madagascar}.
+\newblock \emph{Environmental Conservation}, \textbf{34}, 325--333.
+\newblock \doi{10.1017/S0376892907004262}.
+
+\bibitem[{Kim \emph{et~al.}(2014)Kim, Sexton, Noojipady
+  \emph{et~al.}}]{Kim2014}
+Kim DH, Sexton JO, Noojipady P, \emph{et~al.} (2014) Global, landsat-based
+  forest-cover change from 1990 to 2000.
+\newblock \emph{Remote Sensing of Environment}, \textbf{155}, 178--193.
+
+\bibitem[{Kremen \emph{et~al.}(2008)Kremen, Cameron, Moilanen
+  \emph{et~al.}}]{Kremen2008}
+Kremen C, Cameron A, Moilanen A, \emph{et~al.} (2008) Aligning conservation
+  priorities across taxa in madagascar with high-resolution planning tools.
+\newblock \emph{Science}, \textbf{320}, 222--226.
+
+\bibitem[{Mercier \& Wilm{\'e}(2013)}]{Mercier2013}
+Mercier JL, Wilm{\'e} L (2013) The eco-geo-clim model: explaining
+  madagascar’s endemism.
+\newblock \emph{Madagascar Conservation \& Development}, \textbf{8}, 63--68.
+
+\bibitem[{{ONE, DGF, FTM, MNP and CI}(2013)}]{ONE2013}
+{ONE, DGF, FTM, MNP and CI} (2013) \emph{Evolution de la couverture de forêts
+  naturelles à Madagascar 2005-2010}.
+
+\bibitem[{Pearson \& Raxworthy(2009)}]{Pearson2009}
+Pearson RG, Raxworthy CJ (2009) The evolution of local endemism in madagascar:
+  watershed versus climatic gradient hypotheses evaluated by null biogeographic
+  models.
+\newblock \emph{Evolution}, \textbf{63}, 959--967.
+
+\bibitem[{Rasolofoharinoro \emph{et~al.}(1997)Rasolofoharinoro, Bellan, \&
+  Blasco}]{Rasolofoharinoro1997}
+Rasolofoharinoro M, Bellan MF, Blasco F (1997) La reconstitution
+  v{\'e}g{\'e}tale apr{\`e}s l'agriculture itin{\'e}rante {\`a}
+  andasibe-p{\'e}rinet (madagascar).
+\newblock \emph{{\'E}cologie}, \textbf{28}, 149--165.
+
+\bibitem[{Saboureau(1960)}]{Saboureau1960}
+Saboureau P (1960) La for{\^e}t malgache peut se reconstituer naturellement.
+\newblock \emph{Bulletin de l'Acad{\'e}mie Malgache}, \textbf{38}, 78--82.
+
+\bibitem[{Thuiller(2014)}]{Thuiller2014GCB}
+Thuiller W (2014) Editorial commentary on ‘biomod – optimizing predictions
+  of species distributions and projecting potential future shifts under global
+  change’.
+\newblock \emph{Global Change Biology}, \textbf{20}, 3591--3592.
+\newblock \doi{10.1111/gcb.12728}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1111/gcb.12728}.
+
+\bibitem[{Vieilledent \emph{et~al.}(2013{\natexlab{a}})Vieilledent, Cornu,
+  Cun{\'\i}~Sanchez, Leong Pock-Tsy, \& Danthu}]{Vieilledent2013a}
+Vieilledent G, Cornu C, Cun{\'\i}~Sanchez A, Leong Pock-Tsy JM, Danthu P
+  (2013{\natexlab{a}}) {Vulnerability of baobab species to climate change and
+  effectiveness of the protected area network in Madagascar: Towards new
+  conservation priorities}.
+\newblock \emph{Biological Conservation}, \textbf{166}, 11--22.
+
+\bibitem[{Vieilledent \emph{et~al.}(2013{\natexlab{b}})Vieilledent, Grinand, \&
+  Vaudry}]{Vieilledent2013}
+Vieilledent G, Grinand C, Vaudry R (2013{\natexlab{b}}) Forecasting
+  deforestation and carbon emissions in tropical developing countries facing
+  demographic expansion: a case study in madagascar.
+\newblock \emph{Ecology and Evolution}, \textbf{3}, 1702--1716.
+\newblock \doi{10.1002/ece3.550}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1002/ece3.550}.
+
+\bibitem[{Wilmé \emph{et~al.}(2006)Wilmé, Goodman, \& Ganzhorn}]{Wilme2006}
+Wilmé L, Goodman SM, Ganzhorn JU (2006) Biogeographic evolution of
+  madagascar's microendemic biota.
+\newblock \emph{Science}, \textbf{312}, 1063--1065.
+
+\end{thebibliography}
