@@ -1,17 +1,7 @@
 ---
-title: |
-  | RAPPORT FINAL
-  | Programme "Modélisation et scénarios de la biodiversité"
-  | Appel à projet 2013
+title:
 bibliography: bib/biblio.bib
-header-includes:
-- \usepackage{float}
-- \usepackage[dvipsnames]{xcolor}
-- \hypersetup{colorlinks=true, citecolor=Blue, urlcolor=Maroon}
-- \definecolor{darkgreen}{RGB}{0,150,0}
 output:
-  word_document:
-    toc: no
   pdf_document:
     citation_package: natbib
     fig_caption: yes
@@ -19,22 +9,11 @@ output:
     latex_engine: pdflatex
     number_sections: no
     toc: no
+    includes:
+      in_header: header.tex
+      before_body: doc_prefix.tex
 biblio-style: bib/jae.bst
 ---
-
-![](figures/FRB.png){width=4cm}
-
-Acronyme: **BioSceneMada**    
-Projet n°: AAP-SCEN-2013 I
-
-**Scénarios de la biodiversité sous l'effet conjoint du changement climatique et de la déforestation à Madagascar**
-
-Rédacteur du rapport: Ghislain Vieilledent    
-Date de rédaction: 01 Décembre 2017    
-E-mail: ghislain.vieilledent@cirad.fr    
-Durée du projet: 5 ans    
-Date de début: 15/05/2014    
-Date de fin: 15/05/2019    
 
 ```{r options, echo=FALSE, results="hide"}
 library(knitr)
@@ -48,8 +27,6 @@ opts_chunk$set(echo=FALSE, cache=FALSE,
                tidy=FALSE)
 # options(knitr.kable.NA="-")
 ```
-
-\newpage
 
 # 1. Description courte à publier
 
@@ -456,6 +433,8 @@ Script R `atlas`:
 # Décrivez les activités de diffusion et transfert de connaissances qui ont été mises en oeuvre en  direction de décideurs, gestionnaires, acteurs socio-économiques (ou autre porteurs d'enjeux), en lien avec ce projet. Merci d'indiquer publications, sites internet, présentations, articles de presse, interviews, projets éducatifs, etc. liés à ces recherches.
 ```
 
+### Compte twitter
+
 
 
 ## Outils de gestion ou d'aide à la décision développés grâce à ce projet
@@ -467,6 +446,8 @@ Script R `atlas`:
 # Quelles activités sont prévues (ou pourraient être prévues) pour amplifier l’utilisation ou la mise en application des résultats ?
 ```
 
+
+
 \newpage
 
 # 6. Accès aux données
@@ -474,6 +455,30 @@ Script R `atlas`:
 ```{r comment11, echo=FALSE}
 # Merci d'indiquer les bases de données créées ou alimentées par le projet, ainsi que les conditions d'accès à ces données.
 ```
+
+## Données
+
+Un effort a été entrepris afin que les données du projet soient rendues disponibles gratuitement et de façon permanente avec l'attribution d'un DOI (Digital Object Identifier) unique. Les plateformes utilisées pour l'archivage des données sont actuellement soit Dryad (https://datadryad.org), soit Zenodo (https://zenodo.org). A terme, l'ensemble des données sera disponible sur la plateforme Dataverse du Cirad (https://dataverse.cirad.fr), qui a été lancée en Février 2018. C'est le lien vers la plateforme Dataverse qui sera préférentiellement utilisé dans les publications. D'autres données seront rendues publiques au fur et à mesure de la publication des articles en préparation.
+
+- Base de données climatiques et environnementales MadaClim accessible via le site internet https://madaclim.cirad.fr.
+- Carte des stocks de carbone forestier sur le site internet du projet à l'adresse https://bioscenemada.cirad.fr/carbonmaps, ainsi que sur la plateforme Dryad https://doi.org/10.5061/dryad.9ph68.
+- Cartes de couverture forestière sur la période 1953-2014 accessibles sur le site internet du projet à l'adresse https://bioscenemada.cirad.fr/forestmaps, ainsi que sur la plateforme Zenodo https://doi.org/10.5281/zenodo.1145785.
+- Carte de probabilité de déforestation en 2010 sur le site du projet: https://bioscenemada.cirad.fr/forestmaps
+- Carte de couvert forestier futur pour l'année 2050: https://bioscenemada.cirad.fr/forestmaps
+
+Concernant la base de données de biodiversité, les données qu'elle inclue proviennent d'institutions différentes qui ont accepté de les partager dans le cadre du projet BioSceneMada. Seule une partie de ces données brutes sont accessibles publiquement. Une discussion avec l'ensemble des institutions ayant fourni les données de biodiversité aura lieu d'ici la fin du projet afin de voir dans quelle mesure celles-ci peuvent être rendues publiques à l'issue du projet. Les données de biodiversité publiques seront regroupées et rendues accessibles dès leur valorisation à travers la publication des articles en préparation.
+
+## Scripts informatiques
+
+La plupart des scripts informatiques ayant servi à l'obtention des résultats sont également mis à la disposition de la communauté scientifique et des gestionnaires. L'outil utilisé pour le partage du code est la plateforme GitHub. Comme pour les données, d'autres répertoires seront créés et rendus publiques au fur et à mesure de la publication des articles en préparation.
+
+- Code pour les données climatiques et environnementales: http://ghislainv.github.io/madaclim
+- Code pour les stocks de carbone forestiers: https://github.com/ghislainv/carbonmap
+- Code du module Python `deforestprob`: https://github.com/ghislainv/deforesprob
+- Code pour les cartes historiques de déforestation sur la période 1953-2014: https://github.com/ghislainv/deforestation-maps-Mada
+- Code pour la carte de probabilité de déforestation et la carte de couvert forestier en 2050: https://ghislainv.github.io/deforestprob
+- Code pour l'atlas de biodiversité: https://github.com/ghislainv/atlas (accès privé pour le moment, couple identifiant/mot de passe: `gvguest`/`gvguest!1`)
+- Code pour l'analyse de la déforestation dans le Menabe: https://github.com/ghislainv/menabe
 
 \newpage
 

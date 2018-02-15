@@ -2,6 +2,7 @@
 *.log
 *.tex
 *.pdf
+!rapport-final-scientific-results/*.tex
 
 # History files
 .Rhistory
