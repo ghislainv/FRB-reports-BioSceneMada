@@ -430,6 +430,7 @@ I.2.5. Rapports diplômants à caractère bibliographique (thèse vétérinaire.
 I.2.6. Conférences dans congrès ou symposium scientifique.
 I.2.7. Autres supports.
 
+\newpage
 ## _Tableau des livrables_
 
 ```{r comment6, echo=FALSE}
@@ -444,6 +445,7 @@ pandoc.table(df.livrables, justify=c("left","left","left"),
 
 Table 1: **Principaux produits issus du projet BioSceneMada.** Les produits sont classés par catégories ("Scripts", "Cartes", "Articles", etc.). Certains produits sont disponibles publiquement via un lien internet. D'autres n'ont pas encore été mis en ligne mais le seront d'ici la fin du projet.
 
+\newpage
 ## Personnes ayant participé à ce projet
 
 ```{r comment7, echo=FALSE}
