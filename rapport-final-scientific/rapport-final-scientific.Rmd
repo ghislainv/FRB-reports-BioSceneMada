@@ -1,6 +1,7 @@
 ---
 title:
 bibliography: bib/biblio.bib
+fontsize: 12pt
 output:
   pdf_document:
     citation_package: natbib
@@ -23,7 +24,7 @@ opts_chunk$set(echo=FALSE, cache=FALSE,
                message=FALSE, highlight=TRUE,
                fig.show="hide", size="small",
                fig.align="center",
-               fig.pos="h!",
+               fig.pos="H",
                tidy=FALSE)
 # options(knitr.kable.NA="-")
 ```
@@ -37,16 +38,15 @@ opts_chunk$set(echo=FALSE, cache=FALSE,
 Madagascar est une île de l'océan indien qui s'est détachée de l'Afrique puis de l'Inde il y a plusieurs dizaines de millions d'années. La biodiversité y a évolué de façon isolée. Ainsi, près de 90% des espèces n'existent que sur l'île. Cette biodiversité est fortement menacée par les changements climatiques et la déforestation. Le projet BioSceneMada, en s'appuyant sur des modèles climatiques, écologiques et paysagers, se propose d'établir des scénarios d'évolution de la biodiversité à Madagascar sous l'effet conjoint du changement climatique et de la déforestation. Les cartes issues du projet permettent d'identifier les zones à risque de perte de biodiversité et de déforestation ainsi que les zones refuges pour la biodiversité. Ces cartes peuvent être utilisées afin d'agir efficacement pour la conservation des forêts et de la biodiversité à Madagascar, notamment en priorisant les actions de conservation sur des zones cibles, tout en s'appuyant sur le réseau d'aires protégées actuel.
 
 ```{r cap_boabab}
-cap <- "Population de baobabs de l'espèce \\emph{Adansonia suarezensis} sur le site de la Montagne des Français au nord de Madagascar."
+cap <- "\\textbf{Population de baobabs de l'espèce \\emph{Adansonia suarezensis} sur le site de la Montagne des Français au nord de Madagascar.}"
 ```
-
 
 ```{r baobab, out.width="\\textwidth", fig.cap=cap}
 knitr::include_graphics("figures/Adansonia_suarezensis.jpg")
 ```
 
 ```{r cap_lemur}
-cap <- "Lémurien de l'espèce \\emph{Indri indri} dans le parc national de Mantadia à l'est de Madagascar."
+cap <- "\\textbf{Lémurien de l'espèce \\emph{Indri indri} dans le parc national de Mantadia à l'est de Madagascar.}"
 ```
 
 ```{r lemur, out.width="\\textwidth", fig.cap=cap}
@@ -81,7 +81,7 @@ Les résultats du projet montrent également que les forêts humides se situant 
 
 ## MadaClim: portail de données climatiques et environnementales à Madagascar
 
-Dans le cadre du projet BioSceneMada, nous avons développé le site internet MadaClim (<https://madaclim.cirad.fr>). Ce site reprend toutes les données climatiques actuelles fournies par WorldClim ainsi que les prédictions climatiques issues des modèles du GIEC (groupe d'experts intergouvernemental sur l'évolution du climat) et fournies par le CGIAR CCAFS. Les données sont recompilées (reprojetées et rééchantillonnées à 1km) et distribuées spécifiquement pour Madagascar. Des variables bioclimatiques supplémentaires comme l'évapotranspiration et le nombre de mois secs ont été calculées et ajoutées aux variables déjà disponibles. En plus des données climatiques, des données environnementales incluant altitude, pente, irradiation solaire, géologie, sol, etc. ont été compilées.
+Nous avons développé le site internet MadaClim (<https://madaclim.cirad.fr> qui reprend toutes les données climatiques actuelles ainsi que les prédictions climatiques issues des modèles du GIEC (groupe d'experts intergouvernemental sur l'évolution du climat). Les données sont à 1km de résolution et distribuées spécifiquement pour Madagascar. Des variables bioclimatiques comme l'évapotranspiration et le nombre de mois secs ont été recalculées et ajoutées aux variables existantes. En plus des données climatiques, des données environnementales incluant altitude, pente, irradiation solaire, géologie, sol, etc. ont été compilées.
 
 _Référence:_
 
@@ -91,7 +91,7 @@ Vieilledent G. 2016. MadaClim: a set of climatic and environmental spatial varia
 
 ## Carte de carbone forestier et vulnérabilité des forêts tropicales au changement climatique à Madagascar
 
-Dans le cadre du projet BioSceneMada, en utilisant les données climatiques précédemment calculées (<https://madaclim.cirad.fr>) et des données d'inventaires forestiers pour 1771 placettes réparties sur l'ensemble de Madagascar, nous avons démontré qu'il existait un lien fort entre climat et stocks de carbone forestiers. Ce lien est notamment déterminé par les caractéristiques architecturales (hauteur notamment) des espèces d'arbres présentes le long du gradient climatique à Madagascar (climat --> assemblage d'espèces --> stocks de carbone). Ainsi, les stocks de carbone sont en moyenne beaucoup plus faibles en forêt épineuse (17 Mg.ha$^{-1}$) qu'en forêt humide (150 Mg.ha$^{-1}$). Le modèle statistique intégrant la relation climat-stock de carbone a permis de produire une carte précise des stocks de carbone forestier à Madagascar à une résolution de 250 m. Nous avons également montré à l'aide de ce modèle que les changements climatiques devraient induire des modifications fortes des communautés forestières et en conséquence une diminution de -17% (7-24%) des stocks de carbone forestier à Madagascar à l'horizon 2100 par rapport à 2010. Ces changements seront vraisemblablement plus forts pour la forêt humide de l'est (notamment autour de la péninsule de Masoala-Makira) que pour les forêts sèches et épineuses de l'ouest et du sud. En comparaison, un taux de déforestation constant de 0.5% par an conduirait à une perte de carbone forestier de l'ordre de 29% entre 2010 et 2100. L'impact potentiel des changements climatiques sur les émissions de CO2 n'est donc pas à négliger.
+En utilisant les données climatiques précédemment calculées (<https://madaclim.cirad.fr>) et des données d'inventaires forestiers pour 1771 placettes réparties sur l'ensemble de Madagascar, nous avons démontré qu'il existait un lien fort entre climat et stocks de carbone forestiers. Nous avons produit une carte précise des stocks de carbone forestier en 2010 à Madagascar à une résolution de 250 m. Les changements climatiques devraient induire des modifications fortes des communautés forestières et en conséquence une diminution de -17% (7-24%) des stocks de carbone forestier à Madagascar à l'horizon 2100 par rapport à 2010.
 
 _Références:_
 
@@ -101,7 +101,7 @@ El Hajj M., N. Baghdadi, I. Fayad, G. Vieilledent, J.-S. Bailly, and D. Ho Tong 
 
 ## Base de données de biodiversité à Madagascar
 
-Nous avons construit un jeu de données sur la biodiversité à Madagascar regroupant 300 000 observations (points de présence) pour 4969 espèces. Ces espèces sont réparties dans différents groupes taxonomiques (Plantes, Vertébrés, Invertébrés) et sont représentatives de la biodiversité à Madagascar. Nous avons apporté une attention particulière à la qualité des données. Toutes les données ont été vérifiées du point de vue des coordonnées géographiques (issues de relevés GPS) et de la taxonomie. Pour la vérification de la taxonomie, nous nous sommes appuyés sur le package `taxize` disponible sous le logiciel `R`. Ce travail de compilation de données de biodiversité est sans précédent à Madagascar. Les précédentes études scientifiques sur la biodiversité à l'échelle nationale à Madagascar s'appuyaient sur un nombre d'espèces < 2843 [@Allnutt2008; @Kremen2008]. Plusieurs institutions ont accepté de partager leur données de biodiversité dans le cadre du projet BioSceneMada et ont ainsi largement contribué à la réalisation de cette base de données. Ces données sont souvent issues d'un travail de prospection conséquent qui s'étalent sur plusieurs dizaines d'années.
+Nous avons construit un jeu de données sur la biodiversité à Madagascar regroupant 300 000 observations (points de présence) pour 4969 espèces. Ces espèces sont réparties dans différents groupes taxonomiques (Plantes, Vertébrés, Invertébrés) et sont représentatives de la biodiversité à Madagascar. Ces données, provenant de différents instituts, sont issues d'un travail de prospection conséquent qui s'étalent sur plusieurs dizaines d'années.
 
 _Référence:_
 
@@ -109,7 +109,7 @@ Charra M., S. Goodman, A. Raselimanana, M.-J. Raherilalao, V. Soarimalala, D. Le
 
 ## Atlas de la biodiversité à Madagascar et de sa vulnérabilité au changement climatique
 
-Nous avons développé un script permettant de modéliser la niche climatique des espèces à partir de modèles d'ensemble [@Vieilledent2013a;@Araujo2007a]. Ce script utilise le package `biomod2` sous `R`. A partir de variables environnementales, incluant des variables climatiques (température moyenne annuelle, saisonnalité de la température, précipitations annuelles, déficit en eau, nombre de mois secs) et des variables physiques (radiation solaire, géologie) disponibles sur le site [MadaClim](https://madaclim.cirad.fr), le script permet d'estimer l'aire de distribution actuelle et future des espèces à Madagascar. Les prédictions sont issues de plusieurs modèles statistiques (Maxent, GLM, GAM et Random Forest). L'approche par modèles d'ensemble permet de moyenner les prédictions faites par plusieurs modèles statistiques afin d'évaluer l'incertitude des prédictions et d'augmenter la robustesse de l'approche. En utilisant cette approche pour les 4969 espèces du jeu de données sur la biodiversité à Madagascar, l'idée est d'obtenir un atlas de la biodiversité à Madagascar et de sa vulnérabilité au changement climatique. Un prototype de cet atlas a été réalisé pour les 7 espèces de baobab présentes à Madagascar.
+Nous avons développé un script `R` permettant de modéliser la niche climatique des espèces à partir de modèles d'ensemble [@Vieilledent2013a;@Araujo2007a]. Le script permet d'estimer l'aire de distribution actuelle et future des espèces à Madagascar. En utilisant cette approche pour les 4969 espèces du jeu de données sur la biodiversité à Madagascar, l'idée est d'obtenir un atlas de la biodiversité à Madagascar et de sa vulnérabilité au changement climatique. Un prototype de cet atlas a été réalisé pour les 7 espèces de baobab présentes à Madagascar.
 
 _Référence:_
 
@@ -119,7 +119,7 @@ Vieilledent G., M. Muniz-Tagliari, C. Grinand, F. Montfort. Atlas of the biodive
 
 ## Cartes de biodiversité et des communautés d'espèces à Madagascar
 
-Lorsque l'on parle de carte de biodiversité à l'échelle nationale, l'objectif n'est pas uniquement d'obtenir des informations sur la localisation des "hotspots" ou points-chauds de la biodiversité (les sites ayant une diversité spécifique élevée), ce que l'on appelle la diversité $\alpha$. Il est en effet surtout intéressant de considérer la diversité $\beta$, c'est-à-dire les communautés ou assemblages d'espèces et comment les assemblages d'espèces changent spatialement ("species turnover"), selon des gradients environnementaux (d'altitude, de climat, etc.). En utilisant des modèles de communautés [@Ferrier2007], nous avons cherché à identifier les facteurs environnementaux déterminants les assemblages d'espèces. Ces facteurs peuvent être climatiques ou associés à des barrières géographiques comme les bassins versants ou les rivières [@Pearson2009]. Il ainsi été montré que la distribution des espèces de lémuriens à Madagascar était fortement liée aux bassins versants [@Wilme2006; @Mercier2013]. Les modèles de communautés que nous avons utilisés, appelés GDM (Generalized Dissimilarity Models), modélisent les changements d'espèces au sein de la communauté en fonction des gradients environnementaux en s'appuyant sur des indices de dissimilarités entre sites [@Ferrier2007]. En appliquant ce modèle à nos données de présence d'espèces à Madagascar, nous avons obtenu une première carte de la biodiversité $\beta$ à Madagascar (Fig. 5). Mais le pourcentage de déviance expliquée par ce modèle est faible (<10%). En applicant ce même modèle à chaque groupe taxonomique, nous avons trouvé que (i) le pourcentage de variance expliquée par le modèle était généralement beaucoup plus élevé (entre 11% et 88%, Tab. 3) et que (ii) les facteurs explicants l'assemblage des communautés d'espèces variaient d'un groupe taxonomique à l'autre, le climat n'étant pas toujours le facteur le plus important. Par exemple, nous avons confirmé les résultats obtenus par @Wilme2006 pour les espèces de lémuriens. Pour ce groupe, ce sont les bassins versants qui expliquent en majorité l'assemblage des espèces (84% de déviance expliquée). Cela pourrait notamment s'expliquer par la difficulté qu'on les lémuriens à traverser les cours d'eau. A contrario, le climat explique une grande partie des assemblages d'espèces de reptiles et d'amphibiens, espèces poïkilothermes (animaux ayant une température corporelle qui varie avec celle de leur milieu) et des espèces de mammifères autres que les lémuriens. Pour d'autres groupes, comme les espèces d'arbres, les facteurs climatiques et les bassins versants semblent expliquer à part égale les assemblages d'espèces.
+En utilisant des modèles de communautés [@Ferrier2007], nous avons cherché à identifier les facteurs environnementaux déterminants les assemblages d'espèces. Ces facteurs peuvent être climatiques ou associés à des barrières géographiques comme les bassins versants ou les rivières [@Pearson2009]. En appliquant ce modèle à nos données de présence d'espèces à Madagascar, nous avons obtenu une première carte de la biodiversité $\beta$ à Madagascar (Fig. 5). Mais le pourcentage de déviance expliquée par le modèle est faible (<10%). En applicant ce même modèle à chaque groupe taxonomique, nous avons trouvé que les facteurs explicants l'assemblage des communautés d'espèces variaient d'un groupe taxonomique à l'autre, le climat n'étant pas toujours le facteur le plus important. Pour le groupe des lémuriens, ce sont les bassins versants qui expliquent en majorité l'assemblage des espèces. A contrario, le climat explique une grande partie des assemblages d'espèces de reptiles et d'amphibiens, espèces poïkilothermes (animaux ayant une température corporelle qui varie avec celle de leur milieu). Pour d'autres groupes, comme les arbres, les facteurs climatiques et les bassins versants semblent expliquer à part égale les assemblages d'espèces.
 
 _Référence:_
 
@@ -127,7 +127,7 @@ Charra M., S. Goodman, A. Raselimanana, M.-J. Raherilalao, V. Soarimalala, D. Le
 
 ## Soixante ans (1953-2014) d'étude de la déforestation et de la fragmentation forestière à Madagascar
 
-Nous avons obtenu de nouvelles cartes d'évolution de la couverture forestière à Madagascar sur la période 2000-2014. Ces cartes sont sans nuages et disponibles à 30 m de résolution. Elles viennent compléter les cartes de @Harper2007 disponibles pour les années 1953, 1973 et 1990. Ainsi, nous avons pu étudier l'évolution du couvert forestier et de la fragmentation de la forêt à l'échelle nationale sur une période de 60 ans. Nous montrons que le couvert forestier a diminué de 44% sur la période 1953-2014 (37% si l'on considère la période 1973-2014). Les forêts naturelles couvrent 8.9 Mha en 2014 (15% du territoire national) et incluent 4.4 Mha (50%) de forêt humide, 2.6 Mha (29%) de forêt sèche, 1.7 Mha de forêt épineuse (19%) et environ 177,000 ha (2%) de mangrove. Depuis 2005, les surfaces déforestées annuellement ont augmenté à Madagascar pour atteindre 100,000 ha/an sur la période 2010-2014 (correspondant à un taux de déforestation de 1.1 %/an). Aujourd'hui, environ 50% de la forêt est située à moins de 100 m de la lisière et est donc exposée aux perturbations. Les cartes de couvert forestier sont disponibles sur le site du projet BioSceneMada: <https://bioscenemada.cirad.fr/forestmaps>. Elles servent de base au travail de modélisation du processus de déforestation.
+Nous avons obtenu de nouvelles cartes d'évolution de la couverture forestière à Madagascar sur la période 2000-2014. Elles viennent compléter les cartes de @Harper2007 pour les années 1953, 1973 et 1990. Nous montrons que le couvert forestier a diminué de 44% sur la période 1953-2014. Les forêts naturelles couvrent 8.9 Mha en 2014 (15% du territoire national) et incluent 4.4 Mha (50%) de forêt humide, 2.6 Mha (29%) de forêt sèche, 1.7 Mha de forêt épineuse (19%) et environ 177,000 ha (2%) de mangrove. Depuis 2005, les surfaces déforestées annuellement ont augmenté à Madagascar pour atteindre 100 000 ha/an sur la période 2010-2014. Aujourd'hui, environ 50% de la forêt est située à moins de 100 m de la lisière et est donc exposée aux perturbations. 
 
 _Référence:_
 
@@ -135,7 +135,7 @@ Vieilledent G., C. Grinand, F. A. Rakotomalala, R. Ranaivosoa, J.-R. Rakotoarija
 
 ## Retour sur les facteurs de déforestation: la pauvreté n'est pas l'unique responsable de la déforestation à Madagascar. 
 
-Afin de valider les cartes de déforestation historique obtenues sur la période 2000-2014 et d'identifier plus précisément les facteurs de déforestation, nous avons effectué une mission de terrain dans le Menabe, à l'ouest de Madagascar, en forêt sèche. Nous nous sommes concentrés sur deux zones identifiées comme "hot-spot" de déforestation, autour des Parcs Nationaux de Menabe-Antimena et Kirindy‐Mité. Nous avons effectué des observations de terrain ainsi que des enquêtes auprès des populations et de l'administration locale afin d'identifier les causes de la déforestation. Nous avons conclu que les causes directes de la déforestation dans la région sont l'agriculture sur brulis pour la culture de rente comme le maïs ou l'arachide et le paturage des zébus. Le maïs et l'arachide sont principalement exportés sur les marchés internationaux, notamment vers les îles de l'Océan Indien et en Chine. Ces activités sont favorisées par un marché global non régulé, une forte corruption et une non-application des lois environnementales à Madagascar. Dans l'hypothèse d'un scénario "business-as-usual", si aucune solution n'est trouvée pour lutter efficacement contre la déforestation, le couvert forestier pourrait diminuer de plus de 50% sur la période 2010-2050 dans les deux zones d'étude.
+A l'issue d'une mission de terrain dans le Menabe, à l'ouest de Madagascar, nous avons conclu que les causes directes de la déforestation dans la région sont l'agriculture sur brulis pour la culture de rente comme le maïs ou l'arachide. Le maïs et l'arachide sont principalement exportés sur les marchés internationaux. Ces activités sont favorisées par un marché global non régulé, une forte corruption et une non-application des lois environnementales à Madagascar. Si aucune solution n'est trouvée pour lutter efficacement contre la déforestation, le couvert forestier pourrait diminuer de plus de 50% sur la période 2010-2050 dans la région.
 
 _Référence:_
 
@@ -143,7 +143,7 @@ Vieilledent G., C. Grinand, M. Pedrono, T. Rabetrano, J.-R. Rakotoarijaona, B. R
 
 ## Cartes du couvert forestier futur à Madagascar
 
-Le modèle portant sur la localisation de la déforestation permet de prédire la probabilité spatiale de déforestation en fonction de variables environnementales décrivant l'accessibilité de la forêt (distance aux routes, villages et rivières, distance à la lisière de la forêt, topographie), son statut de protection (appartenance au réseau d'aires naturelles protégées) et son historique (distance à la déforestation passée). Nous avons utilisé ce modèle pour estimer la probabilité spatiale de déforestation à l'échelle nationale à Madagascar, à une résolution fine de 30 m et pour la couverture forestière de l'année 2010. A partir de la carte de probabilité de déforestation de 2010, en considérant une déforestation moyenne annuelle de 100,000 ha/an à l'échelle nationale sur la période 2010-2050, nous avons pu prédire les zones susceptibles d'être déforestées sur la période 2010-2050 et la couverture forestière probable à Madagascar en 2050. Pour cela, nous calculons la surface forestière déforestée sur une période de 40 ans entre 2010 et 2050 (4 Mha) et nous attribuons la classe "non-forêt" aux pixels ayant la plus forte probabilité de déforestation jusqu'à obtenir une surface de 4 Mha. Les projections montrent une concentration des forêts dans les zones peu accessibles et situées en altitude dans le futur, notamment autour de la péninsule de Mosoala-Makira et dans le Corridor Ankeniheny-Zahamena. Les aires protégées semblent relativement efficaces sur le court terme (horizon 2050) en contribuant à déplacer la déforestation sur des zones à plus faible biodiversité, en dehors des aires protégées. Par contre, si les taux de déforestation restent constants, la déforestation pénétrera au sein des aires protégées les plus accessibles sur le plus long terme (horizon 2100).
+Nous avons estimé la probabilité spatiale de déforestation à l'échelle nationale à Madagascar, à une résolution fine de 30 m pour l'année 2010. A partir de cette carte, en considérant une déforestation moyenne annuelle de 100,000 ha/an, nous avons pu prédire les zones susceptibles d'être déforestées sur la période 2010-2050. Les projections montrent une concentration des forêts dans les zones peu accessibles et situées en altitude dans le futur. Les aires protégées semblent relativement efficaces sur le court terme (horizon 2050) en contribuant à déplacer la déforestation sur des zones à plus faible biodiversité, en dehors des aires protégées mais n'ont pas d'efficacité sur le plus long terme (horizon 2100).
 
 _Références_
 
@@ -155,7 +155,7 @@ Grinand C., G. Vieilledent, T. Razafimbelo, J.-R. Rakotoarijaona, M. Nourtier M.
 
 ## Modèles d'évolution de l'intensité de déforestation en Afrique et à Madagascar
 
-Afin de proposer des scénarios d'évolution de l'intensité de déforestation et du couvert forestier à Madagascar, il a fallu construire un modèle à l'échelle de l'Afrique afin de disposer d'un plus grand nombre de données et d'avoir un modèle plus robuste. Le modèle permet d'estimer le taux de  déforestation (en ha/an) pour l'ensemble des pays africains en prenant en compte le couvert forestier existant (en ha) et la taille de la population (en nombre d'habitants). Les résultats montrent que malgré les variations annuelles des taux de déforestation (associables aux marchés et aux politiques), la tendance sur le long terme est forte et qu'un simple modèle permet de reproduire fidèlement l'évolution du couvert forestier de 1990 à 2015 pour la plupart des pays africains. Ce modèle est utilisé pour prédire les tendances de déforestation pour l'Afrique par pays, selon un scénario de référence (ou scénario "business-as-usual"), en tenant compte des projections démographiques des Nations Unies jusqu'à l'horizon 2100. Pour Madagascar, on observerait une diminution de l'intensité de déforestation après 1950 liée à la transition démographique et à la réduction du couvert forestier disponible. Toutefois, les surfaces déforestées annuellement resteraient importantes (>75,000 ha/an). Selon ce scénario, le couvert forestier diminuerait ainsi de plus de 50% entre 2000 et 2050 et de plus de 75% entre 2000 et 2100, pour atteindre environ 2 Mha en 2100 (Fig. 9). Ces scénarios d'évolution de l'intensité de déforestation intégrant la croissance démographique seront utilisés pour obtenir de nouvelles cartes du couvert forestier futur en 2050 et 2100.
+Nous avons établi un modèle d'évolution des surfaces déforestées pour les pays africains en prenant en compte le couvert forestier existant et la taille de la population. Ce modèle est utilisé pour prédire les tendances de déforestation pour l'Afrique pays par pays. Pour Madagascar, on observerait une diminution de l'intensité de déforestation après 1950 liée à la transition démographique et à la réduction du couvert forestier disponible. Toutefois, les surfaces déforestées annuellement resteraient importantes (>75,000 ha/an). Selon ce scénario, le couvert forestier diminuerait ainsi de plus de 50% entre 2000 et 2050 et de plus de 75% entre 2000 et 2100, pour atteindre environ 2 Mha en 2100 (Fig. 9).
 
 _Références_
 
@@ -191,12 +191,22 @@ Vieilledent G., W. F. Laurance, S. Peedell, and F. Achard. The fate of tropical 
 
 #### MadaClim: portail de données climatiques et environnementales à Madagascar
 
-Dans le cadre du projet BioSceneMada, nous avons développé le site internet MadaClim (<https://madaclim.cirad.fr>). Ce site reprend toutes les données climatiques actuelles fournies par WorldClim ainsi que les prédictions climatiques issues des modèles du GIEC (groupe d'experts intergouvernemental sur l'évolution du climat) et fournies par le CGIAR CCAFS. Les données sont recompilées (reprojetées et rééchantillonnées à 1km) et distribuées spécifiquement pour Madagascar. Des variables bioclimatiques supplémentaires comme l'évapotranspiration et le nombre de mois secs ont été calculées et ajoutées aux variables déjà disponibles (Fig. 1). En plus des données climatiques, des données environnementales (sol, géologie, altitude, etc.) sont également fournies. Ce site et ces données sont particulièrement utiles pour tous les chercheurs, gestionnaires, membres d'ONG environnementales, ministères voulant étudier les effets du changement climatique à Madagascar. Elles peuvent être utilisées par exemple pour calculer les anomalies climatiques prédites par les modèles du GIECC (Fig. 2).
+Dans le cadre du projet BioSceneMada, nous avons développé le site internet MadaClim (<https://madaclim.cirad.fr>). Ce site reprend toutes les données climatiques actuelles fournies par WorldClim ainsi que les prédictions climatiques issues des modèles du GIEC (groupe d'experts intergouvernemental sur l'évolution du climat) et fournies par le CGIAR CCAFS. Les données sont recompilées (reprojetées et rééchantillonnées à 1km) et distribuées spécifiquement pour Madagascar. Des variables bioclimatiques supplémentaires comme l'évapotranspiration et le nombre de mois secs ont été calculées et ajoutées aux variables déjà disponibles. En plus des données climatiques, des données environnementales (sol, géologie, altitude, etc.) sont également fournies. Ce site et ces données sont particulièrement utiles pour tous les chercheurs, gestionnaires, membres d'ONG environnementales, ministères voulant étudier les effets du changement climatique à Madagascar. Elles peuvent être utilisées par exemple pour calculer les anomalies climatiques prédites par les modèles du GIECC (Fig. 1).
 
-![**Exemple de variable bioclimatique calculée: evapotranspiration potentielle (ETP) mensuelle actuelle pour Madagascar (mm).** Nous avons utilisé l'équation de Thornthwaite qui permet de calculer l'ETP à partir des températures moyennes mensuelles et de la durée moyenne du jour sur le mois.](figures/pet.png){width=12cm}
+```{r cap_pet}
+cap <- "\\textbf{Exemple de variable bioclimatique calculée: evapotranspiration potentielle (ETP) mensuelle actuelle pour Madagascar (mm).} Nous avons utilisé l'équation de Thornthwaite qui permet de calculer l'ETP à partir des températures moyennes mensuelles et de la durée moyenne du jour sur le mois."
+```
 
-```{r comment_anomalies}
-# ![**Anomalies climatiques prédites sur les forêts de Madagascar entre 2010 et 2080.** Les anomalies ont été calculées pour les précipitations annuelles (panneau de gauche), la saisonnalité de la température (milieu) et la température moyenne annuelle (droite) en faisant la moyenne des prédictions de sept modèles climatiques du GIEC suivant le scénario d'émission RCP 8.5. Les précipitations devraient diminuer, notamment sur les forêts humides de l'est et la saisonnalité de la température ainsi que la température moyenne annuelle devraient augmenter sur l'ensemble des forêts de Madagascar.](figures/Anomalies.png)
+```{r pet, out.width="13cm", fig.cap=cap}
+# knitr::include_graphics("figures/pet.png")
+```
+
+```{r cap_anomalies}
+cap <- "\\textbf{Anomalies climatiques prédites sur les forêts de Madagascar entre 2010 et 2080.} Les anomalies ont été calculées pour les précipitations annuelles (panneau de gauche), la saisonnalité de la température (milieu) et la température moyenne annuelle (droite) en faisant la moyenne des prédictions de sept modèles climatiques du GIEC suivant le scénario d'émission RCP 8.5. Les précipitations devraient diminuer, notamment sur les forêts humides de l'est et la saisonnalité de la température ainsi que la température moyenne annuelle devraient augmenter sur l'ensemble des forêts de Madagascar."
+```
+
+```{r anomalies, out.width="\\textwidth", fig.cap=cap}
+knitr::include_graphics("figures/Anomalies.png")
 ```
 
 #### Carte de carbone forestier et vulnérabilité des forêts tropicales au changement climatique à Madagascar
@@ -205,7 +215,13 @@ Dans le cadre du projet BioSceneMada, en utilisant les données climatiques pré
 
 Concernant les scénarios d'évolution de la biodiversité et des stocks de carbone forestier, nous avons montré à l'aide de ce modèle que les changements climatiques devraient induire des modifications fortes des communautés forestières et en conséquence une diminution de -17% (7-24%) des stocks de carbone forestier à Madagascar à l'horizon 2100 par rapport à 2010 (Fig. 3). Ces changements seront vraisemblablement plus forts pour la forêt humide de l'est (notamment autour de la péninsule de Masoala-Makira) que pour les forêts sèches et épineuses de l'ouest et du sud. En comparaison, un taux de déforestation constant de 0.5% par an conduirait à une perte de carbone forestier de l'ordre de 29% entre 2010 et 2100. L'impact potentiel des changements climatiques sur les émissions de CO2 n'est donc pas à négliger.
 
-![**Carte de carbone forestier et évolution potentiel des stocks sous l'effet du changement climatique.** Les changements climatiques devraient induire des modifications fortes des communautés forestières et en conséquence une diminution des stocks de carbone forestier (-17% en 2100 par rapport à 2010).](figures/carbonmaps.png)
+```{r cap_carbonmaps}
+cap <- "\\textbf{Carte de carbone forestier et évolution potentielle des stocks sous l'effet du changement climatique.} Les changements climatiques devraient induire des modifications fortes des communautés forestières et en conséquence une diminution des stocks de carbone forestier (-17\\% en 2100 par rapport à 2010)."
+```
+
+```{r carbonmaps, out.width="\\textwidth", fig.cap=cap}
+knitr::include_graphics("figures/carbonmaps.png")
+```
 
 #### Base de données de biodiversité à Madagascar
 
@@ -229,7 +245,13 @@ Le script a été optimisé. Il peut être parrallélisé, c'est-à-dire envoyé
 
 Un prototype de cet atlas a été réalisé pour les 7 espèces de baobab présentes à Madagascar. Le prototype de l'atlas est disponible [ici](https://bioscenemada.cirad.fr/FileTransfer/atlas.pdf).
 
-![**Extrait de l'atlas de la biodiversité à Madagascar et de sa vulnérabilité au changement climatique pour l'espèce _Adansonia grandidieri_**. Une fiche est dynamiquement créée à parti du nom taxonomique de l'espèce et de ses points de présence en utilisant un script `R`. Photo et texte sont extraits automatiquement du site _Encyclopedia Of Life_ ([eol.org](http://eol.org)). Un ensemble de modèles statistiques est utilisé pour prédire la niche climatique et l'aire de distribution actuelle de l'espèce. Ce modèle d'ensemble est ensuite utilisé pour prédire la vulnérabilité de l'espèce au changement climatique en intégrant les prédictios climatiques du GIECC suivant deux scénarios, RCP 8.5 et 4.5](figures/atlas.png){width=80%}
+```{r cap_atlas}
+cap <- "\\textbf{Extrait de l'atlas de la biodiversité à Madagascar et de sa vulnérabilité au changement climatique pour l'espèce \\emph{Adansonia grandidieri}}. Une fiche est dynamiquement créée à parti du nom taxonomique de l'espèce et de ses points de présence en utilisant un script \\texttt{R}. Photo et texte sont extraits automatiquement du site \\emph{Encyclopedia Of Life} (\\href{eol.org}{http://eol.org}). Un ensemble de modèles statistiques est utilisé pour prédire la niche climatique et l'aire de distribution actuelle de l'espèce. Ce modèle d'ensemble est ensuite utilisé pour prédire la vulnérabilité de l'espèce au changement climatique en intégrant les prédictios climatiques du GIECC suivant deux scénarios, RCP 8.5 et 4.5"
+```
+
+```{r atlas, out.width="80%", fig.cap=cap}
+knitr::include_graphics("figures/atlas.png")
+```
 
 #### Cartes de biodiversité et des communautés d'espèces à Madagascar
 
@@ -237,7 +259,13 @@ Lorsque l'on parle de carte de biodiversité à l'échelle nationale, l'objectif
 
 En utilisant des modèles de communautés [@Ferrier2007], nous avons cherché à identifier les facteurs environnementaux déterminants les assemblages d'espèces. Ces facteurs peuvent être climatiques ou associés à des barrières géographiques comme les bassins versants ou les rivières [@Pearson2009]. Il ainsi été montré que la distribution des espèces de lémuriens à Madagascar était fortement liée aux bassins versants [@Wilme2006; @Mercier2013]. Les modèles de communautés que nous avons utilisés, appelés GDM (Generalized Dissimilarity Models), modélisent les changements d'espèces au sein de la communauté en fonction des gradients environnementaux en s'appuyant sur des indices de dissimilarités entre sites [@Ferrier2007]. En appliquant ce modèle à nos données de présence d'espèces à Madagascar, nous avons obtenu une première carte de la biodiversité $\beta$ à Madagascar (Fig. 5). Mais le pourcentage de déviance expliquée par ce modèle est faible (<10%).
 
-![**Carte de biodiversité $\beta$ pour Madagascar.** Les couleurs indiquent les changements d'assemblage d'espèces spatialement: les sites aux couleurs proches présentent des assemblages d'espèces proches. Deux gradients sont largements visibles sur cette carte: un gradient est-ouest lié à la topographie (chaîne de montagne nord-sud) et aux précipitations ainsi qu'un un gradient nord-sud associé à la latitude et à la saisonnalité.](figures/GDM_map.png){width=7cm}
+```{r cap_GDM}
+cap <- "\\textbf{Carte de biodiversité $\\beta$ pour Madagascar.} Les couleurs indiquent les changements d'assemblage d'espèces spatialement: les sites aux couleurs proches présentent des assemblages d'espèces proches. Deux gradients sont largements visibles sur cette carte: un gradient est-ouest lié à la topographie (cha\\^ine de montagne nord-sud) et aux précipitations ainsi qu'un un gradient nord-sud associé à la latitude et à la saisonnalité."
+```
+
+```{r GDM, out.width="8cm", fig.cap=cap}
+knitr::include_graphics("figures/GDM_map.png")
+```
 
 En applicant ce même modèle à chaque groupe taxonomique, nous avons trouvé que (i) le pourcentage de variance expliquée par le modèle était généralement beaucoup plus élevé (entre 11% et 88%, Tab. 3) et que (ii) les facteurs explicants l'assemblage des communautés d'espèces variaient d'un groupe taxonomique à l'autre, le climat n'étant pas toujours le facteur le plus important (Tab. 3). Par exemple, nous avons confirmé les résultats obtenus par @Wilme2006 pour les espèces de lémuriens. Pour ce groupe, ce sont les bassins versants qui expliquent en majorité l'assemblage des espèces (84% de déviance expliquée). Cela pourrait notamment s'expliquer par la difficulté qu'on les lémuriens à traverser les cours d'eau. A contrario, le climat explique une grande partie des assemblages d'espèces de reptiles et d'amphibiens, espèces poïkilothermes (animaux ayant une température corporelle qui varie avec celle de leur milieu) et des espèces de mammifères autres que les lémuriens. Pour d'autres groupes, comme les espèces d'arbres, les facteurs climatiques et les bassins versants semblent expliquer à part égale les assemblages d'espèces.
 
@@ -256,22 +284,28 @@ Table 3: **Facteurs explicants l'assemblage des espèces par groupe taxonomique.
 
 Nous avons obtenu de nouvelles cartes d'évolution de la couverture forestière à Madagascar sur la période 2000-2014. Ces cartes sont sans nuages et disponibles à 30 m de résolution. Elles viennent compléter les cartes de @Harper2007 disponibles pour les années 1953, 1973 et 1990. Ainsi, nous avons pu étudier l'évolution du couvert forestier et de la fragmentation de la forêt à l'échelle nationale sur une période de 60 ans. Nous montrons que le couvert forestier a diminué de 44% sur la période 1953-2014 (37% si l'on considère la période 1973-2014). Les forêts naturelles couvrent 8.9 Mha en 2014 (15% du territoire national) et incluent 4.4 Mha (50%) de forêt humide, 2.6 Mha (29%) de forêt sèche, 1.7 Mha de forêt épineuse (19%) et environ 177,000 ha (2%) de mangrove. Depuis 2005, les surfaces déforestées annuellement ont augmenté à Madagascar pour atteindre 100,000 ha/an sur la période 2010-2014 (correspondant à un taux de déforestation de 1.1 %/an). Aujourd'hui, environ 50% de la forêt est située à moins de 100 m de la lisière et est donc exposée aux perturbations. Les cartes de couvert forestier sont disponibles sur le site du projet BioSceneMada: <https://bioscenemada.cirad.fr/forestmaps>. Elles servent de base au travail de modélisation du processus de déforestation.
 
-![**Evolution du couvert forestier à Madagascar sur 60 ans de 1953 à 2014.** Les changements de couverture forestière de 1973 à 2014 sont présentés sur la figure principale. Le couvert forestier en 1953 est présenté dans l'encart en bas à droite. Deux séries de zooms sur la forêt sèche de l'ouest (à gauche) et de la forêt humide de l'est (à droite) presentent une vue plus détaillée de (du haut vers le bas): la couverture forestière en 1953, les changements de couverture forestière de 1973 à 2014, la fragmentation de la forêt en 2014 et la distance à la lisière de la forêt en 2014. Les données sur les plans d'eau et leur saisonnalité (bleu foncé pour permanent, bleu clair pour saisonnié) sont issues de l'article de @Pekel2016.](figures/fig_fcc.png)
+```{r cap_fcc}
+cap <- "\\textbf{Evolution du couvert forestier à Madagascar sur 60 ans de 1953 à 2014.} Les changements de couverture forestière de 1973 à 2014 sont présentés sur la figure principale. Le couvert forestier en 1953 est présenté dans l'encart en bas à droite. Deux séries de zooms sur la forêt sèche de l'ouest (à gauche) et de la forêt humide de l'est (à droite) presentent une vue plus détaillée de (du haut vers le bas): la couverture forestière en 1953, les changements de couverture forestière de 1973 à 2014, la fragmentation de la forêt en 2014 et la distance à la lisière de la forêt en 2014. Les données sur les plans d'eau et leur saisonnalité (bleu foncé pour permanent, bleu clair pour saisonnié) sont issues de l'article de \\citet{Pekel2016}."
+```
+
+```{r fcc, out.width="\\textwidth", fig.cap=cap}
+knitr::include_graphics("figures/fig_fcc.png")
+```
 
 #### Retour sur les facteurs de déforestation: la pauvreté n'est pas l'unique responsable de la déforestation à Madagascar. 
 
 Afin de valider les cartes de déforestation historique obtenues sur la période 2000-2014 et d'identifier plus précisément les facteurs de déforestation, nous avons effectué une mission de terrain dans le Menabe, à l'ouest de Madagascar, en forêt sèche. Nous nous sommes concentrés sur deux zones identifiées comme "hot-spot" de déforestation, autour des Parcs Nationaux de Menabe-Antimena et Kirindy‐Mité. Nous avons effectué des observations de terrain ainsi que des enquêtes auprès des populations et de l'administration locale afin d'identifier les causes de la déforestation. Nous avons conclu que les causes directes de la déforestation dans la région sont l'agriculture sur brulis pour la culture de rente comme le maïs ou l'arachide et le paturage des zébus. Le maïs et l'arachide sont principalement exportés sur les marchés internationaux, notamment vers les îles de l'Océan Indien et en Chine. Ces activités sont favorisées par un marché global non régulé, une forte corruption et une non-application des lois environnementales à Madagascar. Dans l'hypothèse d'un scénario "business-as-usual", si aucune solution n'est trouvée pour lutter efficacement contre la déforestation, le couvert forestier pourrait diminuer de plus de 50% sur la période 2010-2050 dans les deux zones d'étude.
 
 ```{r cap_defor_Menabe}
-cap <- "Carte de déforestation et de projection de la déforestation autour du Parc National de Menabe-Antimena. A gauche, la déforestation historique sur la période 2000-2010-2014. Vert: couvert forestier en 2014, orange: déforestation sur la période 2000-2010, rouge: déforestation sur la période 2010-2014. A droite, projection de la déforestation pour la période 2010-2050 selon deux scénarios d'intensité différents. Vert: couvert forestier en 2050, gris: déforestation sur la période 2010-2050."
+cap <- "\\textbf{Carte de déforestation et de projection de la déforestation autour du Parc National de Menabe-Antimena.} A gauche, la déforestation historique sur la période 2000-2010-2014. Vert: couvert forestier en 2014, orange: déforestation sur la période 2000-2010, rouge: déforestation sur la période 2010-2014. A droite, projection de la déforestation pour la période 2010-2050 selon deux scénarios d'intensité différents. Vert: couvert forestier en 2050, gris: déforestation sur la période 2010-2050."
 ```
 
 ```{r defor_Menabe, out.width="\\textwidth", fig.cap=cap}
-knitr::include_graphics("figures/defor_Menabe.png")
+# knitr::include_graphics("figures/defor_Menabe.png")
 ```
 
 ```{r cap_causes}
-cap <- "Principales causes de la déforestation dans le Menabe centrale. a-a': Agriculture sur brulis (``hatsake'') pour la culture d'arachide. b-b': Agriculture sur brulis pour la culture de ma\"is. c-c': Cyclone suivi de feux incontrolés d'origine anthropique. d-d': Exploitation illégale de bois."
+cap <- "\\textbf{Principales causes de la déforestation dans le Menabe centrale.} \\textbf{a-a'}: Agriculture sur brulis (\\emph{``hatsake''}) pour la culture d'arachide. \\textbf{b-b'}: Agriculture sur brulis pour la culture de ma\\\"is. \\textbf{c-c'}: Cyclone suivi de feux incontrolés d'origine anthropique. \\textbf{d-d'}: Exploitation illégale de bois."
 ```
 
 ```{r causes, out.width="\\textwidth", fig.cap=cap}
@@ -284,20 +318,37 @@ Un module Python a été développé afin de pouvoir estimer rapidement la proba
 
 Nous avons utilisé ce module pour estimer la probabilité spatiale de déforestation à l'échelle nationale à Madagascar, à une résolution fine de 30 m et pour la couverture forestière de l'année 2010 (Fig. 7). Cette démarche a fait l'objet d'un tutoriel où chacune des étape de modélisation est indiquée pas à pas. Cet tutoriel, disponible sous forme d'un notebook Jupyter est disponible à l'adresse suivante: <https://ghislainv.github.io/deforestprob>. Le tutoriel pourra notamment être utilisé pendant les ateliers de renforcement de capacité dans les deux prochaines années à venir.
 
-![**Probabilité de déforestation pour les forêts de Madagascar**. Couvert forestier de l'année 2010 [@Vieilledent2017]. La probabilité de déforestation est faible (vert) dans les zones reculées et au sein des aires protégées et augmente (rouge puis noir) avec la proximité des villes et des routes.](figures/pred_binomial_iCAR.png){width=50%}
+```{r cap_pred}
+cap <- "\\textbf{Probabilité de déforestation pour les forêts de Madagascar.} Couvert forestier de l'année 2010 \\citep{Vieilledent2017}. La probabilité de déforestation est faible (vert) dans les zones reculées et au sein des aires protégées et augmente (rouge puis noir) avec la proximité des villes et des routes."
+```
+
+```{r pred, out.width="10cm", fig.cap=cap}
+knitr::include_graphics("figures/pred_binomial_iCAR.png")
+```
 
 #### Cartes du couvert forestier futur à Madagascar
 
 A partir de la carte de probabilité de déforestation de 2010, en considérant une déforestation moyenne annuelle de 100 000 ha/an à l'échelle nationale sur la période 2010-2050, nous avons pu prédire les zones susceptibles d'être déforestées sur la période 2010-2050 et la couverture forestière probable à Madagascar en 2050 (Fig. 8). Pour cela, nous calculons la surface forestière déforestée sur une période de 40 ans entre 2010 et 2050 (4 Mha) et nous attribuons la classe "non-forêt" aux pixels ayant la plus forte probabilité de déforestation jusqu'à obtenir une surface de 4 Mha. Les projections montrent une concentration des forêts dans les zones peu accessibles et situées en altitude dans le futur, notamment autour de la péninsule de Mosoala-Makira et dans le Corridor Ankeniheny-Zahamena (Fig. 8). Les aires protégées semblent relativement efficaces sur le court terme (horizon 2050) en contribuant à déplacer la déforestation sur des zones à plus faible biodiversité, en dehors des aires protégées. Par contre, si les taux de déforestation restent constants, la déforestation pénétrera au sein des aires protégées les plus accessibles sur le plus long terme (horizon 2100).
 
-![**Deforestation sur la période 2010-2050 et couverture forestière en 2050 à Madagascar**. Nous projetons la couverture forestière à l'horizon 2050 en considérant une déforestation moyenne annuelle de 100 000 ha/an. **\textcolor{darkgreen}{Vert}**: forêt résiduelle en 2050; **\textcolor{gray}{Gris}**: déforestation sur la période 2010-2050.](figures/forest_cover_2050.png)
+```{r cap_fc2050}
+cap <- "\\textbf{Deforestation sur la période 2010-2050 et couverture forestière en 2050 à Madagascar}. Nous projetons la couverture forestière à l'horizon 2050 en considérant une déforestation moyenne annuelle de 100 000 ha/an. Vert: forêt résiduelle en 2050; gris: déforestation sur la période 2010-2050."
+```
+
+```{r fc2050, out.width="\\textwidth", fig.cap=cap}
+knitr::include_graphics("figures/forest_cover_2050.png")
+```
 
 #### Modèles d'évolution de l'intensité de déforestation en Afrique et à Madagascar
 
 Afin de proposer des scénarios d'évolution de l'intensité de déforestation et du couvert forestier à Madagascar, il a fallu construire un modèle à l'échelle de l'Afrique afin de disposer d'un plus grand nombre de données et d'avoir un modèle plus robuste. Le modèle permet d'estimer le taux de  déforestation (en ha/an) pour l'ensemble des pays africains en prenant en compte le couvert forestier existant (en ha) et la taille de la population (en nombre d'habitants). Trois jeux de données ont été comparés pour la modélisation : (i) celui issu du rapport Global Forest Ressource Assessment (FRA) 2015 de la FAO [@FAO2015], (ii) celui issu du projet Trees du JRC [@Achard2014] et (iii) celui issu de Global Forest Watch [@Hansen2013]. Nous montrons que les données de déforestation du FRA ne peuvent pas être utilisées pour modéliser et prédire la déforestation ("outlier"). Les résultats permettent également de montrer que malgré les variations annuelles des taux de déforestation (associables aux marchés et aux politiques), la tendance sur le long terme est forte et qu'un simple modèle permet de reproduire fidèlement l'évolution du couvert forestier de 1990 à 2015 pour la plupart des pays africains. Ce modèle est utilisé pour prédire les tendances de déforestation pour les pays africains, selon un scénario de référence (ou scénario "business-as-usual"), en tenant compte des projections démographiques des Nations Unies jusqu'à l'horizon 2100. Pour Madagascar, on observerait une diminution de l'intensité de déforestation après 1950 liée à la transition démographique et à la réduction du couvert forestier disponible. Toutefois, les surfaces déforestées annuellement resteraient importantes (>75000 ha/an). Selon ce scénario, le couvert forestier diminuerait ainsi de plus de 50% entre 2000 et 2050 et de plus de 75% entre 2000 et 2100, pour atteindre environ 2 Mha en 2100 (Fig. 9). Ces scénarios d'évolution de l'intensité de déforestation intégrant la croissance démographique seront utilisés pour obtenir de nouvelles cartes du couvert forestier futur en 2050 et 2100.
 
-![**Evolution (1990-2010) et prédiction (2010-2100) de la déforestation et du couvert forestier à Madagascar.** La figure de gauche montre l'évolution de la déforestation (en milliers d’hectares par an) et la figure de droite l'évolution du couvert forestier (en milliers d’hectares). Nous avons considéré trois jeux de données (FAO FRA, Achard et al. 2014 JRC TREES project, Global Forest Watch Hansen et al. 2013). Les projections prennent en compte la croissance démographique (données des Nations Unies, 2015 Revision of World Population Prospects).](figures/deforMada.png)
+```{r cap_intensity}
+cap <- "\\textbf{Evolution (1990-2010) et prédiction (2010-2100) de la déforestation et du couvert forestier à Madagascar.} La figure de gauche montre l'évolution de la déforestation (en milliers d'hectares par an) et la figure de droite l'évolution du couvert forestier (en milliers d'hectares). Nous avons considéré trois jeux de données (FAO FRA, Achard et al. 2014 JRC TREES project, Global Forest Watch Hansen et al. 2013). Les projections prennent en compte la croissance démographique (données des Nations Unies, 2015 Revision of World Population Prospects)."
+```
 
+```{r intensity, out.width="\\textwidth", fig.cap=cap}
+knitr::include_graphics("figures/deforMada.png")
+```
 
 ## _Liste des publications et communications scientifiques_
 
@@ -440,11 +491,11 @@ M. Pedrono, T. F. Allnutt, C. Grinand, J.-R. Rakotoarijaona, D. Razafimpahanana,
 
 ### Réunions avec les parties-prenantes
 
-Plusieurs réunions de présentations des résultats intermédiaires du projet aux parties-prenantes ont eu lieu à Antananarivo. Etaient présents des membres du MEEF (Ministère de l'Environnement, de l'Ecologie et des Forêts, Direction Générale des Forêts et Direction Générale de l'Environnement), des ONG environnementales (WWF, WCS, CI, GERP, Asity Madagascar, Vahatra, Biotope, Blue Ventures), des chercheurs (Université d'Antananarivo, ESSA, IOGA, LRI, IRD, Cirad, RGB Kew, MBG), des membres d'institutions nationales (Madagascar National Park, Office National de l'Environnement, FOFIFA):
+Plusieurs réunions de présentation du projet et de présentation des résultats intermédiaires ont eu lieu à Antananarivo avec les parties-prenantes du projet. Etaient présents des membres du MEEF (Ministère de l'Environnement, de l'Ecologie et des Forêts, Direction Générale des Forêts et Direction Générale de l'Environnement), des ONG environnementales (WWF, WCS, CI, GERP, Asity Madagascar, Vahatra, Biotope, Blue Ventures), des chercheurs (Université d'Antananarivo, ESSA, IOGA, LRI, IRD, Cirad, RGB Kew, MBG), des membres d'institutions nationales (Madagascar National Park, Office National de l'Environnement, FOFIFA):
 
 - Réunion de présentation des avancées du projet, le 3 Juin 2016 à Antananarivo
 - Réunion de présentation des avancées du projet, le 2 Avril 2015 à Antananarivo
-- Réunion de présentation et lancement du projet, le 5 Mars 2014 à Antananarivo
+- Réunion de lancement du projet, le 5 Mars 2014 à Antananarivo
 
 ```{r cap_meeting}
 cap <- "Participants à la réunion de présentation des avancées du projet, le 3 Juin 2016 à Antananarivo"
