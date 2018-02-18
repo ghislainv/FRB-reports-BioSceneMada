@@ -404,9 +404,9 @@ Long R. 2014. Modélisation de la déforestation à Madagascar. _Master I Agrono
 
 #### I.1.4. Communications courtes dans congrès / symposiums scientifiques (préciser le support écrit : poster, résumé ou texte intégral). 
 
-Vieilledent G., W. F. Laurance, S. Peedell, and F. Achard. The fate of tropical forests associated to the demographic explosion in Africa. Scennet 2016: international conference on Scenarios and Models of Biodiversity and Ecosystem Services in Support of Decision Making. Montpellier. Présentation orale. https://scennet2016.sciencesconf.org/112264
+Vieilledent G., W. F. Laurance, S. Peedell, and F. Achard. The fate of tropical forests associated to the demographic explosion in Africa. Scennet 2016: international conference on Scenarios and Models of Biodiversity and Ecosystem Services in Support of Decision Making. Montpellier. Présentation orale.
 
-Grinand C., G. Vieilledent, T. Razafimbelo, J.-R. Rakotoarijaona, M. Nourtier M., and M. Bernoux. 2016. New tools and methodological framework to study spatial drivers of deforestation, degradation and regeneration and forecast possible futures in Madagascar. Scennet 2016: international conference on Scenarios and Models of Biodiversity and Ecosystem Services in Support of Decision Making. Montpellier. Présentation orale. https://scennet2016.sciencesconf.org/112335
+Grinand C., G. Vieilledent, T. Razafimbelo, J.-R. Rakotoarijaona, M. Nourtier M., and M. Bernoux. 2016. New tools and methodological framework to study spatial drivers of deforestation, degradation and regeneration and forecast possible futures in Madagascar. Scennet 2016: international conference on Scenarios and Models of Biodiversity and Ecosystem Services in Support of Decision Making. Montpellier. Présentation orale.
 
 Vieilledent G., O. Gardi, C. Grinand, C. Burren, M. Andriamanjato, C. Camara, C. J. Gardner, L. Glass, A. Rasolohery, H. Rakoto Ratsimba, V. Gond, J.-R. Rakotoarijaona. 2016. Bioclimatic envelope models predict a decrease in tropical forest carbon stocks with climate change in Madagascar. In : Tropical ecology and society reconciliating conservation and sustainable use of biodiversity. Program and abstracts. Plinio Sist (ed.), Stéphanie Carrière (ed.), Pia Parolin (ed.), Pierre-Michel Forget (ed.). ATBC. Storrs : ATBC, Résumé, p. 325. Montpellier. Présentation orale. 
 
@@ -438,12 +438,18 @@ I.2.7. Autres supports.
 ```
 
 ```{r livrables, results="asis", echo=FALSE}
+library(knitr)
+library(kableExtra)
 df.livrables <- read.table("tables/livrables.txt", header=TRUE, sep=";")
-pandoc.table(df.livrables, justify=c("left","left","left"),
-             split.table=Inf, split.cells=c(30,90,20))
+# Caption
+tab.livrables <- "\\textbf{Livrables du projet BioSceneMada.} Les livrables sont classés par catégories (``Bases de données'', ``Cartes'', etc.). Les articles, disposant d'une section spécifiques dans le rapport, n'ont pas été repris."
+# Kable
+knitr::kable(df.livrables, caption=tab.livrables, booktabs=TRUE, format="latex") %>%
+  kable_styling(latex_options=c("hold_position","striped")) %>%
+  column_spec(1, width="2cm") %>%
+  column_spec(2, width="7cm") %>%
+  column_spec(3, width="6cm")
 ```
-
-Table 1: **Principaux produits issus du projet BioSceneMada.** Les produits sont classés par catégories ("Scripts", "Cartes", "Articles", etc.). Certains produits sont disponibles publiquement via un lien internet. D'autres n'ont pas encore été mis en ligne mais le seront d'ici la fin du projet.
 
 \newpage
 ## Personnes ayant participé à ce projet
@@ -526,16 +532,15 @@ Les résultats de l'article sur la vulnérabilité des forêts tropicales au cha
 
 ## Outils de gestion ou d'aide à la décision développés grâce à ce projet
 
-### Cartes
+Plusieurs outils ont été développés au cours du projet BioSceneMada pour la gestion ou l'aide à la décision concernant la conservation de la biodiversité à Madagascar. Ces outils sont sous forme de bases de données, de cartes à haute résolution, d'un atlas de la biodiversité, de logiciels. Ces outils seront notamment utiles pour l'application du programme REDD+ à Madagascar et l'optimisation du réseau d'aires naturelles protégées.
 
+_Base de données_: Le projet BioSceneMada a permis de constituter une base de données climatiques et environnementales à Madagascar. Le projet a également permis d'obtenir une base de données de biodiversité incluant plus de 300 000 points de présences pour 4969 espèces représentatives de la biodiversité à Madagascar. Cette base de données, incluant des données privées, sera accessible sur demande. 
 
+_Cartes_: Le projet BioSceneMada a permis d'obtenir différentes cartes utiles pour la gestion de la biodiversité. Sont disponibles: des cartes de couverts forestiers sur la période 1953-2014 à 30m de résolution, une première carte de la biodiversité $\beta$, une carte des habitats forestiers vulnérables/résilients aux changements climatiques, une carte de la couverture forestière probable en 2050 et 2100 indiquant les zones à risque de déforestation.
 
-### Atlas de la biodiversité à Madagascar
+_Atlas_: Un atlas de la biodiversité est en cours de réalisation. Un prototype de cet atlas a déjà été réalisé pour le groupe des baobabs à Madagascar. Cet atlas permettra d'obtenir l'aire de distribution actuelle des espèces ainsi qu'une estimation de leur vulnérabilité au changement climatique indiquant notamment les zones de refuge climatique pour ces espèces.
 
-### Logiciels
-
-- Module Python `deforestprob`:
-- Script R `atlas`:
+_Bibliothèques logicielles_: Deux principales bibliothèques logicielles à destination des gestionnaires ont été développées au cours du projet. Le module Python `deforestprob` permet la modélisation et la projection spatialisée de la déforestation dans le futur suivant différents scénarios d'intensité. Le script R `atlas` permet de modéliser la niche climatique des espèces et leur vulnérabilité au changement climatique en fonction des données de présence de l'espèce.
 
 ## Activités de suivi et projets de valorisation des résultats
 

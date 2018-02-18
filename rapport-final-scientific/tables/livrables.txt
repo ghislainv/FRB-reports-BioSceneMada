@@ -1,16 +1,15 @@
-"Categories";"Description";"Hyperlien"
-"**1. Sites internet**";"**1.1** Projet BioSceneMada";"https://bioscenemada.cirad.fr"
-;"**1.2** Portail de données MadaClim";"https://madaclim.cirad.fr"
-"**2. Jeux de données**";"**2.1** Variables climatiques et environnementales";"https://madaclim.cirad.fr/download"
-;"**2.2** Inventaires de 1771 placettes pour le stock de carbone forestier ";"http://doi.org/10.5061/dryad.9ph68"
-;"**2.3** Base de données de biodiversité (points de présence pour 4969 espèces)";"Non public"
-"**3. Scripts de calcul**";"**3.1** Scripts d'obtention des données MadaClim";"https://github.com/ghislainv/madaclim"
-;"**3.2** Scripts R/GRASS pour les cartes forestières";"https://github.com/ghislainv/deforestmap"
-;"**3.3** Scripts pour la réalisation de l'atlas";"https://github.com/ghislainv/atlas"
-"**4. Logiciels**";"**4.1** Package Python deforestprob";"https://github.com/ghislainv/deforestprob"
-;"**4.2** Package R hSDM pour la modélisation de la distribution des espèces";"https://cran.r-project.org/package=hSDM"
-"**5. Cartes**";"**5.1** Evolution (1953-2014) du couvert forestier (30m)";"https://bioscenemada.cirad.fr/forestmaps"
-;"**5.2** Carte de probabilité de déforestation (30m)";"https://bioscenemada.cirad.fr/forestmaps"
-;"**5.3** Couvert forestier futur en 2050 et 2100 (30m)";"En cours"
-;"**5.4** Stocks de carbone forestier en 2010 (250m)";"http://doi.org/10.5061/dryad.9ph68"
-;"**5.5** Carte de biodiversité beta (1km)";"En cours"
+Catégorie;Description;Commentaire
+Bases de données;Variables climatiques et environnementales;Livré
+;Inventaires de 1771 placettes pour le stock de carbone forestier ;Livré
+;Base de données de biodiversité (points de présence pour 4969 espèces);Livré
+Scénarios;Scénarios de déforestation: tendance historique et effet de la démographie;Livré
+;Scénarios climatiques et biodiversité;Livré pour certains groupes taxonomiques. A généraliser à l’ensemble des espèces. 
+Cartes;Evolution (1953-2014) du couvert forestier (30m);Livré
+;Carte de probabilité de déforestation (30m);Livré
+;Couvert forestier futur en 2050 et 2100 (30m);Livré pour 2050. En cours pour 2100. Inclure le scénario avec croissance démographique.
+;Stocks de carbone forestier en 2010 et 2080 (250m);Livré
+;Cartes des habitats forestiers vulnérables/résilients aux changement climatiques;Livré
+;Carte de biodiversité beta (1km);Première version. Nouvelle approche à développer pour tenir compte des différences entre groupes taxonomiques.
+Atlas;Atlas de la biodiversité à Madagascar;Prototype livré. A généraliser à l’ensemble des espèces
+Logiciels;Module Python ‘deforestprob’ pour la modélisation de la déforestation;Livré
+;Script R ‘atlas’ pour la modélisation de la niche climatique des espèces ;Livré
