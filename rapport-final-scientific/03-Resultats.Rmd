@@ -6,7 +6,7 @@
 
 ## MadaClim: portail de données climatiques et environnementales à Madagascar
 
-Nous avons développé le site internet MadaClim (<https://madaclim.cirad.fr> qui reprend toutes les données climatiques actuelles ainsi que les prédictions climatiques issues des modèles du GIEC (groupe d'experts intergouvernemental sur l'évolution du climat). Les données sont à 1km de résolution et distribuées spécifiquement pour Madagascar. Des variables bioclimatiques comme l'évapotranspiration et le nombre de mois secs ont été recalculées et ajoutées aux variables existantes. En plus des données climatiques, des données environnementales incluant altitude, pente, irradiation solaire, géologie, sol, etc. ont été compilées.
+Nous avons développé le site internet MadaClim (<https://madaclim.cirad.fr>) qui reprend toutes les données climatiques actuelles ainsi que les prédictions climatiques issues des modèles du GIEC (groupe d'experts intergouvernemental sur l'évolution du climat). Les données sont à 1km de résolution et distribuées spécifiquement pour Madagascar. Des variables bioclimatiques comme l'évapotranspiration et le nombre de mois secs ont été recalculées et ajoutées aux variables existantes. En plus des données climatiques, des données environnementales incluant altitude, pente, irradiation solaire, géologie, sol, etc. ont été compilées.
 
 _Référence:_
 
@@ -16,7 +16,7 @@ Vieilledent G. 2016. MadaClim: a set of climatic and environmental spatial varia
 
 ## Carte de carbone forestier et vulnérabilité des forêts tropicales au changement climatique à Madagascar
 
-En utilisant les données climatiques précédemment calculées (<https://madaclim.cirad.fr>) et des données d'inventaires forestiers pour 1771 placettes réparties sur l'ensemble de Madagascar, nous avons démontré qu'il existait un lien fort entre climat et stocks de carbone forestiers. Nous avons produit une carte précise des stocks de carbone forestier en 2010 à Madagascar à une résolution de 250 m. Les changements climatiques devraient induire des modifications fortes des communautés forestières et en conséquence une diminution de -17% (7-24%) des stocks de carbone forestier à Madagascar à l'horizon 2100 par rapport à 2010.
+En utilisant les données climatiques présentées précédemment et des données d'inventaires forestiers pour 1771 placettes réparties sur l'ensemble de Madagascar, nous avons démontré qu'il existait un lien fort entre climat et stocks de carbone forestiers. Nous avons produit une carte précise des stocks de carbone forestier en 2010 à Madagascar à une résolution de 250 m. Les changements climatiques devraient induire des modifications fortes des communautés forestières et en conséquence une diminution de -17% (7-24%) des stocks de carbone forestier à Madagascar à l'horizon 2100 par rapport à 2010.
 
 _Références:_
 

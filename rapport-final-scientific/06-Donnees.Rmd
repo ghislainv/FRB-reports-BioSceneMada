@@ -25,5 +25,5 @@ La plupart des scripts informatiques ayant servi à l'obtention des résultats s
 - Code du module Python `deforestprob`: https://github.com/ghislainv/deforesprob
 - Code pour les cartes historiques de déforestation sur la période 1953-2014: https://github.com/ghislainv/deforestation-maps-Mada
 - Code pour la carte de probabilité de déforestation et la carte de couvert forestier en 2050: https://ghislainv.github.io/deforestprob
-- Code pour l'atlas de biodiversité: https://github.com/ghislainv/atlas (accès privé pour le moment, couple identifiant/mot de passe: `gvguest`/`gvguest!1`)
+- Code pour l'atlas de biodiversité: https://github.com/ghislainv/atlas (accès sur demande, répertoire privé jusqu'à publication de l'atlas)
 - Code pour l'analyse de la déforestation dans le Menabe: https://github.com/ghislainv/menabe

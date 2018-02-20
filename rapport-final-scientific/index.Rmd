@@ -55,7 +55,6 @@ opts_chunk$set(echo=FALSE, cache=FALSE,
                fig.align="center",
                fig.pos="H",
                tidy=FALSE)
-# options(knitr.kable.NA="-")
 ```
 
 # 1. Description courte

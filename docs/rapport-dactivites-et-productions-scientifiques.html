@@ -190,145 +190,297 @@ Figure 5: <strong>Carte de carbone forestier et évolution potentielle des stock
 </div>
 <div id="base-de-donnees-de-biodiversite-a-madagascar-1" class="section level4">
 <h4>Base de données de biodiversité à Madagascar</h4>
-<p>Nous avons construit un jeu de données sur la biodiversité à Madagascar regroupant 300 000 observations (points de présence) pour 4969 espèces. Ces espèces sont réparties dans différents groupes taxonomiques (Plantes, Vertébrés, Invertébrés) et sont représentatives de la biodiversité à Madagascar (Tab. 2). Nous avons apporté une attention particulière à la qualité des données. Toutes les données ont été vérifiées du point de vue des coordonnées géographiques (issues de relevés GPS) et de la taxonomie. Pour la vérification de la taxonomie, nous nous sommes appuyés sur le package <code>taxize</code> disponible sous le logiciel <code>R</code>. Ce travail de compilation de données de biodiversité est sans précédent à Madagascar. Les précédentes études scientifiques sur la biodiversité à l’échelle nationale à Madagascar s’appuyait sur un nombre d’espèces &lt; 2843 <span class="citation">(Allnutt et al. 2008; Kremen et al. 2008)</span>. Plusieurs institutions ont accepté de partager leur données de biodiversité dans le cadre du projet BioSceneMada et ont ainsi largement contribué à la réalisation de cette base de données. Ces données sont souvent issues d’un travail de prospection conséquent qui s’étalent sur plusieurs dizaines d’années.</p>
-<table style="width:90%;">
-<colgroup>
-<col width="25%" />
-<col width="20%" />
-<col width="15%" />
-<col width="12%" />
-<col width="16%" />
-</colgroup>
+<p>Nous avons construit un jeu de données sur la biodiversité à Madagascar regroupant 300 000 observations (points de présence) pour 4969 espèces. Ces espèces sont réparties dans différents groupes taxonomiques (Plantes, Vertébrés, Invertébrés) et sont représentatives de la biodiversité à Madagascar (Tab. <a href="rapport-dactivites-et-productions-scientifiques.html#tab:species">1</a>). Nous avons apporté une attention particulière à la qualité des données. Toutes les données ont été vérifiées du point de vue des coordonnées géographiques (issues de relevés GPS) et de la taxonomie. Pour la vérification de la taxonomie, nous nous sommes appuyés sur le package <code>taxize</code> disponible sous le logiciel <code>R</code>. Ce travail de compilation de données de biodiversité est sans précédent à Madagascar. Les précédentes études scientifiques sur la biodiversité à l’échelle nationale à Madagascar s’appuyait sur un nombre d’espèces &lt; 2843 <span class="citation">(Allnutt et al. 2008; Kremen et al. 2008)</span>. Plusieurs institutions ont accepté de partager leur données de biodiversité dans le cadre du projet BioSceneMada et ont ainsi largement contribué à la réalisation de cette base de données. Ces données sont souvent issues d’un travail de prospection conséquent qui s’étalent sur plusieurs dizaines d’années.</p>
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:species">Table 1: </span><strong>Bases de données sur la biodiversité de Madagascar.</strong> La base de données incluent des points de présence pour 4969 espèces réparties dans différents groupes taxonomiques. Ces espèces sont représentatives de la biodiversité à Madagascar.
+</caption>
 <thead>
-<tr class="header">
-<th></th>
-<th align="left">Groupe</th>
-<th align="right">Espèces</th>
-<th align="right">Genres</th>
-<th align="right">Obs.</th>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Groupe
+</th>
+<th style="text-align:right;">
+Espèces
+</th>
+<th style="text-align:right;">
+Genres
+</th>
+<th style="text-align:right;">
+Obs.
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><strong>Plantes</strong></td>
-<td align="left">Arbres</td>
-<td align="right">531</td>
-<td align="right">283</td>
-<td align="right">40178</td>
+<tr>
+<td style="text-align:left;">
+Plantes
+</td>
+<td style="text-align:left;">
+Arbres
+</td>
+<td style="text-align:right;">
+531
+</td>
+<td style="text-align:right;">
+283
+</td>
+<td style="text-align:right;">
+40178
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td align="left">Palmiers</td>
-<td align="right">178</td>
-<td align="right">16</td>
-<td align="right">5105</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Palmiers
+</td>
+<td style="text-align:right;">
+178
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+5105
+</td>
 </tr>
-<tr class="odd">
-<td></td>
-<td align="left">Fougères</td>
-<td align="right">317</td>
-<td align="right">82</td>
-<td align="right">1664</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Fougères
+</td>
+<td style="text-align:right;">
+317
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:right;">
+1664
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td align="left">Légumineuses</td>
-<td align="right">724</td>
-<td align="right">149</td>
-<td align="right">30305</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Légumineuses
+</td>
+<td style="text-align:right;">
+724
+</td>
+<td style="text-align:right;">
+149
+</td>
+<td style="text-align:right;">
+30305
+</td>
 </tr>
-<tr class="odd">
-<td></td>
-<td align="left">Graminées</td>
-<td align="right">283</td>
-<td align="right">113</td>
-<td align="right">3469</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Graminées
+</td>
+<td style="text-align:right;">
+283
+</td>
+<td style="text-align:right;">
+113
+</td>
+<td style="text-align:right;">
+3469
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td align="left">Autres</td>
-<td align="right">1229</td>
-<td align="right">359</td>
-<td align="right">34265</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Autres
+</td>
+<td style="text-align:right;">
+1229
+</td>
+<td style="text-align:right;">
+359
+</td>
+<td style="text-align:right;">
+34265
+</td>
 </tr>
-<tr class="odd">
-<td><strong>Vertébrés</strong></td>
-<td align="left">Mammifères</td>
-<td align="right">189</td>
-<td align="right">69</td>
-<td align="right">28316</td>
+<tr>
+<td style="text-align:left;">
+Vertébrés
+</td>
+<td style="text-align:left;">
+Mammifères
+</td>
+<td style="text-align:right;">
+189
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+28316
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td align="left">Lémuriens</td>
-<td align="right">64</td>
-<td align="right">15</td>
-<td align="right">3136</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Lémuriens
+</td>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+3136
+</td>
 </tr>
-<tr class="odd">
-<td></td>
-<td align="left">Oiseaux</td>
-<td align="right">285</td>
-<td align="right">172</td>
-<td align="right">60895</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Oiseaux
+</td>
+<td style="text-align:right;">
+285
+</td>
+<td style="text-align:right;">
+172
+</td>
+<td style="text-align:right;">
+60895
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td align="left">Reptiles</td>
-<td align="right">153</td>
-<td align="right">41</td>
-<td align="right">4938</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Reptiles
+</td>
+<td style="text-align:right;">
+153
+</td>
+<td style="text-align:right;">
+41
+</td>
+<td style="text-align:right;">
+4938
+</td>
 </tr>
-<tr class="odd">
-<td></td>
-<td align="left">Amphibiens</td>
-<td align="right">78</td>
-<td align="right">21</td>
-<td align="right">208</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Amphibiens
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+208
+</td>
 </tr>
-<tr class="even">
-<td><strong>Invertébrés</strong></td>
-<td align="left">Escargots</td>
-<td align="right">537</td>
-<td align="right">113</td>
-<td align="right">1635</td>
+<tr>
+<td style="text-align:left;">
+Invertébrés
+</td>
+<td style="text-align:left;">
+Escargots
+</td>
+<td style="text-align:right;">
+537
+</td>
+<td style="text-align:right;">
+113
+</td>
+<td style="text-align:right;">
+1635
+</td>
 </tr>
-<tr class="odd">
-<td></td>
-<td align="left">Fourmis</td>
-<td align="right">379</td>
-<td align="right">46</td>
-<td align="right">70012</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Fourmis
+</td>
+<td style="text-align:right;">
+379
+</td>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:right;">
+70012
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td align="left">Papillons</td>
-<td align="right">262</td>
-<td align="right">82</td>
-<td align="right">16396</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Papillons
+</td>
+<td style="text-align:right;">
+262
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:right;">
+16396
+</td>
 </tr>
-<tr class="odd">
-<td></td>
-<td align="left">Autres</td>
-<td align="right">355</td>
-<td align="right">203</td>
-<td align="right">6202</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Autres
+</td>
+<td style="text-align:right;">
+355
+</td>
+<td style="text-align:right;">
+203
+</td>
+<td style="text-align:right;">
+6202
+</td>
 </tr>
-<tr class="even">
-<td><strong>TOTAL=</strong></td>
-<td align="left"></td>
-<td align="right"><strong>4969</strong></td>
-<td align="right">1749</td>
-<td align="right"><strong>303588</strong></td>
+<tr>
+<td style="text-align:left;">
+TOTAL=
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+4969
+</td>
+<td style="text-align:right;">
+1749
+</td>
+<td style="text-align:right;">
+303588
+</td>
 </tr>
 </tbody>
 </table>
-<p>Table 2: <strong>Bases de données sur la biodiversité de Madagascar.</strong> La base de données incluent des points de présence pour 4969 espèces réparties dans différents groupes taxonomiques. Ces espèces sont représentatives de la biodiversité à Madagascar.</p>
 </div>
 <div id="atlas-de-la-biodiversite-a-madagascar-et-de-sa-vulnerabilite-au-changement-climatique-1" class="section level4">
 <h4>Atlas de la biodiversité à Madagascar et de sa vulnérabilité au changement climatique</h4>
 <p>Nous avons développé un script permettant de modéliser la niche climatique des espèces à partir de modèles d’ensemble <span class="citation">(Vieilledent et al. 2013; Araujo and New 2007)</span>. Ce script utilise le package <code>biomod2</code> sous <code>R</code>. A partir de variables environnementales, incluant des variables climatiques (température moyenne annuelle, saisonnalité de la température, précipitations annuelles, déficit en eau, nombre de mois secs) et des variables physiques (radiation solaire, géologie) disponibles sur le site <a href="https://madaclim.cirad.fr">MadaClim</a>, il permet de prédire la probabilité de présence ainsi que l’aire de distribution présente et future des espèces à Madagascar. Les prédictions sont issues de plusieurs modèles statistiques (Maxent, GLM, GAM et Random Forest). L’approche par modèles d’ensemble permet de moyenner les prédictions faites par plusieurs modèles statistiques afin d’évaluer l’incertitude des prédictions et d’augmenter la robustesse de l’aire de distribution. Le script a été développé au cours du stage de Master II de Mario Muniz-Tagliari. L’idée est de pouvoir utiliser ce script et modéliser l’aire de distribution présente et future de l’ensemble des espèces constituant le jeu de données sur la biodiversité à Madagascar (4969 espèces).</p>
-<p>Le script a été optimisé. Il peut être parrallélisé, c’est-à-dire envoyé sur les différents processeurs d’un serveur afin d’accélérer les calculs. Il permet également de créer un document pdf dynamique, réactualisable très facilement, où les photos, textes, figures et tableaux sont agencés de manière automatique pour chaque espèce (Fig. <a href="rapport-dactivites-et-productions-scientifiques.html#fig:atlas">6</a>). La dernière version du script est disponible sur GitHub: <a href="https://github.com/ghislainv/atlas" class="uri">https://github.com/ghislainv/atlas</a>. Ce répertoire est privé pour le moment mais accessible avec le couple d’identifiants suivant sur la plateforme GitHub: <code>gvguest</code>/<code>gvguest!1</code>. L’objectif est d’obtenir au final un atlas de la biodiversité à Madagascar incluant (i) les points de présence des espèces, (ii) leur aire de distribution actuelle, (iii) la distribution future potentielle des espèces sous l’effet du changement climatique et une estimation de leur vulnérabilité au changement climatique.</p>
+<p>Le script a été optimisé. Il peut être parrallélisé, c’est-à-dire envoyé sur les différents processeurs d’un serveur afin d’accélérer les calculs. Il permet également de créer un document pdf dynamique, réactualisable très facilement, où les photos, textes, figures et tableaux sont agencés de manière automatique pour chaque espèce (Fig. <a href="rapport-dactivites-et-productions-scientifiques.html#fig:atlas">6</a>). La dernière version du script est disponible sur GitHub: <a href="https://github.com/ghislainv/atlas" class="uri">https://github.com/ghislainv/atlas</a>. Ce répertoire, privé jusqu’à la publication de l’atlas, est accessible sur demande. L’objectif est d’obtenir au final un atlas de la biodiversité à Madagascar incluant (i) les points de présence des espèces, (ii) leur aire de distribution actuelle, (iii) la distribution future potentielle des espèces sous l’effet du changement climatique et une estimation de leur vulnérabilité au changement climatique.</p>
 <p>Un prototype de cet atlas a été réalisé pour les 7 espèces de baobab présentes à Madagascar. Le prototype de l’atlas est disponible <a href="https://bioscenemada.cirad.fr/FileTransfer/atlas.pdf">ici</a>.</p>
 
 <div class="figure" style="text-align: center"><span id="fig:atlas"></span>
@@ -344,104 +496,202 @@ Figure 6: <strong>Extrait de l’atlas de la biodiversité à Madagascar et de s
 <p>En utilisant des modèles de communautés <span class="citation">(Ferrier et al. 2007)</span>, nous avons cherché à identifier les facteurs environnementaux déterminants les assemblages d’espèces. Ces facteurs peuvent être climatiques ou associés à des barrières géographiques comme les bassins versants ou les rivières <span class="citation">(Pearson and Raxworthy 2009)</span>. Il ainsi été montré que la distribution des espèces de lémuriens à Madagascar était fortement liée aux bassins versants <span class="citation">(Wilmé, Goodman, and Ganzhorn 2006; Mercier and Wilmé 2013)</span>. Les modèles de communautés que nous avons utilisés, appelés GDM (Generalized Dissimilarity Models), modélisent les changements d’espèces au sein de la communauté en fonction des gradients environnementaux en s’appuyant sur des indices de dissimilarités entre sites <span class="citation">(Ferrier et al. 2007)</span>. En appliquant ce modèle à nos données de présence d’espèces à Madagascar, nous avons obtenu une première carte de la biodiversité <span class="math inline">\(\beta\)</span> à Madagascar (Fig. <a href="rapport-dactivites-et-productions-scientifiques.html#fig:GDM">7</a>). Mais le pourcentage de déviance expliquée par ce modèle est faible (&lt;10%).</p>
 
 <div class="figure" style="text-align: center"><span id="fig:GDM"></span>
-<img src="figures/GDM_map.png" alt="Carte de biodiversité \(\beta\) pour Madagascar. Les couleurs indiquent les changements d’assemblage d’espèces spatialement: les sites aux couleurs proches présentent des assemblages d’espèces proches. Deux gradients sont largements visibles sur cette carte: un gradient est-ouest lié à la topographie (chaîne de montagne nord-sud) et aux précipitations ainsi qu’un un gradient nord-sud associé à la latitude et à la saisonnalité." width="8cm" />
+<img src="figures/GDM_map.png" alt="Carte de biodiversité \(\beta\) pour Madagascar. Les couleurs indiquent les changements d’assemblage d’espèces spatialement: les sites aux couleurs proches présentent des assemblages d’espèces proches. Deux gradients sont largements visibles sur cette carte: un gradient est-ouest lié à la topographie (chaîne de montagne nord-sud) et aux précipitations ainsi qu’un un gradient nord-sud associé à la latitude et à la saisonnalité." width="534" />
 <p class="caption">
 Figure 7: <strong>Carte de biodiversité <span class="math inline">\(\beta\)</span> pour Madagascar.</strong> Les couleurs indiquent les changements d’assemblage d’espèces spatialement: les sites aux couleurs proches présentent des assemblages d’espèces proches. Deux gradients sont largements visibles sur cette carte: un gradient est-ouest lié à la topographie (chaîne de montagne nord-sud) et aux précipitations ainsi qu’un un gradient nord-sud associé à la latitude et à la saisonnalité.
 </p>
 </div>
-<p>En applicant ce même modèle à chaque groupe taxonomique, nous avons trouvé que (i) le pourcentage de variance expliquée par le modèle était généralement beaucoup plus élevé (entre 11% et 88%, Tab. 3) et que (ii) les facteurs explicants l’assemblage des communautés d’espèces variaient d’un groupe taxonomique à l’autre, le climat n’étant pas toujours le facteur le plus important (Tab. 3). Par exemple, nous avons confirmé les résultats obtenus par <span class="citation">Wilmé, Goodman, and Ganzhorn (2006)</span> pour les espèces de lémuriens. Pour ce groupe, ce sont les bassins versants qui expliquent en majorité l’assemblage des espèces (84% de déviance expliquée). Cela pourrait notamment s’expliquer par la difficulté qu’on les lémuriens à traverser les cours d’eau. A contrario, le climat explique une grande partie des assemblages d’espèces de reptiles et d’amphibiens, espèces poïkilothermes (animaux ayant une température corporelle qui varie avec celle de leur milieu) et des espèces de mammifères autres que les lémuriens. Pour d’autres groupes, comme les espèces d’arbres, les facteurs climatiques et les bassins versants semblent expliquer à part égale les assemblages d’espèces.</p>
+<p>En applicant ce même modèle à chaque groupe taxonomique, nous avons trouvé que (i) le pourcentage de variance expliquée par le modèle était généralement beaucoup plus élevé (entre 11% et 88%, Tab. <a href="rapport-dactivites-et-productions-scientifiques.html#tab:gdms">2</a>) et que (ii) les facteurs explicants l’assemblage des communautés d’espèces variaient d’un groupe taxonomique à l’autre, le climat n’étant pas toujours le facteur le plus important (Tab. <a href="rapport-dactivites-et-productions-scientifiques.html#tab:gdms">2</a>). Par exemple, nous avons confirmé les résultats obtenus par <span class="citation">Wilmé, Goodman, and Ganzhorn (2006)</span> pour les espèces de lémuriens. Pour ce groupe, ce sont les bassins versants qui expliquent en majorité l’assemblage des espèces (84% de déviance expliquée). Cela pourrait notamment s’expliquer par la difficulté qu’on les lémuriens à traverser les cours d’eau. A contrario, le climat explique une grande partie des assemblages d’espèces de reptiles et d’amphibiens, espèces poïkilothermes (animaux ayant une température corporelle qui varie avec celle de leur milieu) et des espèces de mammifères autres que les lémuriens. Pour d’autres groupes, comme les espèces d’arbres, les facteurs climatiques et les bassins versants semblent expliquer à part égale les assemblages d’espèces.</p>
 <p>Ainsi, on voit qu’il est difficile d’établir une carte des communautés d’espèces végétales et animales à Madagascar, les facteurs explicatifs de la distribution des communautés changeant d’un groupe à l’autre. Nous montrons également que lorsque l’on utilise des modèles de communautés construits à partir de GDM, basés sur indices de dissimilarités combinant toutes les espèces, il y a un risque d’obtenir un modèle très peu explicatif, alors que des modèles à l’échelle du groupe taxonomique sont bien meilleurs. Il serait ainsi nécessaire d’envisager (i) de croiser les cartes de biodiversité obtenues par groupe taxonomique, ou bien (ii) de travailler plutôt avec des modèles de distribution à l’échelle de l’espèce, ou encore (iii) d’utiliser d’autres types de modèles comme les “modèles joints” <span class="citation">(Warton et al. 2015)</span>, permettant de combiner des processus à l’échelle de l’espèce et des processus à l’échelle de la communauté.</p>
-<table style="width:71%;">
-<colgroup>
-<col width="34%" />
-<col width="9%" />
-<col width="6%" />
-<col width="9%" />
-<col width="9%" />
-</colgroup>
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:gdms">Table 2: </span><strong>Facteurs explicants l’assemblage des espèces par groupe taxonomique.</strong> Le tableau indique le pourcentage de déviance expliquée par chacun des modèles. Les modèles Clim n’incluent que des variables climatiques, les modèles WS n’incluent que les bassins versants (WS pour “watershed”) et les modèles C+WS incluent les deux types de facteurs. Le modèle Full inclue en plus des corrélations spatiales.
+</caption>
 <thead>
-<tr class="header">
-<th align="left">Groupes</th>
-<th align="right">Clim</th>
-<th align="right">WS</th>
-<th align="right">C+WS</th>
-<th align="right">Full</th>
+<tr>
+<th style="text-align:left;">
+Groupes
+</th>
+<th style="text-align:right;">
+Clim
+</th>
+<th style="text-align:right;">
+WS
+</th>
+<th style="text-align:right;">
+C+WS
+</th>
+<th style="text-align:right;">
+Full
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left"><strong>Plantes</strong></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<tr>
+<td style="text-align:left;">
+Plantes
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">Arbres</td>
-<td align="right">30</td>
-<td align="right">28</td>
-<td align="right">43</td>
-<td align="right">44</td>
+<tr>
+<td style="text-align:left;">
+Arbres
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:right;">
+44
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Tous</td>
-<td align="right">24</td>
-<td align="right">16</td>
-<td align="right">31</td>
-<td align="right">32</td>
+<tr>
+<td style="text-align:left;">
+Tous
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+31
+</td>
+<td style="text-align:right;">
+32
+</td>
 </tr>
-<tr class="even">
-<td align="left"><strong>Animauxs</strong></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<tr>
+<td style="text-align:left;">
+Animaux
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Lémuriens</td>
-<td align="right">56</td>
-<td align="right">84</td>
-<td align="right">87</td>
-<td align="right">88</td>
+<tr>
+<td style="text-align:left;">
+Lémuriens
+</td>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:right;">
+84
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:right;">
+88
+</td>
 </tr>
-<tr class="even">
-<td align="left">Autres mammifères</td>
-<td align="right">63</td>
-<td align="right">30</td>
-<td align="right">64</td>
-<td align="right">65</td>
+<tr>
+<td style="text-align:left;">
+Autres mammifères
+</td>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:right;">
+65
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Oiseaux</td>
-<td align="right">8</td>
-<td align="right">3</td>
-<td align="right">9</td>
-<td align="right">11</td>
+<tr>
+<td style="text-align:left;">
+Oiseaux
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+11
+</td>
 </tr>
-<tr class="even">
-<td align="left">Reptiles et Amphibiens</td>
-<td align="right">34</td>
-<td align="right">33</td>
-<td align="right">40</td>
-<td align="right">40</td>
+<tr>
+<td style="text-align:left;">
+Reptiles et Amphibiens
+</td>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:right;">
+33
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+40
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Invertébrés</td>
-<td align="right">9</td>
-<td align="right">3</td>
-<td align="right">9</td>
-<td align="right">11</td>
+<tr>
+<td style="text-align:left;">
+Invertébrés
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+11
+</td>
 </tr>
-<tr class="even">
-<td align="left">Tous</td>
-<td align="right">6</td>
-<td align="right">2</td>
-<td align="right">6</td>
-<td align="right">9</td>
+<tr>
+<td style="text-align:left;">
+Tous
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+9
+</td>
 </tr>
 </tbody>
 </table>
-<p>Table 3: <strong>Facteurs explicants l’assemblage des espèces par groupe taxonomique.</strong> Le tableau indique le pourcentage de déviance expliquée par chacun des modèles. Les modèles Clim n’incluent que des variables climatiques, les modèles WS n’incluent que les bassins versants (WS pour “watershed”) et les modèles C+WS incluent les deux types de facteurs. Le modèle Full inclue en plus des corrélations spatiales.</p>
 </div>
 <div id="soixante-ans-1953-2014-detude-de-la-deforestation-et-de-la-fragmentation-forestiere-a-madagascar-1" class="section level4">
 <h4>Soixante ans (1953-2014) d’étude de la déforestation et de la fragmentation forestière à Madagascar</h4>
@@ -472,7 +722,7 @@ Figure 9: <strong>Principales causes de la déforestation dans le Menabe central
 <p>Nous avons utilisé ce module pour estimer la probabilité spatiale de déforestation à l’échelle nationale à Madagascar, à une résolution fine de 30 m et pour la couverture forestière de l’année 2010 (Fig. <a href="rapport-dactivites-et-productions-scientifiques.html#fig:pred">10</a>). Cette démarche a fait l’objet d’un tutoriel où chacune des étape de modélisation est indiquée pas à pas. Cet tutoriel, disponible sous forme d’un notebook Jupyter est disponible à l’adresse suivante: <a href="https://ghislainv.github.io/deforestprob" class="uri">https://ghislainv.github.io/deforestprob</a>. Le tutoriel pourra notamment être utilisé pendant les ateliers de renforcement de capacité dans les deux prochaines années à venir.</p>
 
 <div class="figure" style="text-align: center"><span id="fig:pred"></span>
-<img src="figures/pred_binomial_iCAR.png" alt="Probabilité de déforestation pour les forêts de Madagascar. Couvert forestier de l’année 2010 (Vieilledent et al. 2017). La probabilité de déforestation est faible (vert) dans les zones reculées et au sein des aires protégées et augmente (rouge puis noir) avec la proximité des villes et des routes." width="10cm" />
+<img src="figures/pred_binomial_iCAR.png" alt="Probabilité de déforestation pour les forêts de Madagascar. Couvert forestier de l’année 2010 (Vieilledent et al. 2017). La probabilité de déforestation est faible (vert) dans les zones reculées et au sein des aires protégées et augmente (rouge puis noir) avec la proximité des villes et des routes." width="332" />
 <p class="caption">
 Figure 10: <strong>Probabilité de déforestation pour les forêts de Madagascar.</strong> Couvert forestier de l’année 2010 <span class="citation">(Vieilledent et al. 2017)</span>. La probabilité de déforestation est faible (vert) dans les zones reculées et au sein des aires protégées et augmente (rouge puis noir) avec la proximité des villes et des routes.
 </p>
@@ -533,15 +783,15 @@ Figure 12: <strong>Evolution (1990-2010) et prédiction (2010-2100) de la défor
 <div id="i.1.2.-dans-periodique-sans-comite-de-lecture." class="section level4">
 <h4>I.1.2. Dans périodique sans comité de lecture.</h4>
 </div>
-<div id="i.1.3.-rapports-diplomants-master-these" class="section level4">
-<h4>I.1.3. Rapports diplômants (Master, Thèse)</h4>
+<div id="i.1.3.-rapports-diplomants" class="section level4">
+<h4>I.1.3. Rapports diplômants</h4>
 <p>Grinand C. 2016. Suivi et modélisation des changements d’usage des terres et stocks de carbone dans les sols et les arbres dans le cadre de la REDD+ à Madagascar. Vers des mesures pertinentes localement et cohérentes à large échelle. <em>Thèse de doctorat en Écologie Fonctionnelle et Sciences Agronomiques.</em> Montpellier SupAgro. Ecole doctorale GAIA.</p>
 <p>Muniz-Tagliari M. 2015. Biogéographie et vulnérabilité au changement climatique des espèces de baobabs à Madagascar. <em>Master II Biologie Végétale Tropicale.</em> Université de Montpellier.</p>
 <p>Charra M. 2015. Mise en place d’une base de données et réalisation d’une carte de biodiversité faune/flore à Madagascar. <em>Master II Ecologie Biologie Evolution.</em> Université Paris-Sud XI, Orsay.</p>
 <p>Long R. 2014. Modélisation de la déforestation à Madagascar. <em>Master I Agronomie Générale</em>. AgroParisTech.</p>
 </div>
-<div id="i.1.4.-communications-courtes-dans-congres-symposiums-scientifiques-preciser-le-support-ecrit-poster-resume-ou-texte-integral." class="section level4">
-<h4>I.1.4. Communications courtes dans congrès / symposiums scientifiques (préciser le support écrit : poster, résumé ou texte intégral).</h4>
+<div id="i.1.4.-communications-courtes-dans-congres-symposiums-scientifiques" class="section level4">
+<h4>I.1.4. Communications courtes dans congrès / symposiums scientifiques</h4>
 <p>Vieilledent G., W. F. Laurance, S. Peedell, and F. Achard. The fate of tropical forests associated to the demographic explosion in Africa. Scennet 2016: international conference on Scenarios and Models of Biodiversity and Ecosystem Services in Support of Decision Making. Montpellier. Présentation orale.</p>
 <p>Grinand C., G. Vieilledent, T. Razafimbelo, J.-R. Rakotoarijaona, M. Nourtier M., and M. Bernoux. 2016. New tools and methodological framework to study spatial drivers of deforestation, degradation and regeneration and forecast possible futures in Madagascar. Scennet 2016: international conference on Scenarios and Models of Biodiversity and Ecosystem Services in Support of Decision Making. Montpellier. Présentation orale.</p>
 <p>Vieilledent G., O. Gardi, C. Grinand, C. Burren, M. Andriamanjato, C. Camara, C. J. Gardner, L. Glass, A. Rasolohery, H. Rakoto Ratsimba, V. Gond, J.-R. Rakotoarijaona. 2016. Bioclimatic envelope models predict a decrease in tropical forest carbon stocks with climate change in Madagascar. In : Tropical ecology and society reconciliating conservation and sustainable use of biodiversity. Program and abstracts. Plinio Sist (ed.), Stéphanie Carrière (ed.), Pia Parolin (ed.), Pierre-Michel Forget (ed.). ATBC. Storrs : ATBC, Résumé, p. 325. Montpellier. Présentation orale.</p>
@@ -571,7 +821,7 @@ I.2.7. Autres supports.</p>
 
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:livrables">Table 1: </span><strong>Livrables du projet BioSceneMada.</strong> Les livrables sont classés par catégories (“Bases de données”, “Cartes”, etc.). Les articles, disposant d’une section spécifique dans le rapport, n’ont pas été repris.
+<span id="tab:livrables">Table 3: </span><strong>Livrables du projet BioSceneMada.</strong> Les livrables sont classés par catégories (“Bases de données”, “Cartes”, etc.). Les articles, disposant d’une section spécifique dans le rapport, n’ont pas été repris.
 </caption>
 <thead>
 <tr>
@@ -738,7 +988,11 @@ Livré
 </div>
 <div id="personnes-ayant-participe-a-ce-projet" class="section level2">
 <h2><em>Personnes ayant participé à ce projet</em></h2>
-<table>
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:participants">Table 4: </span><strong>Liste des participants au projet par institution.</strong> Le statut des personnes ayant participé au projet en temps que stagiaire de Master ou thésard est indiqué dans la colonne de droite.
+</caption>
 <thead>
 <tr>
 <th style="text-align:left;">

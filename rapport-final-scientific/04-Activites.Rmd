@@ -52,7 +52,7 @@ Dans le cadre du projet BioSceneMada, nous avons développé le site internet Ma
 
 (ref:cap-pet) **Exemple de variable bioclimatique calculée: evapotranspiration potentielle (ETP) mensuelle actuelle pour Madagascar (mm).** Nous avons utilisé l'équation de Thornthwaite qui permet de calculer l'ETP à partir des températures moyennes mensuelles et de la durée moyenne du jour sur le mois.
 
-```{r pet, out.width="13cm", fig.cap="(ref:cap-pet)"}
+```{r pet, out.width="80%", fig.cap="(ref:cap-pet)"}
 # knitr::include_graphics("figures/pet.png")
 ```
 
@@ -76,23 +76,22 @@ knitr::include_graphics("figures/carbonmaps.png")
 
 #### Base de données de biodiversité à Madagascar
 
-Nous avons construit un jeu de données sur la biodiversité à Madagascar regroupant 300 000 observations (points de présence) pour 4969 espèces. Ces espèces sont réparties dans différents groupes taxonomiques (Plantes, Vertébrés, Invertébrés) et sont représentatives de la biodiversité à Madagascar (Tab. 2). Nous avons apporté une attention particulière à la qualité des données. Toutes les données ont été vérifiées du point de vue des coordonnées géographiques (issues de relevés GPS) et de la taxonomie. Pour la vérification de la taxonomie, nous nous sommes appuyés sur le package `taxize` disponible sous le logiciel `R`. Ce travail de compilation de données de biodiversité est sans précédent à Madagascar. Les précédentes études scientifiques sur la biodiversité à l'échelle nationale à Madagascar s'appuyait sur un nombre d'espèces < 2843 [@Allnutt2008; @Kremen2008]. Plusieurs institutions ont accepté de partager leur données de biodiversité dans le cadre du projet BioSceneMada et ont ainsi largement contribué à la réalisation de cette base de données. Ces données sont souvent issues d'un travail de prospection conséquent qui s'étalent sur plusieurs dizaines d'années.
+Nous avons construit un jeu de données sur la biodiversité à Madagascar regroupant 300 000 observations (points de présence) pour 4969 espèces. Ces espèces sont réparties dans différents groupes taxonomiques (Plantes, Vertébrés, Invertébrés) et sont représentatives de la biodiversité à Madagascar (Tab. \@ref(tab:species)). Nous avons apporté une attention particulière à la qualité des données. Toutes les données ont été vérifiées du point de vue des coordonnées géographiques (issues de relevés GPS) et de la taxonomie. Pour la vérification de la taxonomie, nous nous sommes appuyés sur le package `taxize` disponible sous le logiciel `R`. Ce travail de compilation de données de biodiversité est sans précédent à Madagascar. Les précédentes études scientifiques sur la biodiversité à l'échelle nationale à Madagascar s'appuyait sur un nombre d'espèces < 2843 [@Allnutt2008; @Kremen2008]. Plusieurs institutions ont accepté de partager leur données de biodiversité dans le cadre du projet BioSceneMada et ont ainsi largement contribué à la réalisation de cette base de données. Ces données sont souvent issues d'un travail de prospection conséquent qui s'étalent sur plusieurs dizaines d'années.
+
+(ref:cap-species) **Bases de données sur la biodiversité de Madagascar.** La base de données incluent des points de présence pour 4969 espèces réparties dans différents groupes taxonomiques. Ces espèces sont représentatives de la biodiversité à Madagascar.
 
 ```{r species, results="asis", echo=FALSE}
-library(pander)
 df.species <- read.table("tables/species.txt", header=TRUE, sep=";")
 names(df.species)[1] <- " "
-pandoc.table(df.species, justify=c("left","left","right","right","right"),
-             split.table=Inf)
+knitr::kable(df.species, caption="(ref:cap-species)", booktabs=TRUE, align="llrrr", linesep="") %>%
+  kable_styling(latex_options=c("hold_position","striped"))
 ```
-
-Table 2: **Bases de données sur la biodiversité de Madagascar.** La base de données incluent des points de présence pour 4969 espèces réparties dans différents groupes taxonomiques. Ces espèces sont représentatives de la biodiversité à Madagascar.
 
 #### Atlas de la biodiversité à Madagascar et de sa vulnérabilité au changement climatique
 
 Nous avons développé un script permettant de modéliser la niche climatique des espèces à partir de modèles d'ensemble [@Vieilledent2013a;@Araujo2007a]. Ce script utilise le package `biomod2` sous `R`. A partir de variables environnementales, incluant des variables climatiques (température moyenne annuelle, saisonnalité de la température, précipitations annuelles, déficit en eau, nombre de mois secs) et des variables physiques (radiation solaire, géologie) disponibles sur le site [MadaClim](https://madaclim.cirad.fr), il permet de prédire la probabilité de présence ainsi que l'aire de distribution présente et future des espèces à Madagascar. Les prédictions sont issues de plusieurs modèles statistiques (Maxent, GLM, GAM et Random Forest). L'approche par modèles d'ensemble permet de moyenner les prédictions faites par plusieurs modèles statistiques afin d'évaluer l'incertitude des prédictions et d'augmenter la robustesse de l'aire de distribution. Le script a été développé au cours du stage de Master II de Mario Muniz-Tagliari. L'idée est de pouvoir utiliser ce script et modéliser l'aire de distribution présente et future de l'ensemble des espèces constituant le jeu de données sur la biodiversité à Madagascar (4969 espèces). 
 
-Le script a été optimisé. Il peut être parrallélisé, c'est-à-dire envoyé sur les différents processeurs d'un serveur afin d'accélérer les calculs. Il permet également de créer un document pdf dynamique, réactualisable très facilement, où les photos, textes, figures et tableaux sont agencés de manière automatique pour chaque espèce (Fig. \@ref(fig:atlas)). La dernière version du script est disponible sur GitHub: <https://github.com/ghislainv/atlas>. Ce répertoire est privé pour le moment mais accessible avec le couple d'identifiants suivant sur la plateforme GitHub: `gvguest`/`gvguest!1`. L'objectif est d'obtenir au final un atlas de la biodiversité à Madagascar incluant (i) les points de présence des espèces, (ii) leur aire de distribution actuelle, (iii) la distribution future potentielle des espèces sous l'effet du changement climatique et une estimation de leur vulnérabilité au changement climatique.
+Le script a été optimisé. Il peut être parrallélisé, c'est-à-dire envoyé sur les différents processeurs d'un serveur afin d'accélérer les calculs. Il permet également de créer un document pdf dynamique, réactualisable très facilement, où les photos, textes, figures et tableaux sont agencés de manière automatique pour chaque espèce (Fig. \@ref(fig:atlas)). La dernière version du script est disponible sur GitHub: <https://github.com/ghislainv/atlas>. Ce répertoire, privé jusqu'à la publication de l'atlas, est accessible sur demande. L'objectif est d'obtenir au final un atlas de la biodiversité à Madagascar incluant (i) les points de présence des espèces, (ii) leur aire de distribution actuelle, (iii) la distribution future potentielle des espèces sous l'effet du changement climatique et une estimation de leur vulnérabilité au changement climatique.
 
 Un prototype de cet atlas a été réalisé pour les 7 espèces de baobab présentes à Madagascar. Le prototype de l'atlas est disponible [ici](https://bioscenemada.cirad.fr/FileTransfer/atlas.pdf).
 
@@ -110,22 +109,23 @@ En utilisant des modèles de communautés [@Ferrier2007], nous avons cherché à
 
 (ref:cap-GDM) **Carte de biodiversité $\beta$ pour Madagascar.** Les couleurs indiquent les changements d'assemblage d'espèces spatialement: les sites aux couleurs proches présentent des assemblages d'espèces proches. Deux gradients sont largements visibles sur cette carte: un gradient est-ouest lié à la topographie (chaîne de montagne nord-sud) et aux précipitations ainsi qu'un un gradient nord-sud associé à la latitude et à la saisonnalité.
 
-```{r GDM, out.width="8cm", fig.cap="(ref:cap-GDM)"}
+```{r GDM, ou.width="80%", fig.cap="(ref:cap-GDM)"}
 knitr::include_graphics("figures/GDM_map.png")
 ```
 
-En applicant ce même modèle à chaque groupe taxonomique, nous avons trouvé que (i) le pourcentage de variance expliquée par le modèle était généralement beaucoup plus élevé (entre 11% et 88%, Tab. 3) et que (ii) les facteurs explicants l'assemblage des communautés d'espèces variaient d'un groupe taxonomique à l'autre, le climat n'étant pas toujours le facteur le plus important (Tab. 3). Par exemple, nous avons confirmé les résultats obtenus par @Wilme2006 pour les espèces de lémuriens. Pour ce groupe, ce sont les bassins versants qui expliquent en majorité l'assemblage des espèces (84% de déviance expliquée). Cela pourrait notamment s'expliquer par la difficulté qu'on les lémuriens à traverser les cours d'eau. A contrario, le climat explique une grande partie des assemblages d'espèces de reptiles et d'amphibiens, espèces poïkilothermes (animaux ayant une température corporelle qui varie avec celle de leur milieu) et des espèces de mammifères autres que les lémuriens. Pour d'autres groupes, comme les espèces d'arbres, les facteurs climatiques et les bassins versants semblent expliquer à part égale les assemblages d'espèces.
+En applicant ce même modèle à chaque groupe taxonomique, nous avons trouvé que (i) le pourcentage de variance expliquée par le modèle était généralement beaucoup plus élevé (entre 11% et 88%, Tab. \@ref(tab:gdms)) et que (ii) les facteurs explicants l'assemblage des communautés d'espèces variaient d'un groupe taxonomique à l'autre, le climat n'étant pas toujours le facteur le plus important (Tab. \@ref(tab:gdms)). Par exemple, nous avons confirmé les résultats obtenus par @Wilme2006 pour les espèces de lémuriens. Pour ce groupe, ce sont les bassins versants qui expliquent en majorité l'assemblage des espèces (84% de déviance expliquée). Cela pourrait notamment s'expliquer par la difficulté qu'on les lémuriens à traverser les cours d'eau. A contrario, le climat explique une grande partie des assemblages d'espèces de reptiles et d'amphibiens, espèces poïkilothermes (animaux ayant une température corporelle qui varie avec celle de leur milieu) et des espèces de mammifères autres que les lémuriens. Pour d'autres groupes, comme les espèces d'arbres, les facteurs climatiques et les bassins versants semblent expliquer à part égale les assemblages d'espèces.
 
 Ainsi, on voit qu'il est difficile d'établir une carte des communautés d'espèces végétales et animales à Madagascar, les facteurs explicatifs de la distribution des communautés changeant d'un groupe à l'autre. Nous montrons également que lorsque l'on utilise des modèles de communautés construits à partir de GDM, basés sur indices de dissimilarités combinant toutes les espèces, il y a un risque d'obtenir un modèle très peu explicatif, alors que des modèles à l'échelle du groupe taxonomique sont bien meilleurs. Il serait ainsi nécessaire d'envisager (i) de croiser les cartes de biodiversité obtenues par groupe taxonomique, ou bien (ii) de travailler plutôt avec des modèles de distribution à l'échelle de l'espèce, ou encore (iii) d'utiliser d'autres types de modèles comme les "modèles joints" [@Warton2015], permettant de combiner des processus à l'échelle de l'espèce et des processus à l'échelle de la communauté.
 
+(ref:cap-gdms) **Facteurs explicants l'assemblage des espèces par groupe taxonomique.** Le tableau indique le pourcentage de déviance expliquée par chacun des modèles. Les modèles Clim n'incluent que des variables climatiques, les modèles WS n'incluent que les bassins versants (WS pour "watershed") et les modèles C+WS incluent les deux types de facteurs. Le modèle Full inclue en plus des corrélations spatiales.
+
 ```{r gdms, results="asis", echo=FALSE}
+options(knitr.kable.NA="")
 df.gdms <- read.table("tables/gdms.txt", header=TRUE, sep=";")
 names(df.gdms)[4] <- c("C+WS")
-pandoc.table(df.gdms, justify=c("left","right","right","right","right"),
-             split.table=Inf, missing=" ")
+knitr::kable(df.gdms, caption="(ref:cap-gdms)", booktabs=TRUE, align="lrrrr", linesep="") %>%
+  kable_styling(latex_options=c("hold_position","striped"))
 ```
-
-Table 3: **Facteurs explicants l'assemblage des espèces par groupe taxonomique.** Le tableau indique le pourcentage de déviance expliquée par chacun des modèles. Les modèles Clim n'incluent que des variables climatiques, les modèles WS n'incluent que les bassins versants (WS pour "watershed") et les modèles C+WS incluent les deux types de facteurs. Le modèle Full inclue en plus des corrélations spatiales.
 
 #### Soixante ans (1953-2014) d'étude de la déforestation et de la fragmentation forestière à Madagascar
 
@@ -161,7 +161,7 @@ Nous avons utilisé ce module pour estimer la probabilité spatiale de déforest
 
 (ref:cap-pred) **Probabilité de déforestation pour les forêts de Madagascar.** Couvert forestier de l'année 2010 [@Vieilledent2017]. La probabilité de déforestation est faible (vert) dans les zones reculées et au sein des aires protégées et augmente (rouge puis noir) avec la proximité des villes et des routes.
 
-```{r pred, out.width="10cm", fig.cap="(ref:cap-pred)"}
+```{r pred, fig.cap="(ref:cap-pred)"}
 knitr::include_graphics("figures/pred_binomial_iCAR.png")
 ```
 
@@ -227,7 +227,7 @@ Vieilledent G., 2016. MadaClim: a set of climatic and environmental spatial vari
 
 #### I.1.2. Dans périodique sans comité de lecture.
 
-#### I.1.3. Rapports diplômants (Master, Thèse)
+#### I.1.3. Rapports diplômants
 
 Grinand C. 2016. Suivi et modélisation des changements d'usage des terres et stocks de carbone dans les sols et les arbres dans le cadre de la REDD+ à Madagascar. Vers des mesures pertinentes localement et cohérentes à large échelle. _Thèse de doctorat en Écologie Fonctionnelle et Sciences Agronomiques._ Montpellier SupAgro. Ecole doctorale GAIA.
 
@@ -237,7 +237,7 @@ Charra M. 2015. Mise en place d'une base de données et réalisation d'une carte
 
 Long R. 2014. Modélisation de la déforestation à Madagascar. _Master I Agronomie Générale_. AgroParisTech.
 
-#### I.1.4. Communications courtes dans congrès / symposiums scientifiques (préciser le support écrit : poster, résumé ou texte intégral). 
+#### I.1.4. Communications courtes dans congrès / symposiums scientifiques 
 
 Vieilledent G., W. F. Laurance, S. Peedell, and F. Achard. The fate of tropical forests associated to the demographic explosion in Africa. Scennet 2016: international conference on Scenarios and Models of Biodiversity and Ecosystem Services in Support of Decision Making. Montpellier. Présentation orale.
 
@@ -277,7 +277,7 @@ I.2.7. Autres supports.
 ```{r livrables, results="asis", echo=FALSE}
 df.livrables <- read.table("tables/livrables.txt", header=TRUE, sep=";")
 # Kable
-knitr::kable(df.livrables, caption="(ref:cap-livrables)", booktabs=TRUE) %>%
+knitr::kable(df.livrables, caption="(ref:cap-livrables)", booktabs=TRUE, linesep="") %>%
   kable_styling(latex_options=c("hold_position","striped")) %>%
   column_spec(1, width="2cm") %>%
   column_spec(2, width="7cm") %>%
@@ -291,8 +291,12 @@ knitr::kable(df.livrables, caption="(ref:cap-livrables)", booktabs=TRUE) %>%
 # Personnes ayant participé à ce projet: chercheurs et enseignants chercheurs, post-docs, doctorants, ingénieurs
 ```
 
+(ref:cap-participants) **Liste des participants au projet par institution.** Le statut des personnes ayant participé au projet en temps que stagiaire de Master ou thésard est indiqué dans la colonne de droite.
+
 ```{r participants, results="asis", echo=FALSE}
 df.participants <- read.table("tables/participants.txt", header=TRUE, sep="\t")
 col <- c("Institut", "Nom", "Statut particulier")
-knitr::kable(df.participants, booktabs=TRUE, align="lll", col.names=col)
+knitr::kable(df.participants, booktabs=TRUE, align="lll", col.names=col,
+             caption="(ref:cap-participants)", linesep="") %>%
+  kable_styling(latex_options=c("hold_position","striped"))
 ```
