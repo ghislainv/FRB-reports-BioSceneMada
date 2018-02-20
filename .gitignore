@@ -4,10 +4,6 @@
 *.pdf
 !rapport-final-scientific/*.tex
 
-# Book
-rapport-final-scientific/_book
-rapport-final-scientific/libs
-
 # History files
 .Rhistory
 .Rapp.history

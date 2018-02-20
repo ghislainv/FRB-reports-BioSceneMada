@@ -272,14 +272,12 @@ I.2.7. Autres supports.
 # Tableau des livrables (tels qu'identifiés dans le projet soumis; avec livrables supplémentaires le cas échéant).
 ```
 
-(ref:cap-livrables) **Livrables du projet BioSceneMada.** Les livrables sont classés par catégories ("Bases de données", "Cartes", etc.). Les articles, disposant d'une section spécifiques dans le rapport, n'ont pas été repris.
+(ref:cap-livrables) **Livrables du projet BioSceneMada.** Les livrables sont classés par catégories ("Bases de données", "Cartes", etc.). Les articles, disposant d'une section spécifique dans le rapport, n'ont pas été repris.
 
 ```{r livrables, results="asis", echo=FALSE}
-library(knitr)
-library(kableExtra)
 df.livrables <- read.table("tables/livrables.txt", header=TRUE, sep=";")
 # Kable
-knitr::kable(df.livrables, caption="(ref:cap-livrables)", booktabs=TRUE, format="latex") %>%
+knitr::kable(df.livrables, caption="(ref:cap-livrables)", booktabs=TRUE, format="html") %>%
   kable_styling(latex_options=c("hold_position","striped")) %>%
   column_spec(1, width="2cm") %>%
   column_spec(2, width="7cm") %>%
@@ -294,7 +292,6 @@ knitr::kable(df.livrables, caption="(ref:cap-livrables)", booktabs=TRUE, format=
 ```
 
 ```{r participants, results="asis", echo=FALSE}
-library(knitr)
 df.participants <- read.table("tables/participants.txt", header=TRUE, sep="\t")
 col <- c("Institut", "Nom", "Statut particulier")
 knitr::kable(df.participants, booktabs=TRUE, align="lll", col.names=col)
