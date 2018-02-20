@@ -1,4 +1,4 @@
-# 3. Vos principaux résultats valorisés dans les publications scientifiques
+# 3. Principaux résultats valorisés dans les publications scientifiques
 
 ```{r comment3, echo=FALSE}
 # Un paragraphe de texte court (environ 500 caractères) par résultat marquant avec la référence de l'article.

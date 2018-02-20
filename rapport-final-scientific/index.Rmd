@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "`r params$set_title`"
 fontsize: 12pt
 output:
   bookdown::gitbook:
@@ -58,7 +58,7 @@ opts_chunk$set(echo=FALSE, cache=FALSE,
 # options(knitr.kable.NA="-")
 ```
 
-# 1. Description courte à publier
+# 1. Description courte
 
 ```{r comment1, echo=FALSE}
 # Un paragraphe de texte (environ 1000 caractères) sur votre projet, ainsi qu'au moins une photo libre de droits, pour publication sur le site de # la FRB, à destination d’un public large. La FRB se réserve le droit de modifier ce texte avant publication sur son site.
