@@ -9,5 +9,5 @@
 
 library(bookdown)
 setwd("rapport-final-scientific")
-bookdown::render_book("index.Rmd", output_format="pdf_document2", output_dir="../docs")
-bookdown::render_book("index.Rmd", output_format="gitbook", output_dir="../docs")
+bookdown::render_book("index.Rmd", output_format="pdf_document2")
+bookdown::render_book("index.Rmd", output_format="gitbook")

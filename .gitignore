@@ -2,6 +2,7 @@
 *.log
 *.tex
 *.pdf
+!docs/*.pdf
 !rapport-final-scientific/*.tex
 
 # History files

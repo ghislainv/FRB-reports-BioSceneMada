@@ -13,10 +13,6 @@ output:
     includes:
       in_header: header.tex
       before_body: doc_prefix.tex
-  # bookdown::html_book:
-  #  theme: united
-  #  number_sections: no
-  #  toc: yes
   bookdown::gitbook:
     number_sections: no
     split_by: chapter  
