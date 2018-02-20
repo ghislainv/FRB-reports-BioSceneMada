@@ -16,7 +16,7 @@ library(kableExtra)
 setwd("rapport-final-scientific")
 
 # Bookdown
-bookdown::render_book("index.Rmd", output_format="pdf_document2")
+bookdown::render_book("index.Rmd")
                       #output_file="report.Rmd", output_dir="../docs")
 bookdown::render_book("index.Rmd", output_format="gitbook")
                       #output_file="report.Rmd", output_dir="../docs")

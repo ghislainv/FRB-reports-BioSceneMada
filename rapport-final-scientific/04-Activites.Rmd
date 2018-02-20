@@ -277,7 +277,7 @@ I.2.7. Autres supports.
 ```{r livrables, results="asis", echo=FALSE}
 df.livrables <- read.table("tables/livrables.txt", header=TRUE, sep=";")
 # Kable
-knitr::kable(df.livrables, caption="(ref:cap-livrables)", booktabs=TRUE, format="html") %>%
+knitr::kable(df.livrables, caption="(ref:cap-livrables)", booktabs=TRUE) %>%
   kable_styling(latex_options=c("hold_position","striped")) %>%
   column_spec(1, width="2cm") %>%
   column_spec(2, width="7cm") %>%
