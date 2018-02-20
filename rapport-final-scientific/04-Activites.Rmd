@@ -64,7 +64,7 @@ knitr::include_graphics("figures/Anomalies.png")
 
 #### Carte de carbone forestier et vulnérabilité des forêts tropicales au changement climatique à Madagascar
 
-Dans le cadre du projet BioSceneMada, en utilisant les données climatiques précédemment calculées (<https://madaclim.cirad.fr>) et des données d'inventaires forestiers pour 1771 placettes réparties sur l'ensemble de Madagascar, nous avons démontré qu'il existait un lien fort entre climat et stocks de carbone forestiers. Ce lien est notamment déterminé par les caractéristiques architecturales (hauteur notamment) des espèces d'arbres présentes le long du gradient climatique à Madagascar (climat --> assemblage d'espèces --> stocks de carbone). Ainsi, les stocks de carbone sont en moyenne beaucoup plus faibles en forêt épineuse (17 Mg.ha$^{-1}$) qu'en forêt humide (150 Mg.ha$^{-1}$). Le modèle statistique intégrant la relation climat-stock de carbone a permis de produire une carte précise des stocks de carbone forestier à Madagascar à une résolution de 250 m. Cette carte pourra être utilisée par les instances gouvernementales à Madagascar ou les porteurs de projet REDD+ au niveau régional pour le calcul des émissions de CO2 associées à la déforestation. Cette carte ainsi que les données qui ont permis de l'obtenir sont disponibles sur le site du projet BioSceneMada (<https://bioscenemada.cirad.fr/carbonmaps>) ainsi que sur le serveur de données Dryad (doi: [10.5061/dryad.9ph68](http://doi.org/10.5061/dryad.9ph68)).
+Dans le cadre du projet BioSceneMada, en utilisant les données climatiques précédemment calculées (<https://madaclim.cirad.fr>) et des données d'inventaires forestiers pour 1771 placettes réparties sur l'ensemble de Madagascar, nous avons démontré qu'il existait un lien fort entre climat et stocks de carbone forestiers. Ce lien est notamment déterminé par les caractéristiques architecturales (hauteur notamment) des espèces d'arbres présentes le long du gradient climatique à Madagascar (climat $\rightarrow$ assemblage d'espèces $\rightarrow$ stocks de carbone). Ainsi, les stocks de carbone sont en moyenne beaucoup plus faibles en forêt épineuse (17 Mg.ha$^{-1}$) qu'en forêt humide (150 Mg.ha$^{-1}$). Le modèle statistique intégrant la relation climat-stock de carbone a permis de produire une carte précise des stocks de carbone forestier à Madagascar à une résolution de 250 m. Cette carte pourra être utilisée par les instances gouvernementales à Madagascar ou les porteurs de projet REDD+ au niveau régional pour le calcul des émissions de CO2 associées à la déforestation. Cette carte ainsi que les données qui ont permis de l'obtenir sont disponibles sur le site du projet BioSceneMada (<https://bioscenemada.cirad.fr/carbonmaps>) ainsi que sur le serveur de données Dryad (doi: [10.5061/dryad.9ph68](http://doi.org/10.5061/dryad.9ph68)).
 
 Concernant les scénarios d'évolution de la biodiversité et des stocks de carbone forestier, nous avons montré à l'aide de ce modèle que les changements climatiques devraient induire des modifications fortes des communautés forestières et en conséquence une diminution de -17% (7-24%) des stocks de carbone forestier à Madagascar à l'horizon 2100 par rapport à 2010 (Fig. \@ref(fig:carbonmaps)). Ces changements seront vraisemblablement plus forts pour la forêt humide de l'est (notamment autour de la péninsule de Masoala-Makira) que pour les forêts sèches et épineuses de l'ouest et du sud. En comparaison, un taux de déforestation constant de 0.5% par an conduirait à une perte de carbone forestier de l'ordre de 29% entre 2010 et 2100. L'impact potentiel des changements climatiques sur les émissions de CO2 n'est donc pas à négliger.
 
@@ -82,9 +82,13 @@ Nous avons construit un jeu de données sur la biodiversité à Madagascar regro
 
 ```{r species, results="asis", echo=FALSE}
 df.species <- read.table("tables/species.txt", header=TRUE, sep=";")
+df.species <- df.species[,-c(1)]
 names(df.species)[1] <- " "
 knitr::kable(df.species, caption="(ref:cap-species)", booktabs=TRUE, align="llrrr", linesep="") %>%
-  kable_styling(latex_options=c("hold_position","striped"))
+  kable_styling(latex_options=c("hold_position","striped"), full_width=FALSE, position="center") %>%
+  group_rows("Plantes", 1, 6) %>%
+  group_rows("Vertébrés", 7, 11) %>%
+  group_rows("Invertébrés", 12, 15)
 ```
 
 #### Atlas de la biodiversité à Madagascar et de sa vulnérabilité au changement climatique
@@ -109,7 +113,7 @@ En utilisant des modèles de communautés [@Ferrier2007], nous avons cherché à
 
 (ref:cap-GDM) **Carte de biodiversité $\beta$ pour Madagascar.** Les couleurs indiquent les changements d'assemblage d'espèces spatialement: les sites aux couleurs proches présentent des assemblages d'espèces proches. Deux gradients sont largements visibles sur cette carte: un gradient est-ouest lié à la topographie (chaîne de montagne nord-sud) et aux précipitations ainsi qu'un un gradient nord-sud associé à la latitude et à la saisonnalité.
 
-```{r GDM, ou.width="80%", fig.cap="(ref:cap-GDM)"}
+```{r GDM, out.width="40%", fig.cap="(ref:cap-GDM)"}
 knitr::include_graphics("figures/GDM_map.png")
 ```
 
@@ -120,11 +124,12 @@ Ainsi, on voit qu'il est difficile d'établir une carte des communautés d'espè
 (ref:cap-gdms) **Facteurs explicants l'assemblage des espèces par groupe taxonomique.** Le tableau indique le pourcentage de déviance expliquée par chacun des modèles. Les modèles Clim n'incluent que des variables climatiques, les modèles WS n'incluent que les bassins versants (WS pour "watershed") et les modèles C+WS incluent les deux types de facteurs. Le modèle Full inclue en plus des corrélations spatiales.
 
 ```{r gdms, results="asis", echo=FALSE}
-options(knitr.kable.NA="")
 df.gdms <- read.table("tables/gdms.txt", header=TRUE, sep=";")
-names(df.gdms)[4] <- c("C+WS")
+names(df.gdms) <- c("","Clim","WS","C+WS","Full")
 knitr::kable(df.gdms, caption="(ref:cap-gdms)", booktabs=TRUE, align="lrrrr", linesep="") %>%
-  kable_styling(latex_options=c("hold_position","striped"))
+  kable_styling(latex_options=c("hold_position", "striped"), full_width=FALSE, position="center") %>%
+  group_rows("Plantes", 1, 2) %>%
+  group_rows("Animaux", 3, 8)
 ```
 
 #### Soixante ans (1953-2014) d'étude de la déforestation et de la fragmentation forestière à Madagascar
@@ -278,7 +283,7 @@ I.2.7. Autres supports.
 df.livrables <- read.table("tables/livrables.txt", header=TRUE, sep=";")
 # Kable
 knitr::kable(df.livrables, caption="(ref:cap-livrables)", booktabs=TRUE, linesep="") %>%
-  kable_styling(latex_options=c("hold_position","striped")) %>%
+  kable_styling(latex_options=c("hold_position","striped"), full_width=FALSE, position="center") %>%
   column_spec(1, width="2cm") %>%
   column_spec(2, width="7cm") %>%
   column_spec(3, width="6cm")
@@ -298,5 +303,5 @@ df.participants <- read.table("tables/participants.txt", header=TRUE, sep="\t")
 col <- c("Institut", "Nom", "Statut particulier")
 knitr::kable(df.participants, booktabs=TRUE, align="lll", col.names=col,
              caption="(ref:cap-participants)", linesep="") %>%
-  kable_styling(latex_options=c("hold_position","striped"))
+  kable_styling(latex_options=c("hold_position","striped"), full_width=FALSE, position="center")
 ```
