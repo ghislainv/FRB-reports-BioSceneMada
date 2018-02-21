@@ -84,8 +84,9 @@ Nous avons construit un jeu de données sur la biodiversité à Madagascar regro
 df.species <- read.table("tables/species.txt", header=TRUE, sep=";")
 df.species <- df.species[,-c(1)]
 names(df.species)[1] <- " "
-knitr::kable(df.species, caption="(ref:cap-species)", booktabs=TRUE, align="llrrr", linesep="") %>%
-  kable_styling(latex_options=c("hold_position","striped"), full_width=FALSE, position="center") %>%
+v.align <- c(rep("l",2), rep("r",3))
+knitr::kable(df.species, caption="(ref:cap-species)", booktabs=TRUE, align=v.align, linesep="") %>%
+  kable_styling(latex_options=c("HOLD_position","striped"), full_width=FALSE, position="center") %>%
   group_rows("Plantes", 1, 6) %>%
   group_rows("Vertébrés", 7, 11) %>%
   group_rows("Invertébrés", 12, 15)
@@ -126,8 +127,9 @@ Ainsi, on voit qu'il est difficile d'établir une carte des communautés d'espè
 ```{r gdms, results="asis", echo=FALSE}
 df.gdms <- read.table("tables/gdms.txt", header=TRUE, sep=";")
 names(df.gdms) <- c("","Clim","WS","C+WS","Full")
-knitr::kable(df.gdms, caption="(ref:cap-gdms)", booktabs=TRUE, align="lrrrr", linesep="") %>%
-  kable_styling(latex_options=c("hold_position", "striped"), full_width=FALSE, position="center") %>%
+v.align <- c("l",rep("r",4))
+knitr::kable(df.gdms, caption="(ref:cap-gdms)", booktabs=TRUE, align=v.align, linesep="") %>%
+  kable_styling(latex_options=c("HOLD_position", "striped"), full_width=FALSE, position="center") %>%
   group_rows("Plantes", 1, 2) %>%
   group_rows("Animaux", 3, 8)
 ```
@@ -282,8 +284,8 @@ I.2.7. Autres supports.
 ```{r livrables, results="asis", echo=FALSE}
 df.livrables <- read.table("tables/livrables.txt", header=TRUE, sep=";")
 # Kable
-knitr::kable(df.livrables, caption="(ref:cap-livrables)", booktabs=TRUE, linesep="") %>%
-  kable_styling(latex_options=c("hold_position","striped"), full_width=FALSE, position="center") %>%
+knitr::kable(df.livrables, caption="(ref:cap-livrables)", align="lll", booktabs=TRUE, linesep="") %>%
+  kable_styling(latex_options=c("HOLD_position","striped"), full_width=FALSE, position="center") %>%
   column_spec(1, width="2cm") %>%
   column_spec(2, width="7cm") %>%
   column_spec(3, width="6cm")
@@ -303,5 +305,5 @@ df.participants <- read.table("tables/participants.txt", header=TRUE, sep="\t")
 col <- c("Institut", "Nom", "Statut particulier")
 knitr::kable(df.participants, booktabs=TRUE, align="lll", col.names=col,
              caption="(ref:cap-participants)", linesep="") %>%
-  kable_styling(latex_options=c("hold_position","striped"), full_width=FALSE, position="center")
+  kable_styling(latex_options=c("HOLD_position","striped"), full_width=FALSE, position="center")
 ```
