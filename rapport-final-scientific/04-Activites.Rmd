@@ -326,7 +326,6 @@ I.2.5. Rapports diplômants à caractère bibliographique (thèse vétérinaire.
 I.2.6. Conférences dans congrès ou symposium scientifique.
 I.2.7. Autres supports.
 
-\newpage
 ## _Tableau des livrables_
 
 ```{r comment6, echo=FALSE}
