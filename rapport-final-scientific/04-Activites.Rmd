@@ -145,6 +145,7 @@ knitr::kable(df.species, caption="(ref:cap-species)", booktabs=TRUE, align=vect.
   group_rows("Invertébrés", 12, 15)
 ```
 
+\newpage
 #### Atlas de la biodiversité à Madagascar et de sa vulnérabilité au changement climatique
 
 Nous avons développé un script permettant de modéliser la niche climatique des espèces à partir de modèles d'ensemble [@Vieilledent2013a;@Araujo2007a]. Ce script utilise le package `biomod2` sous `R`. A partir de variables environnementales, incluant des variables climatiques (température moyenne annuelle, saisonnalité de la température, précipitations annuelles, déficit en eau, nombre de mois secs) et des variables physiques (radiation solaire, géologie) disponibles sur le site [MadaClim](https://madaclim.cirad.fr), il permet de prédire la probabilité de présence ainsi que l'aire de distribution présente et future des espèces à Madagascar. Les prédictions sont issues de plusieurs modèles statistiques (Maxent, GLM, GAM et Random Forest). L'approche par modèles d'ensemble permet de moyenner les prédictions faites par plusieurs modèles statistiques afin d'évaluer l'incertitude des prédictions et d'augmenter la robustesse de l'aire de distribution. Le script a été développé au cours du stage de Master II de Mario Muniz-Tagliari. L'idée est de pouvoir utiliser ce script et modéliser l'aire de distribution présente et future de l'ensemble des espèces constituant le jeu de données sur la biodiversité à Madagascar (4969 espèces). 
