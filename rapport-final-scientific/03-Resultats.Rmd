@@ -72,7 +72,7 @@ Nous avons estimé la probabilité spatiale de déforestation à l'échelle nati
 
 _Références_
 
-Dezécache C., J.-M. Salles, G. Vieilledent, and B. Hérault. 2017. Moving forward socio-economically focused models of deforestation. _Global Change Biology_. 23(9): 3484-3500. https://doi.org.10.1111/gcb.13611.
+Dezécache C., J.-M. Salles, G. Vieilledent, and B. Hérault. 2017. Moving forward socio-economically focused models of deforestation. _Global Change Biology_. 23(9): 3484-3500. https://doi.org/10.1111/gcb.13611.
 
 Vieilledent G., and F. Achard. Including spatial-autocorrelation in deforestation model to obtain realistic deforestation projections at national or continental scales. in prep.
 

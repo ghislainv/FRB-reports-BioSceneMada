@@ -1,5 +1,7 @@
 ---
-title: "`r params$set_title`"
+title: "`r params$title`"
+author: "`r params$author`"
+date: "`r params$date`"
 fontsize: 12pt
 output:
   bookdown::gitbook:
@@ -41,6 +43,8 @@ output:
       before_body: doc_prefix.tex
 bibliography: bib/biblio.bib
 biblio-style: bib/jae.bst
+link-citations: yes
+csl: bib/journal-of-applied-ecology.csl
 ---
 
 ```{r options, echo=FALSE, results="hide"}
@@ -57,22 +61,16 @@ opts_chunk$set(echo=FALSE, cache=FALSE,
                tidy=FALSE)
 ```
 
-# 1. Description courte
-
-```{r comment1, echo=FALSE}
-# Un paragraphe de texte (environ 1000 caractères) sur votre projet, ainsi qu'au moins une photo libre de droits, pour publication sur le site de # la FRB, à destination d’un public large. La FRB se réserve le droit de modifier ce texte avant publication sur son site.
-```
-
-Madagascar est une île de l'océan indien qui s'est détachée de l'Afrique puis de l'Inde il y a plusieurs dizaines de millions d'années. La biodiversité y a évolué de façon isolée. Ainsi, près de 90% des espèces n'existent que sur l'île. Cette biodiversité est fortement menacée par les changements climatiques et la déforestation. Le projet BioSceneMada, en s'appuyant sur des modèles climatiques, écologiques et paysagers, se propose d'établir des scénarios d'évolution de la biodiversité à Madagascar sous l'effet conjoint du changement climatique et de la déforestation. Les cartes issues du projet permettent d'identifier les zones à risque de perte de biodiversité et de déforestation ainsi que les zones refuges pour la biodiversité. Ces cartes peuvent être utilisées afin d'agir efficacement pour la conservation des forêts et de la biodiversité à Madagascar, notamment en priorisant les actions de conservation sur des zones cibles, tout en s'appuyant sur le réseau d'aires protégées actuel.
-
-(ref:cap-baobab) **Population de baobabs de l'espèce _Adansonia suarezensis_ sur le site de la Montagne des Français au nord de Madagascar.** Cette espèce est fortement menacée par la perte d'habitat associée aux changements climatiques.
-
-```{r baobab, out.width="\\textwidth", fig.cap="(ref:cap-baobab)"}
-knitr::include_graphics("figures/Adansonia_suarezensis.jpg")
-```
+# Préface {-}
 
 (ref:cap-lemur) **Lémurien de l'espèce _Indri indri_ dans le parc national de Mantadia à l'est de Madagascar.** Cette espèce est fortement menacée par la perte d'habitat associée à la déforestation.
 
 ```{r lemur, out.width="\\textwidth", fig.cap="(ref:cap-lemur)"}
 knitr::include_graphics("figures/Indri_indri.jpg")
 ```
+
+```{r cc-license}
+knitr::include_graphics("figures/by-sa.png")
+```
+
+This report is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).

@@ -18,7 +18,7 @@ liée à l'explosion démographique. De plus, plusieurs indices de développemen
 
 Pour éviter la déforestation et atténuer les changements climatiques, Madagascar est en train de mettre en place le programme national REDD+ de Réduction des Emissions liées à la Déforestation et à la Dégradation des forêts. Plusieurs projets pilotes REDD+ ont été développés à Madagascar, principalement dans la forêt tropicale humide de la côte Est (voir par exemple le PHCF, "Programme Holistique de Conservation des Forêts", présenté dans @Vieilledent2013). Bien que le programme REDD+ soit principalement axé sur les émissions de carbone, le programme REDD+ national et les projets locaux devront intégrer des co-bénéfices pour la biodiversité. Pour le moment, peu d'information et d'outils sont disponibles pour évaluer l'impact des projets REDD+ en terme de conservation de la biodiversité.
 
-Pour préserver la biodiversité malgache, un travail remarquable a été réalisé depuis le cinquième congrès mondial sur les parcs de l'UICN (Union Internationale pour la Conservation de la Nature) tenu à Durban en 2003, afin de concevoir un réseau d'aires protégées intégrant les points chauds de biodiversité et les aires protégées existant à l'époque au niveau national [@Kremen2008]. Actuellement, il existe plus de 50 aires protégées à Madagascar divisées entre les réserves naturelles intégrales (catégorie I de l'UICN), les parcs nationaux (catégorie II de l'UICN) et les réserves spéciales (catégorie IV de l'UICN) [@Rabearivony2010]. Parmi ces aires protégées, beaucoup sont dans un statut temporaire ou en cours de création [@Rabearivony2010]. Le futur réseau d'aires protégées à Madagascar (SAPM, Système d'Aires Protégées à Madagascar) devrait couvrir plus de 10% du territoire nationale et intégrer une bonne partie des forêts naturelles subsitant à Madagascar. Dans le contexte d'un changement climatique anthropique rapide [@IPCC2007; @Loarie2009], il est très probable que de nombreuses espèces ne soient pas en mesure de s'adapter ni de coloniser de nouveaux habitats favorables d'un point de vue climatique [@Menendez2006]. Ceci s'explique en partie par une faible dispersion des espèces, rendue difficile par la disparition des animaux disperseurs [@Menendez2006; @Vieilledent2013a] et une perte d'habitat (associé à la déforestation) en dehors des aires protégées actuelles [@Vieilledent2013a]. Ainsi, les espèces devraient connaitre une contraction de leur aire de distribution actuelle [@Andriamasimanana2013; @Hannah2008; @Raxworthy2008; @Vieilledent2013a]. Par conséquence, la majeure partie de la biodiversité devrait se concentrer dans des zones refuge à l'intérieur des aires protégées. Identifier ces zones refuge est particulièrement important afin d'orienter les efforts de conservation sur des sites pertinents.
+Pour préserver la biodiversité malgache, un travail remarquable a été réalisé depuis le cinquième congrès mondial sur les parcs de l'UICN (Union Internationale pour la Conservation de la Nature) tenu à Durban en 2003, afin de concevoir un réseau d'aires protégées intégrant les points chauds de biodiversité et les aires protégées existant à l'époque au niveau national [@Kremen2008]. Actuellement, il existe plus de 50 aires protégées à Madagascar divisées entre les réserves naturelles intégrales (catégorie I de l'UICN), les parcs nationaux (catégorie II de l'UICN) et les réserves spéciales (catégorie IV de l'UICN) [@Rabearivony2010]. Parmi ces aires protégées, beaucoup sont dans un statut temporaire ou en cours de création [@Rabearivony2010]. Le future réseau d'aires protégées à Madagascar (SAPM, Système d'Aires Protégées à Madagascar) devrait couvrir plus de 10% du territoire nationale et intégrer une bonne partie des forêts naturelles subsitant à Madagascar. Dans le contexte d'un changement climatique anthropique rapide [@IPCC2014; @Loarie2009], il est très probable que de nombreuses espèces ne soient pas en mesure de s'adapter ni de coloniser de nouveaux habitats favorables d'un point de vue climatique [@Menendez2006]. Ceci s'explique en partie par une faible dispersion des espèces, rendue difficile par la disparition des animaux disperseurs [@Menendez2006; @Vieilledent2013a] et une perte d'habitat (associé à la déforestation) en dehors des aires protégées actuelles [@Vieilledent2013a]. Ainsi, les espèces devraient connaitre une contraction de leur aire de distribution actuelle [@Andriamasimanana2013; @Hannah2008; @Raxworthy2008; @Vieilledent2013a]. Par conséquence, la majeure partie de la biodiversité devrait se concentrer dans des zones refuge à l'intérieur des aires protégées. Identifier ces zones refuge est particulièrement important afin d'orienter les efforts de conservation sur des sites pertinents.
 
 ### Objectifs
 
@@ -26,7 +26,7 @@ L'objectif du projet BioSceneMada est de développer des scénarios d'évolution
 
 L'ensemble de ces scénarios sera spatialisé et les résultats seront principalement rendus sous forme de cartes. Les scénarios permettront notamment de proposer des stratégies d'aménagement du territoire les plus efficaces possibles en vue de la conservation de la biodiversité et s'apppuyant sur des résultats issus de la recherche scientifique. Par exemple, les efforts de conservation pourraient être concentrés soit sur les zones refuges de la biodiversité sous contrainte climatique, soit au contraire sur des zones importantes pour la conservation de la biodiversité mais qui risquent de disparaitre à cause de la déforestation.
 
-(ref:cap-schema) **Description schématique du projet.** Les modèles combinent des données d'inventaires, des données environnementales et des données démographiques pour évaluer l'impact futur des changements climatiques et de la déforestation sur la biodiversité à Madagascar. Les résultats sont utilisés pour une aide à la décision en aménagement du territoire et pour définir des stratégies de conservation efficaces.
+(ref:cap-schema) **Description schématique du projet.** Les modèles combinent des données d'inventaires, des données environnementales et des données démographiques pour évaluer l'impact future des changements climatiques et de la déforestation sur la biodiversité à Madagascar. Les résultats sont utilisés pour une aide à la décision en aménagement du territoire et pour définir des stratégies de conservation efficaces.
 
 ```{r schema, out.width="\\textwidth", fig.cap="(ref:cap-schema)"}
 knitr::include_graphics("figures/Scheme.png")
@@ -36,13 +36,66 @@ knitr::include_graphics("figures/Scheme.png")
 
 #### Modélisation de l'intensité de la déforestation
 
+Dans le prolongement des travaux de @Barnes1990, nous avons modélisé l'intensité de la déforestation ($D_{ij}$, en ha.an$^{-1}$) en fonction du couvert forestier existant ($F_i$, en ha) et de la taille de la population ($P_i$, nombre d'habitants). Le modèle intègre un effet aléatoire pays $b_j$ permettant de différencier le taux de déforestation moyen d'un pays à l'autre (Eq. \@ref(eq:intensity)). Afin d'estimer les paramètres de ce modèle, nous avons considéré les données pour l'ensemble des pays africains, y compris Madagascar. Les données de déforestation portent sur les périodes 1990-2000 et 2000-2010. Elles proviennent de différents instituts: le Global Forest Watch [@Hansen2013], le Centre Commun de Recherche de la Commission Européenne [@Achard2014] et la Food and Agriculture Organization [@FAO2015]. Les données de population proviennent des Nations Unies [@UN2015].
 
+\begin{equation}
+\begin{split}
+\log(D_{ij})=\beta_0+b_j+\beta_1\log(F_i)+\beta_2\log(P_i)+\varepsilon_i \\
+b_j \sim \mathcal{N}ormal(0,V_b) \\
+\varepsilon_i \sim \mathcal{N}ormal(0,\sigma^2)
+\end{split}
+(\#eq:intensity)
+\end{equation}
+
+Quelque soit le jeu de données considéré, nous avons estimé un effet significatif du couvert forestier (plus la ressource forestière est importante, plus les surfaces déforestées le sont) et de la population (plus la population est élevée, plus les surfaces déforestées le sont). L'équation \@ref(eq:intensity2) indique les valeurs des paramètres pour le modèle utilisant les données de @Achard2014. Les deux facteurs agissent de façon opposée avec le temps: la surface forestière tend à diminuer alors que la population tend à augmenter dans le future.
+
+\begin{equation}
+\log(D_i)=-10.284+0.568\log(F_i)+0.534\log(P_i)
+(\#eq:intensity2)
+\end{equation}
+
+Des scénarios d'évolution des surfaces déforestées dans le future, et de la perte de biodiversité associée, peuvent ainsi être établis par pays en prenant en compte les prévisions démographiques des Nations Unies [@UN2015].
 
 #### Modélisation spatialisée de la déforestation
 
+Afin d'identifier les zones à risque de déforestation, nous avons modélisé (Eq. \@ref(eq:proba)) la probabilité spatiale de déforestation ($\theta_{ij}$) en fonction de variables environnementales ($X_i$) décrivant l'accessibilité de la forêt (distance aux routes, villages et rivières, distance à la lisière de la forêt, topographie), son statut de protection (appartenance au réseau d'aires naturelles protégées) et son historique (distance à la déforestation passée). Ces variables, même si elles ont un effet qui est la plupart du temps significatif d'un point de vue statistique, expliquent une faible part de la déforestation. Ainsi, le modèle que nous avons utilisé intègre également des effets aléatoires spatiaux auto-corrélés ($\rho_j$) qui permettent de prendre en compte la variabilité spatiale résiduelle, non-expliquée par les facteurs environnementaux, et de l'estimer. 
+
+\begin{equation}
+\begin{split}
+D_{ij} \sim \mathcal{B}ernoulli(\theta_{ij}) \\
+\text{logit}(\theta_{ij})=X_i\beta+\rho_j \\
+\rho_j \sim \mathcal{N}ormal(\mu_j,V_{\rho} / n_j)
+\end{split}
+(\#eq:proba)
+\end{equation}
+
+Ce type de modèle, intégrant la variabilité régionale, permet de produire des cartes de probabilité de déforestation à une date donnée qui sont plus réalistes. La carte de probabilité de déforestation permet d'identifier les zones à fort risque de déforestation et d'obtenir des cartes de couvert forestier future en fonction de différents scénarios d'intensité de déforestation (avec croissance démographique, "business-as-usual" ou avec atténuation).
+
 #### Modélisation de la niche climatique des espèces
 
+Nous avons utilisé des modèles de distribution des espèces afin d'identifier la niche climatique des espèces et de prédire leur vulnérabilité au changement climatique. Cette approche s'appuie sur des modèles d'ensemble et sur les données de présence ($P_i$) des espèces. Plusieurs algorithmes statistiques sont utilisés pour estimer la niche climatique des espèces et les prédictions des modèles sont moyennées. Nous avons choisi quatre algorithmes selon un gradient de robustesse et de complexité: les modèles GLM (Generalized Linear Model), les modèles GAM (Generalized Additive Models), les modèles de classification par forêt aléatoire RandomForest et l'approche par maximum d'entropie MaxEnt. Tous ces modèles permettent d'estimer une probabilité de présence de l'espèce ($\delta_i$) en fonction de variables climatiques (Eq. \@ref(eq:SDM)).
+
+\begin{equation}
+\begin{split}
+P_i \sim \mathcal{B}ernoulli(\delta_i) \\
+\text{logit}(\delta_{i})=f(X_i)
+\end{split}
+(\#eq:SDM)
+\end{equation}
+
+En utilisant les scénarios et modèles climatiques du GIECC [-@IPCC2014], il est possible de prédire la probabilité de présence et l'aire de distribution future probable de chacune des espèces. Pour Madagascar, nous avons considéré les scénarios climatiques correspondant au RCP (Representative Concentration Pathway) 8.5 et au RCP 4.5 qui correspondent respectivement à un scénario pessimiste de croissance des émissions et à un scénario d'atténuation modérée des émissions de CO$_2$ sur le long terme. Concernant les modèles climatiques, trois modèles principaux, représentatif de la gamme des prédictions climatiques à Madagascar, seront sélectionnés: CCSM4 (modifications climatiques relativement faibles), GISS-E2-R (modifications climatiques moyennes) et HadGEM2-ES (modifications climatiques fortes).
+
 #### Modélisation de l'assemblage des espèces en communauté
+
+Nous avons cherché à identifier les facteurs environnementaux déterminants les assemblages d'espèces (biodiversité $\beta$) en utilisant des modèles de communauté. Les modèles de communautés que nous avons utilisés, appelés GDM (Generalized Dissimilarity Models), modélisent les changements d'espèces au sein de la communauté en fonction des gradients environnementaux en s'appuyant sur des indices de dissimilarités entre sites \citep{Ferrier2007}. Plus précisément, les GDM utilisent des GLM (Generalized Linear Models) pour modéliser des indices de Bray-Curtis observés $d_{ij}$ entre des paires de sites $i$ et $j$ en fonction de $n$ variables environnementales, de $x_1$ à $x_n$, via une fonction de lien exponentielle (Eq. \@ref(eq:GDM)). L'indice de dissimilarité $d_{ij}$ est exprimé en fonction du nombre $A$ d'espèces communes aux sites $i$ et $j$, du nombre $B$ d'espèces présentes uniquement au site $i$ et du nombre $C$ d'espèces présentes uniquement au site $j$ (Eq. \@ref(eq:GDM)).
+
+\begin{equation}
+    \text{ln}(1-d_{ij})=a_0 + \sum_{p=1}^{n} |f_p(x_{pi})-f_p(x_{pj})|
+    d_{ij}=1-2A/(2A+B+C)
+  (\#eq:GDM)
+\end{equation}
+
+En appliquant ce modèle à nos données de présence d'espèces à Madagascar, nous avons obtenu une première carte de la biodiversité $\beta$ à Madagascar. Les GDM peuvent être utilisés pour prédire les communautés les plus affectées par le changement climatique en se basant sur les scénarios climatiques du GIECC [-@IPCC2014].
 
 ### Principaux résultats
 
@@ -84,8 +137,8 @@ Nous avons construit un jeu de données sur la biodiversité à Madagascar regro
 df.species <- read.table("tables/species.txt", header=TRUE, sep=";")
 df.species <- df.species[,-c(1)]
 names(df.species)[1] <- " "
-v.align <- c(rep("l",2), rep("r",3))
-knitr::kable(df.species, caption="(ref:cap-species)", booktabs=TRUE, align=v.align, linesep="") %>%
+vect.align <- c(rep("l",2), rep("r",3))
+knitr::kable(df.species, caption="(ref:cap-species)", booktabs=TRUE, align=vect.align, linesep="") %>%
   kable_styling(latex_options=c("HOLD_position","striped"), full_width=FALSE, position="center") %>%
   group_rows("Plantes", 1, 6) %>%
   group_rows("Vertébrés", 7, 11) %>%
@@ -127,8 +180,8 @@ Ainsi, on voit qu'il est difficile d'établir une carte des communautés d'espè
 ```{r gdms, results="asis", echo=FALSE}
 df.gdms <- read.table("tables/gdms.txt", header=TRUE, sep=";")
 names(df.gdms) <- c("","Clim","WS","C+WS","Full")
-v.align <- c("l",rep("r",4))
-knitr::kable(df.gdms, caption="(ref:cap-gdms)", booktabs=TRUE, align=v.align, linesep="") %>%
+vect.align <- c("l",rep("r",4))
+knitr::kable(df.gdms, caption="(ref:cap-gdms)", booktabs=TRUE, align=vect.align, linesep="") %>%
   kable_styling(latex_options=c("HOLD_position", "striped"), full_width=FALSE, position="center") %>%
   group_rows("Plantes", 1, 2) %>%
   group_rows("Animaux", 3, 8)
@@ -172,7 +225,7 @@ Nous avons utilisé ce module pour estimer la probabilité spatiale de déforest
 knitr::include_graphics("figures/pred_binomial_iCAR.png")
 ```
 
-#### Cartes du couvert forestier futur à Madagascar
+#### Cartes du couvert forestier future à Madagascar
 
 A partir de la carte de probabilité de déforestation de 2010, en considérant une déforestation moyenne annuelle de 100 000 ha/an à l'échelle nationale sur la période 2010-2050, nous avons pu prédire les zones susceptibles d'être déforestées sur la période 2010-2050 et la couverture forestière probable à Madagascar en 2050 (Fig. \@ref(fig:fc2050)). Pour cela, nous calculons la surface forestière déforestée sur une période de 40 ans entre 2010 et 2050 (4 Mha) et nous attribuons la classe "non-forêt" aux pixels ayant la plus forte probabilité de déforestation jusqu'à obtenir une surface de 4 Mha. Les projections montrent une concentration des forêts dans les zones peu accessibles et situées en altitude dans le futur, notamment autour de la péninsule de Mosoala-Makira et dans le Corridor Ankeniheny-Zahamena (Fig. 8). Les aires protégées semblent relativement efficaces sur le court terme (horizon 2050) en contribuant à déplacer la déforestation sur des zones à plus faible biodiversité, en dehors des aires protégées. Par contre, si les taux de déforestation restent constants, la déforestation pénétrera au sein des aires protégées les plus accessibles sur le plus long terme (horizon 2100).
 
@@ -184,7 +237,7 @@ knitr::include_graphics("figures/forest_cover_2050.png")
 
 #### Modèles d'évolution de l'intensité de déforestation en Afrique et à Madagascar
 
-Afin de proposer des scénarios d'évolution de l'intensité de déforestation et du couvert forestier à Madagascar, il a fallu construire un modèle à l'échelle de l'Afrique afin de disposer d'un plus grand nombre de données et d'avoir un modèle plus robuste. Le modèle permet d'estimer le taux de  déforestation (en ha/an) pour l'ensemble des pays africains en prenant en compte le couvert forestier existant (en ha) et la taille de la population (en nombre d'habitants). Trois jeux de données ont été comparés pour la modélisation : (i) celui issu du rapport Global Forest Ressource Assessment (FRA) 2015 de la FAO [@FAO2015], (ii) celui issu du projet Trees du JRC [@Achard2014] et (iii) celui issu de Global Forest Watch [@Hansen2013]. Nous montrons que les données de déforestation du FRA ne peuvent pas être utilisées pour modéliser et prédire la déforestation ("outlier"). Les résultats permettent également de montrer que malgré les variations annuelles des taux de déforestation (associables aux marchés et aux politiques), la tendance sur le long terme est forte et qu'un simple modèle permet de reproduire fidèlement l'évolution du couvert forestier de 1990 à 2015 pour la plupart des pays africains. Ce modèle est utilisé pour prédire les tendances de déforestation pour les pays africains, selon un scénario de référence (ou scénario "business-as-usual"), en tenant compte des projections démographiques des Nations Unies jusqu'à l'horizon 2100. Pour Madagascar, on observerait une diminution de l'intensité de déforestation après 1950 liée à la transition démographique et à la réduction du couvert forestier disponible. Toutefois, les surfaces déforestées annuellement resteraient importantes (>75000 ha/an). Selon ce scénario, le couvert forestier diminuerait ainsi de plus de 50% entre 2000 et 2050 et de plus de 75% entre 2000 et 2100, pour atteindre environ 2 Mha en 2100 (Fig. \@ref(fig:intensity)). Ces scénarios d'évolution de l'intensité de déforestation intégrant la croissance démographique seront utilisés pour obtenir de nouvelles cartes du couvert forestier futur en 2050 et 2100.
+Afin de proposer des scénarios d'évolution de l'intensité de déforestation et du couvert forestier à Madagascar, il a fallu construire un modèle à l'échelle de l'Afrique afin de disposer d'un plus grand nombre de données et d'avoir un modèle plus robuste. Le modèle permet d'estimer le taux de  déforestation (en ha/an) pour l'ensemble des pays africains en prenant en compte le couvert forestier existant (en ha) et la taille de la population (en nombre d'habitants). Trois jeux de données ont été comparés pour la modélisation : (i) celui issu du rapport Global Forest Ressource Assessment (FRA) 2015 de la FAO [@FAO2015], (ii) celui issu du projet Trees du JRC [@Achard2014] et (iii) celui issu de Global Forest Watch [@Hansen2013]. Nous montrons que les données de déforestation du FRA ne peuvent pas être utilisées pour modéliser et prédire la déforestation ("outlier"). Les résultats permettent également de montrer que malgré les variations annuelles des taux de déforestation (associables aux marchés et aux politiques), la tendance sur le long terme est forte et qu'un simple modèle permet de reproduire fidèlement l'évolution du couvert forestier de 1990 à 2015 pour la plupart des pays africains. Ce modèle est utilisé pour prédire les tendances de déforestation pour les pays africains, selon un scénario de référence (ou scénario "business-as-usual"), en tenant compte des projections démographiques des Nations Unies jusqu'à l'horizon 2100. Pour Madagascar, on observerait une diminution de l'intensité de déforestation après 1950 liée à la transition démographique et à la réduction du couvert forestier disponible. Toutefois, les surfaces déforestées annuellement resteraient importantes (>75000 ha/an). Selon ce scénario, le couvert forestier diminuerait ainsi de plus de 50% entre 2000 et 2050 et de plus de 75% entre 2000 et 2100, pour atteindre environ 2 Mha en 2100 (Fig. \@ref(fig:intensity)). Ces scénarios d'évolution de l'intensité de déforestation intégrant la croissance démographique seront utilisés pour obtenir de nouvelles cartes du couvert forestier future en 2050 et 2100.
 
 (ref:cap-intensity) **Evolution (1990-2010) et prédiction (2010-2100) de la déforestation et du couvert forestier à Madagascar.** La figure de gauche montre l'évolution de la déforestation (en milliers d'hectares par an) et la figure de droite l'évolution du couvert forestier (en milliers d'hectares). Nous avons considéré trois jeux de données (FAO FRA, Achard et al. 2014 JRC TREES project, Global Forest Watch Hansen et al. 2013). Les projections prennent en compte la croissance démographique (données des Nations Unies, 2015 Revision of World Population Prospects).
 
@@ -283,12 +336,18 @@ I.2.7. Autres supports.
 
 ```{r livrables, results="asis", echo=FALSE}
 df.livrables <- read.table("tables/livrables.txt", header=TRUE, sep=";")
-# Kable
-knitr::kable(df.livrables, caption="(ref:cap-livrables)", align="lll", booktabs=TRUE, linesep="") %>%
+df.livrables <- df.livrables[,-c(1)]
+col <- c("","Commentaire")
+vect.align <- rep("l",2)
+knitr::kable(df.livrables, caption="(ref:cap-livrables)", align=vect.align, col.names=col, booktabs=TRUE, linesep="") %>%
   kable_styling(latex_options=c("HOLD_position","striped"), full_width=FALSE, position="center") %>%
-  column_spec(1, width="2cm") %>%
-  column_spec(2, width="7cm") %>%
-  column_spec(3, width="6cm")
+  group_rows("Bases de données",1,3) %>%
+  group_rows("Scénarios",4,5) %>%
+  group_rows("Cartes",6,11) %>%
+  group_rows("Atlas",12,12) %>%
+  group_rows("Logiciels",13,14) %>%
+  column_spec(1, width="8cm") %>%
+  column_spec(2, width="7cm")
 ```
 
 \newpage
@@ -301,9 +360,14 @@ knitr::kable(df.livrables, caption="(ref:cap-livrables)", align="lll", booktabs=
 (ref:cap-participants) **Liste des participants au projet par institution.** Le statut des personnes ayant participé au projet en temps que stagiaire de Master ou thésard est indiqué dans la colonne de droite.
 
 ```{r participants, results="asis", echo=FALSE}
-df.participants <- read.table("tables/participants.txt", header=TRUE, sep="\t")
-col <- c("Institut", "Nom", "Statut particulier")
-knitr::kable(df.participants, booktabs=TRUE, align="lll", col.names=col,
+df.participants <- read.table("tables/participants.txt", header=TRUE, sep=";")
+col <- c("", "Statut particulier")
+vect.align <- rep("l",2)
+knitr::kable(df.participants, booktabs=TRUE, align=vect.align, col.names=col,
              caption="(ref:cap-participants)", linesep="") %>%
-  kable_styling(latex_options=c("HOLD_position","striped"), full_width=FALSE, position="center")
+  kable_styling(latex_options=c("HOLD_position","striped"), full_width=FALSE, position="center") %>%
+  group_rows("ONE",1,3) %>%
+  group_rows("ETC Terra",4,8) %>%
+  group_rows("WCS",9,11) %>%
+  group_rows("Cirad",12,15)
 ```

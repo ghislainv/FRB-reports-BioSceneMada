@@ -1,16 +1,16 @@
-Institut	Nom	Statut particulier
-ONE	Jean-Roger Rakotoarijaona	
-	Rija Ranaivosoa	
-	Bruno Rakotoarivelo	
-ETC Terra	Clovis Grinand	Thésard
-	Fety A. Rakotomalala	
-	Marie Nourtier	
-	Frédérique Montfort	
-	Ruoyin Long	Stagiaire
-WCS	Andriamandimbisoa (Dimby) Razafimpahanana	
-	Thomas F. Allnutt	
-	Tsiky Rabetrano	
-Cirad	Ghislain Vieilledent	
-	Miguel Pedrono	
-	Mario Muniz-Tagliari	Stagiaire
-	Margaux Charra	Stagiaire
+Nom;Statut particulier
+Jean-Roger Rakotoarijaona;
+Rija Ranaivosoa;
+Bruno Rakotoarivelo;
+Clovis Grinand;Thésard
+Fety A. Rakotomalala;
+Marie Nourtier;
+Frédérique Montfort;
+Ruoyin Long;Stagiaire
+A. Dimby Razafimpahanana;
+Thomas F. Allnutt;
+Tsiky Rabetrano;
+Ghislain Vieilledent;
+Miguel Pedrono;
+Mario Muniz-Tagliari;Stagiaire
+Margaux Charra;Stagiaire
