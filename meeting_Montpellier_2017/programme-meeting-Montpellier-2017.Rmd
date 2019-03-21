@@ -155,3 +155,17 @@ Après-midi
 - 15:00 Bilan de l'atelier
 - 15:30 Fin de l'atelier
 - 16:25 Train pour Paris pour JRR et DR
+
+### Perspectives
+
+- stage jSDM: écrire proposition et diffuser. Voir R package possibles: boral, gjam, etc.
+- package R atlas portable sur Windows.
+- version compilée de 'deforestprob' pour Windows.
+- article Menabe, finaliser en incluant résultats Mikea.
+- missions Mada en sept/oct 2008 sur biodiv et début 2009 sur déforestation.
+
+Présentation de JB Féret:
+
+- hétérogénéité du paysage à Mada sur la base de données de biodiv.
+- Bray-Curtis et bandes optiques ?
+- Metrics to express variation: SD of NDVI, mean distance from centroid (MDC)
