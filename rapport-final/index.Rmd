@@ -1,0 +1,76 @@
+---
+title: "`r params$title`"
+author: "`r params$author`"
+date: "`r params$date`"
+fontsize: 12pt
+output:
+  bookdown::gitbook:
+    number_sections: no
+    split_by: chapter  
+    config:
+      toc:
+        collapse: section
+        scroll_highlight: yes
+        before: null
+        after: null
+      toolbar:
+        position: fixed
+      edit: null
+      download: ["pdf"]
+      search: yes
+      fontsettings:
+        theme: white
+        family: sans
+        size: 2
+      sharing:
+        facebook: yes
+        twitter: yes
+        google: no
+        linkedin: no
+        weibo: no
+        instapper: no
+        vk: no
+        all: ['facebook', 'google', 'twitter', 'linkedin', 'weibo', 'instapaper']  
+  bookdown::pdf_document2:
+    citation_package: natbib
+    fig_caption: yes
+    keep_tex: no
+    latex_engine: pdflatex
+    number_sections: no
+    toc: no
+    includes:
+      in_header: header.tex
+      before_body: doc_prefix.tex
+bibliography: bib/biblio.bib
+biblio-style: bib/jae.bst
+link-citations: yes
+csl: bib/journal-of-applied-ecology.csl
+---
+
+```{r options, echo=FALSE, results="hide"}
+library(bookdown)
+library(knitr)
+library(kableExtra)
+opts_chunk$set(echo=FALSE, cache=FALSE,
+               # results="hide", 
+               warning=FALSE,
+               message=FALSE, highlight=TRUE,
+               # fig.show="hide", size="small",
+               fig.align="center",
+               fig.pos="H",
+               tidy=FALSE)
+```
+
+# Préface {-}
+
+(ref:cap-lemur) **Lémurien de l'espèce _Indri indri_ dans le parc national de Mantadia à l'est de Madagascar.** Cette espèce est fortement menacée par la perte d'habitat associée à la déforestation.
+
+```{r lemur, out.width="\\textwidth", fig.cap="(ref:cap-lemur)"}
+knitr::include_graphics("figures/Indri_indri.jpg")
+```
+
+```{r cc-license}
+knitr::include_graphics("figures/by-sa.png")
+```
+
+This report is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).

@@ -1,0 +1,15 @@
+Catégorie;Description;Commentaire
+Bases de données;Variables climatiques et environnementales;Livré
+;Inventaires de 1771 placettes pour le stock de carbone forestier ;Livré
+;Base de données de biodiversité (points de présence pour 4969 espèces);Livré
+Scénarios;Scénarios de déforestation: tendance historique et effet de la démographie;Livré
+;Scénarios climatiques et biodiversité;Livré pour certains groupes taxonomiques. A généraliser à l’ensemble des espèces. 
+Cartes;Evolution (1953-2014) du couvert forestier (30m);Livré
+;Carte de probabilité de déforestation (30m);Livré
+;Couvert forestier futur en 2050 et 2100 (30m);Livré pour 2050. En cours pour 2100. Inclure le scénario avec croissance démographique.
+;Stocks de carbone forestier en 2010 et 2080 (250m);Livré
+;Cartes des habitats forestiers vulnérables/résilients aux changement climatiques;Livré
+;Carte de biodiversité beta (1km);Première version. Nouvelle approche à développer pour tenir compte des différences entre groupes taxonomiques.
+Atlas;Atlas de la biodiversité à Madagascar;Prototype livré. A généraliser à l’ensemble des espèces
+Logiciels;Module Python ‘deforestprob’ pour la modélisation de la déforestation;Livré
+;Script R ‘atlas’ pour la modélisation de la niche climatique des espèces ;Livré
