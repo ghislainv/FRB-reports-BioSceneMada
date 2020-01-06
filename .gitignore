@@ -4,6 +4,9 @@
 *.pdf
 !docs/*.pdf
 !rapport-final-scientific/*.tex
+!rapport-final/*.tex
+*.bib.bak
+*.bib.sav
 
 # History files
 .Rhistory
