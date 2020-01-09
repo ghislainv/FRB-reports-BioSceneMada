@@ -6,11 +6,16 @@ Clovis Grinand;Thésard
 Fety A. Rakotomalala;
 Marie Nourtier;
 Frédérique Montfort;
+Corentin Knoplock;Stagiaire
+Aurélien Colas;Stagiaire
 Ruoyin Long;Stagiaire
-A. Dimby Razafimpahanana;
+Andriamandimbisoa Razafimpahanana;
 Thomas F. Allnutt;
 Tsiky Rabetrano;
-Ghislain Vieilledent;
+Vololoniaina M. R. Sojandrimalala;Stagiaire
+Ghislain Vieilledent;Coordinator
 Miguel Pedrono;
+Jeanne Clément;Stagiaire
 Mario Muniz-Tagliari;Stagiaire
 Margaux Charra;Stagiaire
+

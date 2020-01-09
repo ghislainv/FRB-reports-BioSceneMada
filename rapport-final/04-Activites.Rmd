@@ -214,13 +214,13 @@ Afin de valider les cartes de déforestation historique obtenues sur la période
 knitr::include_graphics("figures/causes.jpg")
 ```
 
-#### Logiciel Python `deforestprob` pour le calcul de la probabilité spatiale de déforestation
+#### Logiciel Python `forestatrisk` pour le calcul de la probabilité spatiale de déforestation
 
-Un module Python a été développé afin de pouvoir estimer rapidement la probabilité spatiale de déforestation sur de grandes échelles spatiales (nationales ou continentales) avec une résolution fine (ex. 30 ou 10 m) et de prédire quelles seront les zones à risques de déforestation et les zones potentielles de refuge de la biodiversité dans le futur. Le modèle portant sur la localisation de la déforestation permet de prédire la probabilité spatiale de déforestation en fonction de variables environnementales décrivant l'accessibilité de la forêt (distance aux routes, villages et rivières, distance à la lisière de la forêt, topographie), son statut de protection (appartenance au réseau d'aires naturelles protégées) et son historique (distance à la déforestation passée). Le module Python est disponible sur le serveur Github: <https://github.com/ghislainv/deforestprob>.
+Un module Python a été développé afin de pouvoir estimer rapidement la probabilité spatiale de déforestation sur de grandes échelles spatiales (nationales ou continentales) avec une résolution fine (ex. 30 ou 10 m) et de prédire quelles seront les zones à risques de déforestation et les zones potentielles de refuge de la biodiversité dans le futur. Le modèle portant sur la localisation de la déforestation permet de prédire la probabilité spatiale de déforestation en fonction de variables environnementales décrivant l'accessibilité de la forêt (distance aux routes, villages et rivières, distance à la lisière de la forêt, topographie), son statut de protection (appartenance au réseau d'aires naturelles protégées) et son historique (distance à la déforestation passée). Le module Python est disponible sur le serveur Github: <https://github.com/ghislainv/forestatrisk>.
 
-Nous avons utilisé ce module pour estimer la probabilité spatiale de déforestation à l'échelle nationale à Madagascar, à une résolution fine de 30 m et pour la couverture forestière de l'année 2010 (Fig. \@ref(fig:pred)). Cette démarche a fait l'objet d'un tutoriel où chacune des étape de modélisation est indiquée pas à pas. Cet tutoriel, disponible sous forme d'un notebook Jupyter est disponible à l'adresse suivante: <https://ghislainv.github.io/deforestprob>. Le tutoriel pourra notamment être utilisé pendant les ateliers de renforcement de capacité dans les deux prochaines années à venir.
+Nous avons utilisé ce module pour estimer la probabilité spatiale de déforestation à l'échelle nationale à Madagascar, à une résolution fine de 30 m et pour la couverture forestière de l'année 2010 (Fig. \@ref(fig:pred)). Cette démarche a fait l'objet d'un tutoriel où chacune des étape de modélisation est indiquée pas à pas. Cet tutoriel, disponible sous forme d'un notebook Jupyter est disponible à l'adresse suivante: <https://ghislainv.github.io/forestatrisk>. Le tutoriel pourra notamment être utilisé pendant les ateliers de renforcement de capacité dans les deux prochaines années à venir.
 
-(ref:cap-pred) **Probabilité de déforestation pour les forêts de Madagascar.** Couvert forestier de l'année 2010 [@Vieilledent2017]. La probabilité de déforestation est faible (vert) dans les zones reculées et au sein des aires protégées et augmente (rouge puis noir) avec la proximité des villes et des routes.
+(ref:cap-pred) **Probabilité de déforestation pour les forêts de Madagascar.** Couvert forestier de l'année 2010 [@Vieilledent2018]. La probabilité de déforestation est faible (vert) dans les zones reculées et au sein des aires protégées et augmente (rouge puis noir) avec la proximité des villes et des routes.
 
 ```{r pred, fig.cap="(ref:cap-pred)"}
 knitr::include_graphics("figures/pred_binomial_iCAR.png")
@@ -258,72 +258,115 @@ knitr::include_graphics("figures/deforMada.png")
 
 ##### _Articles acceptés_
 
-Dezécache C., J.-M. Salles, G. Vieilledent, and B. Hérault. 2017. Moving forward socio-economically focused models of deforestation. _Global Change Biology_. 23(9): 3484-3500. https://doi.org.10.1111/gcb.13611.
+**Grinand C., Vieilledent G., T. Razafimbelo, J.-R. Rakotoarijaona, M. Nourtier, and M. Bernoux.** Landscape‐scale spatial modelling of deforestation, land degradation and regeneration using machine learning tools. _Land Degradation and Development_. in press. https://doi.org/10.1002/ldr.3526.
 
-El Hajj M., N. Baghdadi, I. Fayad, G. Vieilledent, J.-S. Bailly, and D. Ho Tong Minh. 2017. Interest of integrating spaceborne LiDAR data to improve the estimation of biomass in high biomass forested areas. _Remote Sensing_. 9(3). https://doi.org/10.3390/rs9030213.
+**Vieilledent G., C. Grinand, F. A. Rakotomalala, R. Ranaivosoa, J.-R. Rakotoarijaona, T. F. Allnutt, and F. Achard.** 2018. Combining global tree cover loss data with historical national forest-cover maps to look at six decades of deforestation and forest fragmentation in Madagascar. _Biological Conservation_. 222: 189-197. https://doi.org/10.1016/j.biocon.2018.04.008.
 
-Vieilledent G., O. Gardi, C. Grinand, C. Burren, M. Andriamanjato, C. Camara, C. J. Gardner, L. Glass, A. Rasolohery, H. Rakoto Ratsimba, V. Gond, and J.-R. Rakotoarijaona. 2016. Bioclimatic envelope models predict a decrease in tropical forest carbon stocks with climate change in Madagascar. _Journal of Ecology_. 104: 703-715. doi: https://doi.org/10.1111/1365-2745.12548.
+**Ho Tong Minh D., E. Ndikumana, G. Vieilledent, D. McKey and N. Baghdadi.** 2018. Potential value of combining ALOS PALSAR and Landsat-derived tree cover data for forest biomass retrieval in Madagascar. _Remote Sensing of Environment_. 213: 206-214. https://doi.org/10.1016/j.rse.2018.04.056.
+
+**Dezécache C., J.-M. Salles, G. Vieilledent, and B. Hérault.** 2017. Moving forward socio-economically focused models of deforestation. _Global Change Biology_. 23(9): 3484-3500. https://doi.org.10.1111/gcb.13611.
+
+**El Hajj M., N. Baghdadi, I. Fayad, G. Vieilledent, J.-S. Bailly, and D. Ho Tong Minh.** 2017. Interest of integrating spaceborne LiDAR data to improve the estimation of biomass in high biomass forested areas. _Remote Sensing_. 9(3). https://doi.org/10.3390/rs9030213.
+
+**Grinand C., G. Le Maire, G. Vieilledent, H. Razakamanarivo, T. Razafimbelo, and M. Bernoux.** 2017. Estimating temporal changes in soil carbon stocks at the ecoregional scale in Madagascar using remote-sensing. _International Journal of Applied Earth Observation and Geoinformation_. 54: 1-14. https://doi.org/10.1016/j.jag.2016.09.002.
+
+**Vieilledent G., O. Gardi, C. Grinand, C. Burren, M. Andriamanjato, C. Camara, C. J. Gardner, L. Glass, A. Rasolohery, H. Rakoto Ratsimba, V. Gond, and J.-R. Rakotoarijaona.** 2016. Bioclimatic envelope models predict a decrease in tropical forest carbon stocks with climate change in Madagascar. _Journal of Ecology_. 104: 703-715. doi: https://doi.org/10.1111/1365-2745.12548.
+
+Ces articles sont accessibles [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier:   
+`/Articles_scientifiques/Acceptes`.
 
 ##### _Articles en pre-print/review_
 
-Vieilledent G., C. Grinand, F. A. Rakotomalala, R. Ranaivosoa, J.-R. Rakotoarijaona, T. F. Allnutt, and F. Achard. Combining global tree cover loss data with historical national forest-cover maps to look at six decades of deforestation and forest fragmentation in Madagascar. _bioRxiv_. 147827. doi: https://doi.org/10.1101/147827. in review in _Biological Conservation_.
+**Vancutsem Ch., F. Achard, J.-F. Pekel, G. Vieilledent, S. Carboni, D. Simonetti, J. Gallego.** Long-term monitoring of the tropical moist forests dynamics reveals unprecedented deforestation rates. in review.
+
+**Muniz Tagliari M., P. Danthu, J.-M. Leong Pock Tsy, C. Cornu, J. Lenoir, V. Carvalho-Rocha, G. Vieilledent.** Not all species will migrate polewards as the climate warms: the case of the seven baobab species in Madagascar. pre-print.
+
+**Vieilledent G., M. Nourtier, C. Grinand, M. Pedrono, A. Clausen, T. Rabetrano, J.-R. Rakotoarijaona, B. Rakotoarivelo, F. A. Rakotomalala, L. Rakotomalala, A. Razafimpahanana, J. M. Ralison, and F. Achard.** It's not only poverty: uncontrolled global trade and bad governance are responsible for unceasing deforestation in Western Madagascar. pre-print.
+
+Ces articles sont accessibles [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier:   
+`/Articles_scientifiques/Preprint_inreview`.
 
 ##### _Articles en préparation_
 
-Charra M., S. Goodman, A. Raselimanana, M.-J. Raherilalao, V. Soarimalala, D. Lees, F. Rakotondrainibe, J. Moat, M. Andriamanjato, W. J. Baker, M. Rakotoarinivo, M. Vorontsova, T. Pearce, T. F. Allnutt, D. Razafimpahanana, M. Pedrono, J.-R. Rakotoarijaona and G. Vieilledent. Climate or watersheds ? Environmental factors determining species assemblages change according to the taxonomic group. in prep.
+**Vieilledent G., and F. Achard.** Including spatial-autocorrelation in deforestation model to obtain realistic deforestation projections at national or continental scales. in prep.
+  
+**Vieilledent G., W. F. Laurance, S. Peedell, and F. Achard.** The fate of tropical forests associated to the demographic explosion in Africa. in prep.
 
-Muniz-Tagliari M., J.-M. Leong Pock-Tsy, C. Cornu and P. Danthu and G. Vieilledent. Vulnerability of the seven Madagascar's baobab species to climate change. in prep.
+**Vieilledent G., Knoploch C., Colas A., C. Grinand** Madagascar biodiversity atlas: present species distribution and species vulnerability to climate change. in prep.
 
-Vieilledent G., M. Muniz-Tagliari, C. Grinand, F. Montfort. Atlas of the biodiversity of Madagascar: present species distribution and species vulnerability to climate change. in prep.
+**Vieilledent G.** MadaClim: a set of climatic and environmental spatial variables for Madagascar. Data paper. in prep.
 
-Vieilledent G., C. Grinand, M. Pedrono, T. Rabetrano, J.-R. Rakotoarijaona, B. Rakotoarivelo, F. A. Rakotomalala, L. Rakotomalala, A. Razafimpahanana, M. Nourtier, and F. Achard. It's not only poverty: uncontrolled global trade and bad governance are responsible for rampant deforestation in Western Madagascar. in prep.
+**Clément J., and G. Vieilledent.** jSM: an R package for Joint Species Distribution Modelling. in prep.
 
-Vieilledent G., and F. Achard. Including spatial-autocorrelation in deforestation model to obtain realistic deforestation projections at national or continental scales. in prep.
+**Vieilledent G., Ch. Vancutsem and F. Achard.** High-resolution spatial modelling and long-term forecasting of anthropogenic deforestation in the tropics. in prep.
 
-Grinand C., G. Vieilledent, T. Razafimbelo, J.-R. Rakotoarijaona, M. Nourtier M., and M. Bernoux. Land use change spatial modeling using machine learning tools and a global land cover change dataset. in prep.
-
-Vieilledent G., W. F. Laurance, S. Peedell, and F. Achard. The fate of tropical forests associated to the demographic explosion in Africa. in prep.
-
-Vieilledent G., 2016. MadaClim: a set of climatic and environmental spatial variables for Madagascar. Data paper. in prep.
+Ces articles sont en cours de rédaction. Ils intègrent des résultats qui peuvent être retrouvés dans les présentations orales effectuées lors de conférences (voir ci-dessous).
 
 #### I.1.2. Dans périodique sans comité de lecture.
 
 #### I.1.3. Rapports diplômants
 
-Grinand C. 2016. Suivi et modélisation des changements d'usage des terres et stocks de carbone dans les sols et les arbres dans le cadre de la REDD+ à Madagascar. Vers des mesures pertinentes localement et cohérentes à large échelle. _Thèse de doctorat en Écologie Fonctionnelle et Sciences Agronomiques._ Montpellier SupAgro. Ecole doctorale GAIA.
+**Clément J.** 2019. Développement d'un modèle joint de distribution des espèces pour la réalisation d'une carte de biodiversité à Madagascar. Rapport de Master. Sous la direction de G. Vieilledent. _Master II Mathématiques-Biostatistique_. Université de Montpellier. 43 p.
 
-Muniz-Tagliari M. 2015. Biogéographie et vulnérabilité au changement climatique des espèces de baobabs à Madagascar. _Master II Biologie Végétale Tropicale._ Université de Montpellier. 
+**Knoplock C.** 2019. The importance of deforestation and climate change in shaping lemurs' distributions and identifying their areas of climatic refuges. Rapport de Master. Sous la direction de C. Grinand et G. Vieilledent. _Master II Biodiversité, Ecologie et Evolution (BEE), finalité Gestion Adaptative de la Biodiversité (GABI)_. Université d'Aix Marseille. 43 p.
 
-Charra M. 2015. Mise en place d'une base de données et réalisation d'une carte de biodiversité faune/flore à Madagascar. _Master II Ecologie Biologie Evolution._ Université Paris-Sud XI, Orsay.
+**Colas A.** 2018. Creation of a biodiversity atlas for Madagascar with the `speciesatlas` R package. Rapport de Master. Sous la direction de C. Grinand et G. Vieilledent. _Master I Bioinformatique et modélisation (BIM)_. INSA Lyon. 29 p.
 
-Long R. 2014. Modélisation de la déforestation à Madagascar. _Master I Agronomie Générale_. AgroParisTech.
+**Grinand C.** 2016. Suivi et modélisation des changements d'usage des terres et stocks de carbone dans les sols et les arbres dans le cadre de la REDD+ à Madagascar. Vers des mesures pertinentes localement et cohérentes à large échelle. Manuscript de thèse. Sous la direction de M. Bernoux et G. Vieilledent. _Thèse de doctorat en Écologie Fonctionnelle et Sciences Agronomiques_. Montpellier SupAgro. Ecole doctorale GAIA. 245 p.
+
+**Muniz Tagliari M.** 2015. Biogéographie et vulnérabilité au changement climatique des espèces de baobabs à Madagascar. Rapport de Master. Sous la direction de G. Vieilledent. _Master II Biologie Végétale Tropicale (BVT)_. Université de Montpellier. 47 p.
+
+**Charra M.** 2015. Création d'une base de données et modélisation de la biodiversité à Madagascar. Rapport de Master. Sous la direction de G. Vieilledent. _Master II Ecologie, Biodiversité, Evolution (EBE), Préservation et Gestion Conservatoire des Ecosystèmes_. Université Paris-Saclay ENS, Université Paris Sud, AgroParisTech, Sorbonne Université, MNHN. 32 p.
+
+**Long R.** 2014. Modélisation de la déforestation à Madagascar. Rapport de Master. Sous la direction de C. Grinand. _Master I Agronomie Générale_. AgroParisTech. 51 p.
+
+Ces rapports sont disponibles [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier:    
+`/Rapports_diplomant_stages_theses`.
 
 #### I.1.4. Communications courtes dans congrès / symposiums scientifiques 
 
-Vieilledent G., W. F. Laurance, S. Peedell, and F. Achard. The fate of tropical forests associated to the demographic explosion in Africa. Scennet 2016: international conference on Scenarios and Models of Biodiversity and Ecosystem Services in Support of Decision Making. Montpellier. Présentation orale.
+**Vieilledent G.** 2019. Forest cover in Madagascar: Past, present and future (SYM/028). ATBC 2019: 56th annual meeting of the Association for Tropical Biology and Conservation. Antananarivo. Présentation orale.
 
-Grinand C., G. Vieilledent, T. Razafimbelo, J.-R. Rakotoarijaona, M. Nourtier M., and M. Bernoux. 2016. New tools and methodological framework to study spatial drivers of deforestation, degradation and regeneration and forecast possible futures in Madagascar. Scennet 2016: international conference on Scenarios and Models of Biodiversity and Ecosystem Services in Support of Decision Making. Montpellier. Présentation orale.
+**Vieilledent G., Ch. Vancutsem and F. Achard.** 2019. The fate of tropical forests: High resolution global maps of deforestation risk and future forest cover (GSOP/251). ATBC 2019: 56th annual meeting of the Association for Tropical Biology and Conservation. Antananarivo. Présentation orale.
 
-Vieilledent G., O. Gardi, C. Grinand, C. Burren, M. Andriamanjato, C. Camara, C. J. Gardner, L. Glass, A. Rasolohery, H. Rakoto Ratsimba, V. Gond, J.-R. Rakotoarijaona. 2016. Bioclimatic envelope models predict a decrease in tropical forest carbon stocks with climate change in Madagascar. In : Tropical ecology and society reconciliating conservation and sustainable use of biodiversity. Program and abstracts. Plinio Sist (ed.), Stéphanie Carrière (ed.), Pia Parolin (ed.), Pierre-Michel Forget (ed.). ATBC. Storrs : ATBC, Résumé, p. 325. Montpellier. Présentation orale. 
+**Knoploch C., C. Grinand, F. Montfort, G. Vieilledent**. 2019. A novel atlas representing Madagascar's biodiversity and potential refuges driven by deforestation and climate change (GSOP/158). ATBC 2019: 56th annual meeting of the Association for Tropical Biology and Conservation. Antananarivo. Présentation orale.
 
-Vieilledent G., M. Charra, M. Muniz-Tagliari, C. Grinand, T. F. Allnutt, D. Razafimpahanana, M. Pedrono, J.-R. Rakotoarijaona. 2015. Biodiversity Scenarios in Madagascar. ICCB-ECCB 2015: 27th International Congress for Conservation Biology - 4th European Congress for Conservation Biology conference. Montpellier. Poster.
+**Rakotomalala A. F., C. Grinand, L. Blanc, V. Gond, S. Rakotoniaina.** 2019. Using remote sensing techniques to monitor forest degradation and forest regeneration in Madagascar's tropical eastern rainforest (GSOP/117). ATBC 2019: 56th annual meeting of the Association for Tropical Biology and Conservation. Antananarivo. Présentation orale.
 
-Vieilledent G., T. F. Allnutt, C. Grinand, M. Pedrono, J.-R. Rakotoarijaona, and D. Razafimpahanana. BioSceneMada: Biodiversity scenarios under the effect of climate change and future deforestation in Madagascar. ICCB-ECCB 2015: 27th International Congress for Conservation Biology - 4th European Congress for Conservation Biology conference. Montpellier. Side-event FRB-FFEM. Présentation orale.
+**Vieilledent G., J. Clement.** 2019. Using Rcpp* packages for easy and fast Gibbs sampling MCMC from within R. UseR!2019 conference. Toulouse. France. Présentation orale.
 
-Vieilledent G., and F. Achard. 2018. Accounting for spatial autocorrelation in deforestation modelling. ISEC 2018: International Statistical Ecology Conference. St Andrews (UK). Présentation orale.
+**Vieilledent G., and F. Achard.** 2018. Accounting for spatial autocorrelation in deforestation modelling. ISEC 2018: International Statistical Ecology Conference. St Andrews (UK). Présentation orale.
+
+**Vieilledent G., W. F. Laurance, S. Peedell, and F. Achard.** 2016. The fate of tropical forests associated to the demographic explosion in Africa. Scennet 2016: international conference on Scenarios and Models of Biodiversity and Ecosystem Services in Support of Decision Making. Montpellier. Présentation orale.
+
+**Grinand C., G. Vieilledent, T. Razafimbelo, J.-R. Rakotoarijaona, M. Nourtier M., and M. Bernoux.** 2016. New tools and methodological framework to study spatial drivers of deforestation, degradation and regeneration and forecast possible futures in Madagascar. Scennet 2016: international conference on Scenarios and Models of Biodiversity and Ecosystem Services in Support of Decision Making. Montpellier. Présentation orale.
+
+**Vieilledent G., O. Gardi, C. Grinand, C. Burren, M. Andriamanjato, C. Camara, C. J. Gardner, L. Glass, A. Rasolohery, H. Rakoto Ratsimba, V. Gond, and J.-R. Rakotoarijaona.** 2016. Bioclimatic envelope models predict a decrease in tropical forest carbon stocks with climate change in Madagascar. In : Tropical ecology and society reconciliating conservation and sustainable use of biodiversity. Program and abstracts. Plinio Sist (ed.), Stéphanie Carrière (ed.), Pia Parolin (ed.), Pierre-Michel Forget (ed.). ATBC. Storrs : ATBC, Résumé, p. 325. Montpellier. Présentation orale. 
+
+**Vieilledent G., M. Charra, M. Muniz-Tagliari, C. Grinand, T. F. Allnutt, D. Razafimpahanana, M. Pedrono, and J.-R. Rakotoarijaona.** 2015. Biodiversity Scenarios in Madagascar. ICCB-ECCB 2015: 27th International Congress for Conservation Biology - 4th European Congress for Conservation Biology conference. Montpellier. Poster.
+
+**Vieilledent G., T. F. Allnutt, C. Grinand, M. Pedrono, J.-R. Rakotoarijaona, and D. Razafimpahanana.** BioSceneMada: Biodiversity scenarios under the effect of climate change and future deforestation in Madagascar. ICCB-ECCB 2015: 27th International Congress for Conservation Biology - 4th European Congress for Conservation Biology conference. Montpellier. Side-event FRB-FFEM. Présentation orale.
+
+Ces présentations sont disponibles [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier:    
+`/Presentations_orales_conferences`.
 
 #### I.1.5. Autres supports.
 
-Vieilledent G., C. Grinand, M. Pedrono, T. Rabetrano, J.-R. Rakotoarijaona, B. Rakotoarivelo, F. A. Rakotomalala and Dimby Razafimpahanana. 2016. Deforestation process in the dry forests of the Menabe region, western Madagascar. Mission report.
+**Vieilledent G.** 2016. Les forêts tropicales, des "puits de carbone" hautement vulnérables. in [The Conversation](https://theconversation.com/les-forets-tropicales-des-puits-de-carbone-hautement-vulnerables-54281), J. Gallé (Associate Editor).
+
+**Vieilledent G., C. Grinand, M. Pedrono, T. Rabetrano, J.-R. Rakotoarijaona, B. Rakotoarivelo, F. A. Rakotomalala and Dimby Razafimpahanana.** 2016. Deforestation process in the dry forests of the Menabe region, western Madagascar. Mission report.
+
+Ces présentations sont disponibles [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier:    
+`/Autres_supports`.
 
 ### I.2 - Synthèses scientifiques 
  
 I.2.1. Dans périodique à comité de lecture.    
-I.2.2. Dans périodique sans comité de lecture.
+I.2.2. Dans périodique sans comité de lecture.    
 I.2.3. Chapitre d'ouvrage.    
 I.2.4. Ouvrage entier.    
-I.2.5. Rapports diplômants à caractère bibliographique (thèse vétérinaire...).     
-I.2.6. Conférences dans congrès ou symposium scientifique.     
+I.2.5. Rapports diplômants à caractère bibliographique (thèse vétérinaire...).    
+I.2.6. Conférences dans congrès ou symposium scientifique.    
 I.2.7. Autres supports.
 
 ## _Tableau des livrables_
@@ -365,9 +408,9 @@ col <- c("", "Statut particulier")
 vect.align <- rep("l",2)
 knitr::kable(df.participants, booktabs=TRUE, align=vect.align, col.names=col,
              caption="(ref:cap-participants)", linesep="") %>%
-  kable_styling(latex_options=c("HOLD_position","striped"), full_width=FALSE, position="center") %>%
-  group_rows("ONE",1,3) %>%
-  group_rows("ETC Terra",4,8) %>%
-  group_rows("WCS",9,11) %>%
-  group_rows("Cirad",12,15)
+  pack_rows("ONE",1,3) %>%
+  pack_rows("ETC Terra",4,10) %>%
+  pack_rows("WCS",11,14) %>%
+  pack_rows("Cirad",15,19) %>%
+  kable_styling(latex_options=c("HOLD_position","striped"), full_width=FALSE, position="center")
 ```

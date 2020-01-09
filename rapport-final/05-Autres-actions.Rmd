@@ -10,37 +10,72 @@
 # Décrivez les activités de diffusion et transfert de connaissances qui ont été mises en oeuvre en  direction de décideurs, gestionnaires, acteurs socio-économiques (ou autre porteurs d'enjeux), en lien avec ce projet. Merci d'indiquer publications, sites internet, présentations, articles de presse, interviews, projets éducatifs, etc. liés à ces recherches.
 ```
 
+### Livre scolaire
+
+Les éditions Hachette ont repris les résultats de l'article Vieilledent et al. 2018 [10.1016/j.biocon.2018.04.008](https://doi.org/10.1016/j.biocon.2018.04.008) dans le manuel scolaire de 1ere, spécialité sciences de la vie et de la terre (SVT), afin d'illustrer le chapitre 11.2 "L'Homme, perturbateur des ecosystèmes" du thème 2 "Les enjeux contemporains de la planète" (p. 228):
+
+**Bellamy J.-M., G. Camus, M. Chaize et al.** 2019. Planète SVT 1ère, Livre élève, Ed. 2019. Hachette édition. EAN 9782013954921. Code Hachette 7688616. 400 p.
+
+L'extrait du manuel scolaire Hachette est disponible [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier:    
+`/Medias`.
+
 ### Sites internet
 
-Site web du projet BioSceneMada (https://bioscenemada.cirad.fr). Le site web permet d'avoir accès à toutes les informations et documents relatifs au déroulement du projet.
+Le site web du projet BioSceneMada (https://bioscenemada.cirad.fr) permet d'avoir accès à toutes les informations et documents relatifs au déroulement du projet.
 
 Le site web MadaClim (https://madaclim.cirad.fr), produit du projet BioSceneMada, regroupe les données climatiques et environnementales pour Madagascar.
 
-### Présentations
+Le site web https://ecology.ghislainv.fr/jSDM/ présente le package R `jSDM` pour la modélisation jointe de la distribution des espèces et la réalisation de cartes de bodiversité.
 
-M. Pedrono, T. F. Allnutt, C. Grinand, J.-R. Rakotoarijaona, D. Razafimpahanana, and G. Vieilledent. Séminaire du projet FED-FEDER POCT "Biodiversité de l'Océan Indien"", 2-5 juin 2015, Université de la Réunion, Saint Denis, Réunion, France. Public: Experts de la biodiversité de l'Océan Indien continental et étudiants en écologie de la Réunion.
+Le site web ForestAtRisk (https://forestatrisk.cirad.fr), produit du projet BioSceneMada, regroupe les outils et résultats associés à la modélisation et à la prévision de la déforestation.
 
-Vieilledent G., T. F. Allnutt, C. Grinand, M. Pedrono, J.-R. Rakotoarijaona, and D. Razafimpahanana. 2015. BioSceneMada: Scénarios de la biodiversité sous l'effet conjoint du changement climatique et de la déforestation à Madagascar. Journées FRB 2015, "Les scénarios de la biodiversité à l'heure du changement climatique". 2 octobre 2015. Paris. Public: Experts français de l'IPBES et du GIECC.
+La page du projet BioSceneMada sur le site de la FRB présente succinctement les premiers résultats scientifique du à l'issue de la première période de 3 ans: https://www.fondationbiodiversite.fr/la-frb-en-action/programmes-et-projets/modelisation-scenarios/bioscenemada/.
 
-M. Pedrono, T. F. Allnutt, C. Grinand, J.-R. Rakotoarijaona, D. Razafimpahanana, and G. Vieilledent. Journée d'animation scientifique du Dispositif en Partenariat "Forêt et Biodiversité", 25 septembre 2015, FOFIFA-DRFP, Antananarivo, Madagascar. Public: Chercheurs et étudiants malgaches, membres de la direction du CIRAD.
+### Interventions grand public
 
-M. Pedrono, T. F. Allnutt, C. Grinand, J.-R. Rakotoarijaona, D. Razafimpahanana, and G. Vieilledent. Table ronde de la Journée du Volontariat Français sur le thème "Regards croisés sur le changement climatique à Madagascar", 3 octobre 2015, Alliance Française, Antananarivo, Madagascar. Public: Grand public malgache et français, volontaires internationaux français, ONGs de développement.
+**Vieilledent G., T. F. Allnutt, C. Grinand, M. Pedrono, J.-R. Rakotoarijaona, and A. Razafimpahanana.** BioSceneMada : Scénarios d'évolution de la biodiversité sous l'effet conjoint du changement climatique et de la déforestation à Madagascar. Plénière du Comité d'Orientation Stratégique de la FRB. 13 Décembre 2018, Paris, France.
 
-M. Pedrono, T. F. Allnutt, C. Grinand, J.-R. Rakotoarijaona, D. Razafimpahanana, and G. Vieilledent. Série de conférences "COP21 à l'Institut Français de Madagascar: la recherche et le changement climatique", 25 novembre 2015, Alliance Française, Antananarivo, Madagascar. Public: Grand public malgache et français.
+**Lebastard A.M.** 2018. Fiche résultat du projet BioSceneMada. Programme "Modélisation et scénarios de la biodiversité". Projet 2013 (Afrique). https://www.fondationbiodiversite.fr/la-frb-en-action/programmes-et-projets/modelisation-scenarios/bioscenemada/
+
+**Hallosserie A., J.-F. Silvain, P.-E. Guillain, C. Krug.** Présentation et résultats de projets soutenus par la FRB en lien avec les conclusions principales du rapport de l'IPBES. Encart sur le projet BioSceneMada. Rencontres scientifiques de l'AllEnvi "Transitions climatique, énergétique et écologique pour une planète durable". 4 juillet 2016, Paris, France.
+
+**Vieilledent G., T. F. Allnutt, C. Grinand, M. Pedrono, J.-R. Rakotoarijaona, and A. Razafimpahanana.** BioSceneMada: biodiversity scenarios under the effect of climate change and future deforestation in Madagascar. Seminaire à Kew Royal Botanic Gardens, 21 juillet 2015, Londres, Royaume-Uni.
+
+**Pedrono M., T. F. Allnutt, C. Grinand, J.-R. Rakotoarijaona, D. Razafimpahanana, and G. Vieilledent.** Séminaire du projet FED-FEDER POCT "Biodiversité de l'Océan Indien"", 2-5 juin 2015, Université de la Réunion, Saint Denis, Réunion, France. Public: Experts de la biodiversité de l'Océan Indien continental et étudiants en écologie de la Réunion.
+
+**Vieilledent G., T. F. Allnutt, C. Grinand, M. Pedrono, J.-R. Rakotoarijaona, and D. Razafimpahanana.** 2015. BioSceneMada: Scénarios de la biodiversité sous l'effet conjoint du changement climatique et de la déforestation à Madagascar. Journées FRB 2015, "Les scénarios de la biodiversité à l'heure du changement climatique". 2 octobre 2015. Paris, France. Public: Experts français de l'IPBES et du GIECC.
+
+**Pedrono M., T. F. Allnutt, C. Grinand, J.-R. Rakotoarijaona, D. Razafimpahanana, and G. Vieilledent.** Journée d'animation scientifique du Dispositif en Partenariat "Forêt et Biodiversité", 25 septembre 2015, FOFIFA-DRFP, Antananarivo, Madagascar. Public: Chercheurs et étudiants malgaches, membres de la direction du CIRAD.
+
+**Pedrono M., T. F. Allnutt, C. Grinand, J.-R. Rakotoarijaona, D. Razafimpahanana, and G. Vieilledent.** Table ronde de la Journée du Volontariat Français sur le thème "Regards croisés sur le changement climatique à Madagascar", 3 octobre 2015, Alliance Française, Antananarivo, Madagascar. Public: Grand public malgache et français, volontaires internationaux français, ONGs de développement.
+
+**Pedrono M., T. F. Allnutt, C. Grinand, J.-R. Rakotoarijaona, D. Razafimpahanana, and G. Vieilledent.** Série de conférences "COP21 à l'Institut Français de Madagascar: la recherche et le changement climatique", 25 novembre 2015, Alliance Française, Antananarivo, Madagascar. Public: Grand public malgache et français.
+
+Pour les interventions s'appuyant sur des supports, ceux-ci sont disponibles [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier:    
+`/Interventions_grand_public`.
 
 ### Réunions avec les parties-prenantes
 
 Plusieurs réunions de présentation du projet et de présentation des résultats intermédiaires ont eu lieu à Antananarivo avec les parties-prenantes du projet. Etaient présents des membres du MEEF (Ministère de l'Environnement, de l'Ecologie et des Forêts, Direction Générale des Forêts et Direction Générale de l'Environnement), des ONG environnementales (WWF, WCS, CI, GERP, Asity Madagascar, Vahatra, Biotope, Blue Ventures), des chercheurs (Université d'Antananarivo, ESSA, IOGA, LRI, IRD, Cirad, RGB Kew, MBG), des membres d'institutions nationales (Madagascar National Park, Office National de l'Environnement, FOFIFA):
 
-- Réunion de présentation des avancées du projet, le 3 Juin 2016 à Antananarivo
-- Réunion de présentation des avancées du projet, le 2 Avril 2015 à Antananarivo
 - Réunion de lancement du projet, le 5 Mars 2014 à Antananarivo
+- Réunion de présentation des avancées du projet, le 2 Avril 2015 à Antananarivo
+- Réunion de présentation des avancées du projet, le 3 Juin 2016 à Antananarivo
+- Réunion de fin de projet, le 29 Juillet 2019 à Antananarivo
 
 (ref:cap-meeting) **Participants à la réunion de présentation des avancées du projet, le 3 Juin 2016 à Antananarivo.** Les participants incluent des chercheurs, étudiants, membres d'ONG environnementales ou institutions nationales.
 
 ```{r meeting, out.width="\\textwidth", fig.cap="(ref:cap-meeting)"}
 knitr::include_graphics("figures/Meeting.jpg")
 ```
+
+Deux autres ateliers de travail ont eu lieu avec les partenaires du projet à Montpellier:
+
+- Atelier de travail, du 28 et 29 Avril 2016 à Montpellier
+- Atelier de travail, du 27 Novembre au 01 Décembre 2017 à Montpellier
+
+Le programme de ces différentes réunions et ateliers est disponible [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier:    
+`/Reunions`.
 
 ### Articles de presse
 
@@ -67,19 +102,52 @@ _Base de données_: Le projet BioSceneMada a permis de constituter une base de d
 
 _Cartes_: Le projet BioSceneMada a permis d'obtenir différentes cartes utiles pour la gestion de la biodiversité. Sont disponibles: des cartes de couverts forestiers sur la période 1953-2014 à 30m de résolution, une première carte de la biodiversité $\beta$, une carte des habitats forestiers vulnérables/résilients aux changements climatiques, une carte de la couverture forestière probable en 2050 et 2100 indiquant les zones à risque de déforestation.
 
-_Atlas_: Un atlas de la biodiversité est en cours de réalisation. Un prototype de cet atlas a déjà été réalisé pour le groupe des baobabs à Madagascar. Cet atlas permettra d'obtenir l'aire de distribution actuelle des espèces ainsi qu'une estimation de leur vulnérabilité au changement climatique indiquant notamment les zones de refuge climatique pour ces espèces.
+_Atlas_: Un atlas de la biodiversité est en cours de réalisation. Un prototype de cet atlas a déjà été réalisé pour les espèces de baobabs et de lémuriens à Madagascar. Cet atlas permettra d'obtenir l'aire de distribution actuelle des espèces ainsi qu'une estimation de leur vulnérabilité au changement climatique indiquant notamment les zones de refuge climatique pour ces espèces.
 
-_Bibliothèques logicielles_: Deux principales bibliothèques logicielles à destination des gestionnaires ont été développées au cours du projet. Le module Python `deforestprob` permet la modélisation et la projection spatialisée de la déforestation dans le futur suivant différents scénarios d'intensité. Le script R `atlas` permet de modéliser la niche climatique des espèces et leur vulnérabilité au changement climatique en fonction des données de présence de l'espèce.
+_Bibliothèques logicielles_: Deux principales bibliothèques logicielles à destination des gestionnaires ont été développées au cours du projet. Le module Python `forestatrisk` permet la modélisation et la projection spatialisée de la déforestation dans le futur suivant différents scénarios d'intensité. Le package R `speciesatlas` permet de modéliser la niche climatique des espèces et leur vulnérabilité au changement climatique en fonction des données de présence de l'espèce.
 
-## Activités de suivi et projets de valorisation des résultats
+## Activités de suivi et valorisation des résultats
 
 ```{r comment10, echo=FALSE}
 # Quelles activités sont prévues (ou pourraient être prévues) pour amplifier l'utilisation ou la mise en application des résultats ?
 ```
 
-Sur 2018 et 2019, les deux dernières années du projet, il est prévu d'organiser des ateliers de renforcement de capacité à Madagascar. Ces ateliers seront à destination des étudiants, chercheurs, techniciens et gestionnaires à Madagascar travaillant sur la conservation de la biodiversité. Le renforcement de capacité porterait sur les approches et outils développés au cours du projet BioSceneMada, à savoir: (i) sur les modèles de déforestation et les scénarios de référence, (ii) sur les modèles de niche et l'atlas, (iii) sur les modèles de communauté et la réalisation de cartes de biodiversité.
+### Impact sur les politiques publiques
 
-Le premier atelier de renforcement de capacité sur les modèles de déforestation aura pour objectif de former les participants à l'utilisation du module Python `deforestprob`, servant à la spatialisation et la projection de la déforestation. Différents scénarios d'intensité de déforestation pourront être explorés. Les cartes de couvert forestier futur produites par les participants pourront être utilisées pour l'établissement du scénario de référence concernant les émissions de CO~2~ associées à la déforestation à Madagascar. Ce scénario à l'échelle nationale est important pour la mise en place du programme REDD+ ("Réduction des Emissions liées à la Déforestation et la Dégradation des forêts") à Madagascar. Les membres du "Bureau National REDD+" seront invités à participer à cette formation. L'objectif est que les participants puissent mettre à jour le scénario de référence au fur et à mesure de l'actualisation des cartes historiques de déforestation ou des variables explicatives en entrée (développement du réseau routier par exemple).
+_Plan national de reforestation à Madagascar_
+
+Le président malgache Andry Rajoelina a cité début 2019 dans une communication à son conseil des ministres l'étude Vieilledent et al. 2018 [10.1016/j.biocon.2018.04.008](https://doi.org/10.1016/j.biocon.2018.04.008) pour le lancement d'un plan national de reforestation et de conservation des forêts à Madagascar intitulé "Reverdir Madagascar". Il a officialisé le lancement de ce plan lors du One Planet Summit en mars 2019 à Nairobi (Fig. \@ref(fig:oneplanetsummit)). Ce plan consiste, entre autres, dans le reboisement de 40,000 ha de forêt par an et le déploiement de foyers à éthanol pour la cuisson des repas afin de limiter la consommation de bois énergie et la pression sur les forêts. 
+
+(ref:cap-oneplanetsummit) **Intervention du président malgache Andry Rajoelina lors One Planet Summit.** Le président reprend le chiffres de la déforestation publiés dans le cadre du projet BioSceneMada pour lancer son plan national de reforestation et de conservation des forêts à Madagascar.
+
+```{r oneplanetsummit, out.width="0.7\\textwidth", fig.cap="(ref:cap-oneplanetsummit)"}
+knitr::include_graphics("figures/Rajoelina.jpg")
+```
+
+L'intégralité de l'intervention du président malgache au One Planet Summit ainsi que la communication au Conseil des Ministres malgache sont disponibles [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier:    
+`/Medias`.  
+
+_Plan d'actions de l'Union Européenne sur la protection et la restoration des forêts_
+
+La méthodologie pour le calcul et la projection des taux de déforestation mise au point dans le cadre du projet BioSceneMada a été réutilisée dans le cadre d'un travail en partenariat avec le JRC (Centre Commun de Recherche de la Commission Européenne). Ce travail portait sur l'ensemble des forêts tropicales humides du globe (Fig. \@ref(fig:map-EU)). A la suite de ce travail, la Commission Européenne à lancé un plan d'actions pour la protection et la restoration des forêts (Fig. \@ref(fig:EU)). Ce plan d'actions passe notamment par la suppression de la déforestation importée dans les chaines de valeur (filière soja, huile de palme, ou cacao par exemple).
+
+(ref:cap-map-EU) **Prediction de l'année de disparition des forêts tropicales par pays sous un scénario "business-as-usual".**
+
+```{r map-EU, out.width="\\textwidth", fig.cap="(ref:cap-map-EU)"}
+knitr::include_graphics("figures/map-EU.png")
+```
+
+(ref:cap-EU) **Lancement d'un plan d'action de l'Union Européenne pour la protection et la restoration des forêts.** L'ensemble du communité de presse est disponible sur le site de la Commission Européenn (https://ec.europa.eu/commission/presscorner/detail/en/IP_19_4470) ou bien [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier `/Medias`.
+
+```{r EU, out.width="0.7\\textwidth", fig.cap="(ref:cap-EU)"}
+knitr::include_graphics("figures/EU.png")
+```
+
+### Renforcement de capacités
+
+Sur 2018 et 2019, les deux dernières années du projet, nous avons organisé trois ateliers de renforcement de capacité à Madagascar. Ces ateliers seront à destination des étudiants, chercheurs, techniciens et gestionnaires à Madagascar travaillant sur la conservation de la biodiversité. Le renforcement de capacité porterait sur les approches et outils développés au cours du projet BioSceneMada, à savoir: (i) sur les modèles de déforestation et les scénarios de référence, (ii) sur les modèles de niche et l'atlas, (iii) sur les modèles de communauté et la réalisation de cartes de biodiversité.
+
+Le premier atelier de renforcement de capacité sur les modèles de déforestation aura pour objectif de former les participants à l'utilisation du module Python `forestatrisk`, servant à la spatialisation et la projection de la déforestation. Différents scénarios d'intensité de déforestation pourront être explorés. Les cartes de couvert forestier futur produites par les participants pourront être utilisées pour l'établissement du scénario de référence concernant les émissions de CO~2~ associées à la déforestation à Madagascar. Ce scénario à l'échelle nationale est important pour la mise en place du programme REDD+ ("Réduction des Emissions liées à la Déforestation et la Dégradation des forêts") à Madagascar. Les membres du "Bureau National REDD+" seront invités à participer à cette formation. L'objectif est que les participants puissent mettre à jour le scénario de référence au fur et à mesure de l'actualisation des cartes historiques de déforestation ou des variables explicatives en entrée (développement du réseau routier par exemple).
 
 Un second atelier de renforcement de capacité sera organisé sur les modèles de niche climatique. Ce second atelier aura pour objectif de former les participants à l'utilisation du script R permettant l'obtention des fiches par espèce constituant l'atlas de la biodiversité à Madagascar. L'objectif est que les participants puissent mettre à jour les fiches espèces et l'atlas au fur et à mesure de l'actualisation des données de présence. Ces fiches peuvent être utilisées afin d'identifier les espèces présentes sur un territoire (une aire protégée par exemple) et d'estimer la vulnérabilité de ces espèces au changement climatique afin d'entreprendre d'éventuelles actions de conservation. Ces actions de conservation peuvent inclure des actions de protection supplémentaires pour certaines zones refuges de la biodiversité ou de la restauration d'habitat. Il nous semble que ces outils seraient particulièrement utiles aux gestionnaires d'aires protégées à Madagascar. Les gestionnaires d'aires protégées comme Madagascar National Park seront invités à participer à cet atelier. L'ONE est également demandeur de ces outils afin de pouvoir obtenir des listes de présence d'espèces sur une zone donnée pour les études d'impact et les autorisations d'exploitation des ressources naturelles notamment.
 
