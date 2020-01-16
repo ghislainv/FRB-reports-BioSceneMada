@@ -30,7 +30,7 @@ Grinand C., G. Le Maire, G. Vieilledent, H. Razakamanarivo, T. Razafimbelo, and 
 
 ## Base de données de biodiversité à Madagascar
 
-Nous avons construit un jeu de données sur la biodiversité à Madagascar regroupant 300 000 observations (points de présence) pour 4969 espèces. Ces espèces sont réparties dans différents groupes taxonomiques (Plantes, Vertébrés, Invertébrés) et sont représentatives de la biodiversité à Madagascar. Ces données, provenant de différents instituts, sont issues d'un travail de prospection conséquent qui s'étalent sur plusieurs dizaines d'années. L'acquisition de ces nouvelles données ont permis d'enrichir la base de données REBIOMA (Réseau de la Biodiversité de Madagacar, http://rebioma.net) hébergée par le WCS, partenaire du projet BioSceneMada.
+Nous avons construit un jeu de données sur la biodiversité à Madagascar regroupant 300 000 observations (points de présence) pour 4969 espèces. Ces espèces sont réparties dans différents groupes taxonomiques (Plantes, Vertébrés, Invertébrés) et sont représentatives de la biodiversité à Madagascar. Ces données, provenant de différents instituts, sont issues d'un travail de prospection conséquent qui s'étalent sur plusieurs dizaines d'années. L'acquisition de ces nouvelles données ont permis d'enrichir la base de données REBIOMA (Réseau de la Biodiversité de Madagacar, http://data.rebioma.net) hébergée par le WCS, partenaire du projet BioSceneMada.
 
 _Référence:_
 
