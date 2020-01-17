@@ -19,7 +19,7 @@ Concernant la base de données de biodiversité, les données qu'elle inclue pro
 
 ## Scripts informatiques
 
-La plupart des scripts informatiques ayant servi à l'obtention des résultats sont également mis à la disposition de la communauté scientifique et des gestionnaires. L'outil utilisé pour le partage du code est la plateforme GitHub. Comme pour les données, d'autres répertoires seront créés et rendus publiques au fur et à mesure de la publication des articles en préparation.
+La plupart des scripts informatiques ayant servi à l'obtention des résultats sont également mis à la disposition de la communauté scientifique et des gestionnaires. L'outil utilisé pour le partage du code est la plateforme GitHub. Comme pour les données, d'autres répertoires seront créés et rendus publics au fur et à mesure de la publication des articles en préparation.
 
 - Code pour les données climatiques et environnementales: https://github.com/ghislainv/madaclim
 - Code du module Python `forestatrisk`: https://github.com/ghislainv/forestatrisk

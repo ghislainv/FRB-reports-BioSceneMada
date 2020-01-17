@@ -12,7 +12,7 @@
 
 ### Livre scolaire
 
-Les éditions Hachette ont repris les résultats de l'article Vieilledent et al. 2018 [10.1016/j.biocon.2018.04.008](https://doi.org/10.1016/j.biocon.2018.04.008) dans le manuel scolaire de 1ere, spécialité sciences de la vie et de la terre (SVT), afin d'illustrer le chapitre 11.2 "L'Homme, perturbateur des ecosystèmes" du thème 2 "Les enjeux contemporains de la planète" (p. 228):
+Les éditions Hachette ont repris les résultats de l'article Vieilledent et al. 2018 [10.1016/j.biocon.2018.04.008](https://doi.org/10.1016/j.biocon.2018.04.008) dans le manuel scolaire de 1ère, spécialité sciences de la vie et de la terre (SVT), afin d'illustrer le chapitre 11.2 "L'Homme, perturbateur des écosystèmes" du thème 2 "Les enjeux contemporains de la planète" (p. 228):
 
 **Bellamy J.-M., G. Camus, M. Chaize et al.** 2019. Planète SVT 1ère, Livre élève, Ed. 2019. Hachette édition. EAN 9782013954921. Code Hachette 7688616. 400 p.
 
@@ -25,7 +25,7 @@ Plusieurs sites internet ont été créés dans le cadre du projet afin de perme
 
 - Site web BioSceneMada (https://bioscenemada.cirad.fr)! il permet d'avoir accès à toutes les informations et documents relatifs au déroulement du projet.
 - Site web MadaClim (https://madaclim.cirad.fr): produit du projet BioSceneMada, il regroupe les données climatiques et environnementales pour Madagascar.
-- Site web jSDM (https://ecology.ghislainv.fr/jSDM/): il présente le package R `jSDM` pour la modélisation jointe de la distribution des espèces et la réalisation de cartes de bodiversité.
+- Site web jSDM (https://ecology.ghislainv.fr/jSDM/): il présente le package R `jSDM` pour la modélisation jointe de la distribution des espèces et la réalisation de cartes de biodiversité.
 - Site web ForestAtRisk (https://forestatrisk.cirad.fr): produit du projet BioSceneMada, il regroupe les outils et résultats associés à la modélisation et à la prévision de la déforestation.
 - Page du projet BioSceneMada sur le [site web de la FRB](https://www.fondationbiodiversite.fr/la-frb-en-action/programmes-et-projets/modelisation-scenarios/bioscenemada/): elle présente succinctement les premiers résultats scientifique à l'issue de la première période de 3 ans.
 
@@ -37,7 +37,7 @@ Plusieurs sites internet ont été créés dans le cadre du projet afin de perme
 
 **Hallosserie A., J.-F. Silvain, P.-E. Guillain, C. Krug.** Présentation et résultats de projets soutenus par la FRB en lien avec les conclusions principales du rapport de l'IPBES. Encart sur le projet BioSceneMada. Rencontres scientifiques de l'AllEnvi "Transitions climatique, énergétique et écologique pour une planète durable". 4 juillet 2016, Paris, France.
 
-**Vieilledent G., T. F. Allnutt, C. Grinand, M. Pedrono, J.-R. Rakotoarijaona, and A. Razafimpahanana.** BioSceneMada: biodiversity scenarios under the effect of climate change and future deforestation in Madagascar. Seminaire à Kew Royal Botanic Gardens, 21 juillet 2015, Londres, Royaume-Uni.
+**Vieilledent G., T. F. Allnutt, C. Grinand, M. Pedrono, J.-R. Rakotoarijaona, and A. Razafimpahanana.** BioSceneMada: biodiversity scenarios under the effect of climate change and future deforestation in Madagascar. Séminaire à Kew Royal Botanic Gardens, 21 juillet 2015, Londres, Royaume-Uni.
 
 **Pedrono M., T. F. Allnutt, C. Grinand, J.-R. Rakotoarijaona, D. Razafimpahanana, and G. Vieilledent.** Séminaire du projet FED-FEDER POCT "Biodiversité de l'Océan Indien"", 2-5 juin 2015, Université de la Réunion, Saint Denis, Réunion, France. Public: Experts de la biodiversité de l'Océan Indien continental et étudiants en écologie de la Réunion.
 
@@ -63,7 +63,7 @@ Plusieurs réunions de présentation du projet et de présentation des résultat
 
 (ref:cap-meeting) **Participants à la réunion de présentation des avancées du projet, le 3 Juin 2016 à Antananarivo.** Les participants incluent des chercheurs, étudiants, membres d'ONG environnementales ou institutions nationales.
 
-```{r meeting, out.width="\\textwidth", fig.cap="(ref:cap-meeting)"}
+```{r meeting, out.height="10cm", fig.cap="(ref:cap-meeting)"}
 knitr::include_graphics("figures/Meeting.jpg")
 ```
 
@@ -103,7 +103,7 @@ Les résultats de l'article sur la vulnérabilité des forêts tropicales au cha
 
 Plusieurs outils ont été développés au cours du projet BioSceneMada pour la gestion ou l'aide à la décision concernant la conservation de la biodiversité à Madagascar. Ces outils sont sous forme de bases de données, de cartes à haute résolution, d'un atlas de la biodiversité, de logiciels. Ces outils seront notamment utiles pour l'application du programme REDD+ à Madagascar et l'optimisation du réseau d'aires naturelles protégées.
 
-_Base de données_: Le projet BioSceneMada a permis de constituter une base de données climatiques et environnementales à Madagascar. Le projet a également permis d'obtenir une base de données de biodiversité incluant plus de 300 000 points de présences pour 4969 espèces représentatives de la biodiversité à Madagascar. Cette base de données, incluant des données privées, est intégrée à la base ReBioMa gérée par le WCS Madagascar. 
+_Base de données_: Le projet BioSceneMada a permis de constituer une base de données climatiques et environnementales à Madagascar. Le projet a également permis d'obtenir une base de données de biodiversité incluant plus de 300 000 points de présences pour 4969 espèces représentatives de la biodiversité à Madagascar. Cette base de données, incluant des données privées, est intégrée à la base ReBioMa gérée par le WCS Madagascar. 
 
 _Cartes_: Le projet BioSceneMada a permis d'obtenir différentes cartes utiles pour la gestion de la biodiversité. Sont disponibles: des cartes de couverts forestiers sur la période 1953-2017 à 30m de résolution, une première carte de la biodiversité $\beta$, une carte des habitats forestiers vulnérables/résilients aux changements climatiques, une carte de la couverture forestière probable en 2050 et 2100 indiquant les zones à risque de déforestation.
 
@@ -121,7 +121,7 @@ _Bibliothèques logicielles_: Trois principales bibliothèques logicielles à de
 
 _Plan national de reforestation à Madagascar_
 
-Le président malgache Andry Rajoelina a cité l'étude de Vieilledent et al. 2018 [10.1016/j.biocon.2018.04.008](https://doi.org/10.1016/j.biocon.2018.04.008) début 2019 dans une communication à son conseil des ministres  pour le lancement d'un plan national de reforestation et de conservation des forêts à Madagascar intitulé "Reverdir Madagascar". Il a officialisé le lancement de ce plan lors du One Planet Summit en mars 2019 à Nairobi (Fig. \@ref(fig:oneplanetsummit)). Ce plan consiste, entre autres, dans le reboisement de 40,000 ha de forêt par an et le déploiement de foyers à éthanol pour la cuisson des repas afin de limiter la consommation de bois énergie et la pression sur les forêts. 
+Le président malgache Andry Rajoelina a cité l'étude de Vieilledent et al. 2018 [10.1016/j.biocon.2018.04.008](https://doi.org/10.1016/j.biocon.2018.04.008) début 2019 dans une communication à son conseil des ministres  pour le lancement d'un plan national de reforestation et de conservation des forêts à Madagascar intitulé "Reverdir Madagascar". Il a officialisé le lancement de ce plan lors du One Planet Summit en mars 2019 à Nairobi (Fig. \@ref(fig:oneplanetsummit)). Ce plan consiste, entre autres, dans le reboisement de 40,000 ha de forêt par an et le déploiement de foyers à éthanol pour la cuisson des repas afin de limiter la consommation de bois énergie et la pression sur les forêts.
 
 (ref:cap-oneplanetsummit) **Intervention du président malgache Andry Rajoelina lors One Planet Summit en mars 2019.** Le président reprend le chiffres de la déforestation publiés dans le cadre du projet BioSceneMada pour lancer son plan national de reforestation et de conservation des forêts à Madagascar.
 
@@ -132,11 +132,11 @@ knitr::include_graphics("figures/Rajoelina.jpg")
 L'intégralité de l'intervention du président malgache au One Planet Summit ainsi que la communication au Conseil des Ministres malgache sont disponibles [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier:    
 `/Medias`.  
 
-_Plan d'actions de l'Union Européenne sur la protection et la restoration des forêts_
+_Plan d'actions de l'Union Européenne sur la protection et la restauration des forêts_
 
-La méthodologie pour le calcul et la projection des taux de déforestation mise au point dans le cadre du projet BioSceneMada a été réutilisée dans le cadre d'un travail en partenariat avec le JRC (Centre Commun de Recherche de la Commission Européenne). Ce travail portait sur l'ensemble des forêts tropicales humides du globe. A la suite de ce travail, la Commission Européenne à lancé un plan d'actions pour la protection et la restoration des forêts tropicales (Fig. \@ref(fig:EU)). Ce plan d'actions passe notamment par la suppression de la déforestation importée dans les chaînes de valeur telles que la filière soja, huile de palme, ou cacao par exemple.
+La méthodologie pour le calcul et la projection des taux de déforestation mise au point dans le cadre du projet BioSceneMada a été réutilisée dans le cadre d'un travail en partenariat avec le JRC (Centre Commun de Recherche de la Commission Européenne). Ce travail portait sur l'ensemble des forêts tropicales humides du globe. A la suite de ce travail, la Commission Européenne à lancé un plan d'actions pour la protection et la restauration des forêts tropicales (Fig. \@ref(fig:EU)). Ce plan d'actions passe notamment par la suppression de la déforestation importée dans les chaînes de valeur telles que la filière soja, huile de palme, ou cacao par exemple.
 
-(ref:cap-EU) **Lancement d'un plan d'action de l'Union Européenne pour la protection et la restoration des forêts.** L'ensemble du communité de presse est disponible sur le site de la Commission Européenne (https://ec.europa.eu/commission/presscorner/detail/en/IP_19_4470) ou bien [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier `/Medias`. La carte présente les predictions par pays de l'année de disparition des forêts tropicales intactes (n'ayant jamais subi de perturbations) sous un scénario de statu quo ("business-as-usual").
+(ref:cap-EU) **Lancement d'un plan d'action de l'Union Européenne pour la protection et la restauration des forêts.** L'ensemble du communité de presse est disponible sur le site de la Commission Européenne (https://ec.europa.eu/commission/presscorner/detail/en/IP_19_4470) ou bien [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier `/Medias`. La carte présente les prédictions par pays de l'année de disparition des forêts tropicales intactes (n'ayant jamais subi de perturbations) sous un scénario de statu quo ("business-as-usual").
 
 ```{r EU, out.height="9cm", fig.cap="(ref:cap-EU)"}
 knitr::include_graphics("figures/EU.png")

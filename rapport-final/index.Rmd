@@ -41,6 +41,7 @@ output:
     includes:
       in_header: header.tex
       before_body: doc_prefix.tex
+classoption: a4paper, 12pt
 bibliography: bib/biblio.bib
 biblio-style: bib/jae.bst
 link-citations: yes
