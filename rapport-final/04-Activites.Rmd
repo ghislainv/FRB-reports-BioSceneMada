@@ -299,7 +299,7 @@ knitr::include_graphics("figures/deforMada.png")
 
 **Grinand C., G. Le Maire, G. Vieilledent, H. Razakamanarivo, T. Razafimbelo, and M. Bernoux.** 2017. Estimating temporal changes in soil carbon stocks at the ecoregional scale in Madagascar using remote-sensing. _International Journal of Applied Earth Observation and Geoinformation_. 54: 1-14. https://doi.org/10.1016/j.jag.2016.09.002.
 
-**Vieilledent G., O. Gardi, C. Grinand, C. Burren, M. Andriamanjato, C. Camara, C. J. Gardner, L. Glass, A. Rasolohery, H. Rakoto Ratsimba, V. Gond, and J.-R. Rakotoarijaona.** 2016. Bioclimatic envelope models predict a decrease in tropical forest carbon stocks with climate change in Madagascar. _Journal of Ecology_. 104: 703-715. doi: https://doi.org/10.1111/1365-2745.12548.
+**Vieilledent G., O. Gardi, C. Grinand, C. Burren, M. Andriamanjato, C. Camara, C. J. Gardner, L. Glass, A. Rasolohery, H. Rakoto Ratsimba, V. Gond, and J.-R. Rakotoarijaona.** 2016. Bioclimatic envelope models predict a decrease in tropical forest carbon stocks with climate change in Madagascar. _Journal of Ecology_. 104: 703-715. https://doi.org/10.1111/1365-2745.12548.
 
 Ces articles sont accessibles [ici](https://nextcloud.fraisedesbois.net/index.php/s/mcm5DLEXcztziRE) dans le dossier:   
 `/Articles_scientifiques/Acceptes`.
